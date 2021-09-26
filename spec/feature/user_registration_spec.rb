@@ -18,7 +18,7 @@ RSpec.describe 'As a visitor', type: :feature do
     visit root_path
     click_button 'Sign up'
 
-    expect(current_path).to eq(sign_up_index_path)
+    expect(current_path).to eq(sign_up_path)
     within '#sign_up_form' do
       expect(page).to have_field(:first_name)
       expect(page).to have_field(:last_name)
@@ -32,7 +32,7 @@ RSpec.describe 'As a visitor', type: :feature do
     end
   end
   scenario 'When I enter my information and sign up, I am redirected to my personal page' do
-    visit sign_up_index_path
+    visit sign_up_path
 
     within '#sign_up_form' do
       fill_in :first_name, with: 'Kris'
