@@ -32,6 +32,10 @@ gem 'hotwire-rails'
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :development do
@@ -45,9 +49,6 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~> 5.0'
-  gem 'capybara'
-  gem 'launchy'
-  gem 'factory_bot_rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
