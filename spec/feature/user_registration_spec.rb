@@ -20,6 +20,8 @@ RSpec.describe 'As a visitor', type: :feature do
 
     expect(current_path).to eq(sign_up_path)
     within '#sign_up_form' do
+      expect(page).to have_field(:username)
+      expect(page).to have_field(:password)
       expect(page).to have_field(:first_name)
       expect(page).to have_field(:last_name)
       expect(page).to have_field(:address_1)
@@ -36,6 +38,8 @@ RSpec.describe 'As a visitor', type: :feature do
     visit sign_up_path
 
     within '#sign_up_form' do
+      fill_in :username, with: 'duguy8'
+      fill_in :password, with: 'Test123!'
       fill_in :first_name, with: 'Kris'
       fill_in :last_name, with: 'Litman'
       fill_in :address_1, with: '5145 S Dale Mabry Hwy'

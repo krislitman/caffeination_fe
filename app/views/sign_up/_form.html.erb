@@ -1,5 +1,11 @@
 <div id="sign_up_form">
   <%= form_with model: User.new, local: true do |form| %>
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+
+    <%= form.label :password %>
+    <%= form.text_field :password %>
+
     <%= form.label :first_name %>
     <%= form.text_field :first_name %>
 
