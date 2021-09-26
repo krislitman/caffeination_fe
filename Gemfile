@@ -31,8 +31,6 @@ gem 'hotwire-rails'
 
 group :development, :test do
   gem 'pry'
-  gem 'capybara'
-  gem 'launchy'
   gem 'rspec-rails'
 end
 
@@ -43,6 +41,13 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 5.0'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'factory_bot_rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
