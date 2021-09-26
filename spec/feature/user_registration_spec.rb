@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'As a visitor', type: :feature do
+  after(:each) do
+    User.destroy_all
+  end
   scenario 'When I visit the app, I see buttons to log in or sign up as a new user, and able to search' do
     visit root_path
 
@@ -40,21 +43,21 @@ RSpec.describe 'As a visitor', type: :feature do
     within '#sign_up_form' do
       fill_in :username, with: 'duguy8'
       fill_in :password, with: 'Test123!'
-      fill_in :first_name, with: 'Kris'
-      fill_in :last_name, with: 'Litman'
+      fill_in :first_name, with: 'kris'
+      fill_in :last_name, with: 'litman'
       fill_in :address_1, with: '5145 S Dale Mabry Hwy'
       fill_in :address_2, with: 'Unit 107'
       fill_in :city, with: 'Tampa'
       fill_in :state, with: 'FL'
       fill_in :zipcode, with: '33611'
-      fill_in :email, with: 'kris.d.litman@gmail.com'
+      fill_in :email, with: 'Kris.d.litman@gmail.com'
       fill_in :favorite_beverage, with: 'Nitro cold brew'
       click_button 'Sign me up'
     end
-    expect(page).to have_content('Kris Litman')
-    expect(page).to have_content('Favorite Beverage: Nitro Cold Brew')
+    expect(page).to have_content('Welcome duguy8')
+    expect(page).to have_content('Favorite Beverage: Nitro cold brew')
     expect(page).to have_content('Where would you like to grab coffee?')
-    expect(page).to have_content('My favorite spots:')
-    expect(page).to have_content('Recommended spots:')
+    expect(page).to have_content('My Favorite Spots:')
+    expect(page).to have_content('Recommended Spots:')
   end
 end

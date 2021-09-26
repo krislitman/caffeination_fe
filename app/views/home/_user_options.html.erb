@@ -1,4 +1,8 @@
 <div id="user_options">
-  <%= button_to 'Log in', log_in_path, method: :get %>
-  <%= button_to 'Sign up', sign_up_path, method: :get %>
+  <% if logged_in %>
+    <%# add button to log out or refer a friend %>
+  <% else %>
+    <%= button_to 'Log in', log_in_path, method: :get %>
+    <%= button_to 'Sign up', sign_up_path, method: :get %>
+  <% end %>
 </div>

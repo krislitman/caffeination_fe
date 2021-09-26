@@ -1,5 +1,5 @@
 <div id="sign_up_form">
-  <%= form_with model: User.new, local: true do |form| %>
+  <%= form_with url: "/sign_up", local: true, method: :post do |form| %>
     <%= form.label :username %>
     <%= form.text_field :username %>
 
