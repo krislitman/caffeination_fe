@@ -7,7 +7,7 @@ FactoryBot.define do
     last_name {"#{Faker::Games::Pokemon.move}"}
     address_1 {"#{Faker::Games::Pokemon.location}"}
     sequence :address_2 do |n|
-      "Apt -#{n}"
+      "Apt-#{n * 5}"
     end
     city {"#{Faker::Address.city}"}
     state {"#{Faker::Address.state_abbr}"}
