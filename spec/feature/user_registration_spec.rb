@@ -29,6 +29,7 @@ RSpec.describe 'As a visitor', type: :feature do
       expect(page).to have_field(:zipcode)
       expect(page).to have_field(:email)
       expect(page).to have_field(:favorite_beverage)
+      expect(page).to have_button('Sign me up')
     end
   end
   scenario 'When I enter my information and sign up, I am redirected to my personal page' do
@@ -44,7 +45,7 @@ RSpec.describe 'As a visitor', type: :feature do
       fill_in :zipcode, with: '33611'
       fill_in :email, with: 'kris.d.litman@gmail.com'
       fill_in :favorite_beverage, with: 'Nitro cold brew'
-      click_button 'Sign up'
+      click_button 'Sign me up'
     end
     expect(page).to have_content('Kris Litman')
     expect(page).to have_content('Favorite Beverage: Nitro Cold Brew')
