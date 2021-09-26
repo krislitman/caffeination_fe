@@ -1,17 +1,17 @@
 class CreateUser < ActiveRecord::Migration[6.1]
   def change
     create_table :users do |t|
-      t.string :first_name
-      t.string :last_name
-      t.string :address_1
-      t.string :address_2
-      t.string :city
-      t.string :state
-      t.string :zipcode
-      t.string :email
-      t.string :favorite_beverage
+      t.string :first_name, null: false
+      t.string :last_name, null: false
+      t.string :address_1, null: true
+      t.string :address_2, null: true
+      t.string :city, null: true
+      t.string :state, null: true
+      t.string :zipcode, limit: 15, null: false
+      t.string :email, unique: true, null: false
+      t.string :favorite_beverage, null: true
       t.string :password_digest
-      t.string :username
+      t.string :username, null: false
 
       t.timestamps
     end
