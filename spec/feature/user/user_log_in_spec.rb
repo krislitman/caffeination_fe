@@ -1,8 +1,13 @@
 require "rails_helper"
 
 RSpec.describe "As a visitor", type: :feature do
+  before :all do
+    @user = FactoryBot.create(:user)
+  end
+  after :all do
+    User.find(@user.id).destroy
+  end
   context "When I visit the home page" do
-    user = FactoryBot.create(:user)
     it "I visit the correct page when clicking Log in button" do
       visit root_path
       click_button "Log in"
@@ -19,13 +24,12 @@ RSpec.describe "As a visitor", type: :feature do
     end
     it "With correct credentials I am able to log in, redirected to root path" do
       visit log_in_path
-      fill_in :email, with: user.email
-      fill_in :password, with: user.password
+      fill_in :email, with: @user.email
+      fill_in :password, with: @user.password
       click_button "Log in"
 
       expect(current_path).to eq(root_path)
-      expect(page).to have_content("Welcome back #{user.username}!")
+      expect(page).to have_content("Welcome back #{@user.username}!")
     end
-    User.find(user.id).destroy
   end
 end
