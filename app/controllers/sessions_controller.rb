@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by(email: params[:email].downcase)
+    user = User.find_by(email: normalized_email)
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       flash[:message] = "Welcome back #{user.username}!"
@@ -14,4 +14,10 @@ class SessionsController < ApplicationController
   end
 
   def destroy; end
+
+  private
+
+  def normalized_email
+    params[:email].downcase
+  end
 end
