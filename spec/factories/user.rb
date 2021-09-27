@@ -14,5 +14,6 @@ FactoryBot.define do
     zipcode {"#{Faker::Address.zip_code}"}
     email {"#{Faker::Internet.safe_email}"}
     favorite_beverage {"#{Faker::Coffee.blend_name}"}
+    password { "test123" }
   end
 end
