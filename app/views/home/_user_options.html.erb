@@ -1,5 +1,6 @@
 <div id="user_options">
   <% if logged_in %>
+    <%= button_to 'Log out', log_out_path, method: :delete %>
     <%# add button to log out or refer a friend %>
   <% else %>
     <%= button_to 'Log in', log_in_path, method: :get %>
