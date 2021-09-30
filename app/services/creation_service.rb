@@ -1,9 +1,7 @@
 class CreationService
   class << self
     def store_user_and_session(user, session)
-      type = {
-        store_user_and_session: true
-      }
+      type = { store_user_and_session: true }
       local_connection(
         user: user,
         session: session,
