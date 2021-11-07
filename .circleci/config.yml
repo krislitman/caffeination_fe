@@ -1,17 +1,17 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/caffeination_be
+    working_directory: ~/caffeination_fe
     docker:
       - image: circleci/ruby:3.0.0
         environment:
           PGHOST: localhost
-          PGUSER: caffeination_be
+          PGUSER: caffeination_fe
           RAILS_ENV: test
       - image: postgres:9.5
         environment:
-          POSTGRES_USER: caffeination_be
-          POSTGRES_DB: caffeination_be_test
+          POSTGRES_USER: caffeination_fe
+          POSTGRES_DB: caffeination_fe_test
           POSTGRES_PASSWORD: POSTGRES_HOST_AUTH_METHOD=trust
     dependencies:
     pre:
@@ -20,8 +20,8 @@ jobs:
       # Setup environment
       - checkout
       - run: gem install bundler:2.2.3
-      - run: bundle config set --local path 'projects/caffeination_rails/caffeination_be'
-      - run: bundle install --path 'projects/caffeination_rails/caffeination_be'
+      - run: bundle config set --local path 'projects/caffeination_rails/caffeination_fe'
+      - run: bundle install --path 'projects/caffeination_rails/caffeination_fe'
 
       # Wait for DB
       - run: dockerize -wait tcp://localhost:5432 -timeout 1m
