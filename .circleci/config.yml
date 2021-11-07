@@ -31,5 +31,10 @@ jobs:
       - run: bundle exec rails db:migrate
       - run: bundle exec rails db:schema:load
 
-      # Run the tests
-      - run: bundle exec rspec
+      # Not running request specs!
+
+      # Run the feature tests
+      - run: bundle exec rspec spec/feature
+
+      # Run the unit tests
+      - run: bundle exec rspec spec/unit
