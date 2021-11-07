@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/krislitman/caffeination_fe.svg?style=shield)](https://circleci.com/gh/krislitman/caffeination_fe)
+
 # Caffeination FE
 
 ### Rails Application
