@@ -1,5 +1,10 @@
 class CreationService
   class << self
+
+    def clean_up_test
+      HTTParty.delete('http://localhost:3001/api/v1/store')
+    end
+
     def store_user_and_session(user, session)
       type = { store_user_and_session: true }
       local_connection(
