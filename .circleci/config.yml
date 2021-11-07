@@ -24,7 +24,7 @@ jobs:
       - run: bundle install --path 'projects/caffeination_rails/caffeination_fe'
 
       # Fix node errors with webpacker
-      - run: bundle exec rails assets:precompile
+      - run: NODE_ENV=test bundle exec rails webpacker:compile
 
       # Wait for DB
       - run: dockerize -wait tcp://localhost:5432 -timeout 1m
