@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/caffeination_fe
     docker:
-      - image: circleci/ruby:3.0.0
+      - image: circleci/ruby:3.0.0-node-browsers
         environment:
           PGHOST: localhost
           PGUSER: caffeination_fe
@@ -24,6 +24,7 @@ jobs:
       - run: bundle install --path 'projects/caffeination_rails/caffeination_fe'
 
       # Fix node errors with webpacker
+      - run: yarn install
       - run: NODE_ENV=test bundle exec rails webpacker:compile
 
       # Wait for DB
