@@ -2,7 +2,6 @@ class SearchController < ApplicationController
   def index
     begin
       @coffee_shops = YelpService.search(search_params)
-      require 'pry'; binding.pry
     rescue
       flash[:notice] = "An unexpected error occurred"
       # Log error
