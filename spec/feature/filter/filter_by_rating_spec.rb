@@ -12,6 +12,7 @@ RSpec.describe "Filter Search Results by Rating", type: :feature do
         fill_in :query, with: "15243"
         click_button "Search"
         select "Rating", from: :sort_by
+        click_button "Filter"
 
         expect(current_path).to eq(search_path)
       end

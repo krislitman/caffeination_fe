@@ -1,11 +1,16 @@
 class SearchController < ApplicationController
   def index
-    begin
-      @coffee_shops = YelpService.search(search_params)
-    rescue
-      flash[:notice] = "An unexpected error occurred"
-      # Log error
-      redirect_to root_path
+    require 'pry'; binding.pry
+    case
+    when params[:query]
+      begin
+        @coffee_shops = YelpService.search(search_params)
+      rescue
+        flash[:notice] = "An unexpected error occurred"
+        # Log error
+        redirect_to root_path
+      end
+    when params[:sort_by]
     end
   end
 
