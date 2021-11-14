@@ -5,10 +5,10 @@ class YelpService
       zipcode = zipcode[:query].to_s
       response = local_connection(zipcode)
       yelp_data = JSON.parse(response.body, symbolize_names: true)
-      create_coffee_shops(yelp_data)
+      create_coffee_shops(yelp_data, zipcode)
     end
 
-    def create_coffee_shops(data)
+    def create_coffee_shops(data, zipcode)
       all_stores = []
       if data[:businesses]
         data[:businesses].each do |b|
@@ -20,7 +20,8 @@ class YelpService
             transaction_types: b[:transactions],
             location: b[:location],
             phone: b[:display_phone] ||= b[:phone],
-            url: b[:url]
+            url: b[:url],
+            search_phrase: zipcode
           })
           if s.save
               all_stores << s

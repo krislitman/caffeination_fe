@@ -13,4 +13,10 @@ class ApplicationController < ActionController::Base
   def logged_in
     !!current_user
   end
+
+  def unexpected_error
+    flash[:notice] = "An unexpected error occurred"
+    # Log error
+    redirect_to root_path
+  end
 end
