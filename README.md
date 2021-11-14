@@ -75,6 +75,8 @@ To run individual tests use:
 - Redis
 - Bcrypt
 - Better Errors
+- Webmock
+- VCR
 
 ## Versions
 

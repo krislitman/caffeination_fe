@@ -26,6 +26,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Figaro for key storage
 gem 'figaro'
 
+# Image Processing
+gem 'image_processing'
+
 # API Calls
 gem 'httparty'
 
