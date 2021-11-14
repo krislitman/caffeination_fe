@@ -95,6 +95,8 @@ GEM
     faker (2.19.0)
       i18n (>= 1.6, < 2)
     ffi (1.15.4)
+    figaro (1.2.0)
+      thor (>= 0.14.0, < 2)
     fuubar (2.5.1)
       rspec-core (~> 3.0)
       ruby-progressbar (~> 1.4)
@@ -254,6 +256,7 @@ DEPENDENCIES
   capybara
   factory_bot_rails
   faker
+  figaro
   fuubar
   hotwire-rails
   httparty
