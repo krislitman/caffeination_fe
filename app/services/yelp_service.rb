@@ -2,19 +2,21 @@ class YelpService
   class << self
 
     def search(zipcode)
+      zipcode = zipcode[:query].to_s
+      require 'pry'; binding.pry
       response = local_connection(zipcode)
       yelp_data = JSON.parse(response.body, symbolize_names: true)
       YelpPoro.create(yelp_data, zipcode)
     end
 
-    def local_connection(**args)
+    def local_connection(zipcode)
         HTTParty.get(
-          'api.yelp.com/v3/businesses/search',
+          'https://api.yelp.com/v3/businesses/search',
           headers: {
             "Authorization": Figaro.env.yelp_key
           },
-          params: {
-            location: args[:zipcode].to_json,
+          query: {
+            location: zipcode,
             categories: "coffee",
             sort_by: "rating"
           }
