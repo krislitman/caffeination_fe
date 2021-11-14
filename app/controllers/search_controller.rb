@@ -1,22 +1,21 @@
 class SearchController < ApplicationController
+  before_action :location, only: [:index]
+
   def index
-    require 'pry'; binding.pry
-    case
-    when params[:query]
-      begin
-        @coffee_shops = YelpService.search(search_params)
-      rescue
-        flash[:notice] = "An unexpected error occurred"
-        # Log error
-        redirect_to root_path
-      end
-    when params[:sort_by]
-    end
+    unexpected_error unless @coffee_shops = SearchFacade.route(search_params, location)
   end
 
   private
 
+  def location
+    if params[:query]
+      session[:location] = params[:query]
+    else
+      session[:location]
+    end
+  end
+
   def search_params
-    params.permit(:query)
+    params.permit(:query, :sort_by, :price)
   end
 end
