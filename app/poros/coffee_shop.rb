@@ -1,4 +1,4 @@
-class YelpPoro
+class CoffeeShop
   attr_reader :name,
               :image_url,
               :rating,
@@ -7,6 +7,7 @@ class YelpPoro
               :location,
               :phone,
               :url
+
   def initialize(y)
     @name = y[:name]
     @image_url = y[:image_url]

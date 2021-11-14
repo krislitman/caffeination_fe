@@ -5,7 +5,7 @@ class YelpService
       zipcode = zipcode[:query].to_s
       response = local_connection(zipcode)
       yelp_data = JSON.parse(response.body, symbolize_names: true)
-      YelpPoro.create(yelp_data)
+      CoffeeShop.create(yelp_data)
     end
 
     def local_connection(zipcode)
