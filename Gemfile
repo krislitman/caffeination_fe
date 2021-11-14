@@ -23,6 +23,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Figaro for key storage
+gem 'figaro'
+
 # API Calls
 gem 'httparty'
 
@@ -40,6 +43,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'fuubar'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do
