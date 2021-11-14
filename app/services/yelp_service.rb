@@ -3,10 +3,9 @@ class YelpService
 
     def search(zipcode)
       zipcode = zipcode[:query].to_s
-      require 'pry'; binding.pry
       response = local_connection(zipcode)
       yelp_data = JSON.parse(response.body, symbolize_names: true)
-      YelpPoro.create(yelp_data, zipcode)
+      YelpPoro.create(yelp_data)
     end
 
     def local_connection(zipcode)

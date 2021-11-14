@@ -12,19 +12,20 @@ class YelpPoro
     @image_url = y[:image_url]
     @rating = y[:rating]
     @coordinates = y[:coordinates]
-    @fulfillment_types = y[:fulfillment_types]
+    @transaction_types = y[:transactions]
     @location = y[:location]
-    @phone = y[:phone]
+    @phone = y[:display_phone] ||= y[:phone]
     @url = y[:url]
   end
 
   class << self
     def create(data)
-      require 'pry'; binding.pry
       all_stores = []
-      data.each do |d|
-        store = self.new(d)
-        all_stores << store
+      if data[:businesses]
+        data[:businesses].each do |business|
+          s = self.new(business)
+          all_stores << s
+        end
       end
       all_stores
     end
