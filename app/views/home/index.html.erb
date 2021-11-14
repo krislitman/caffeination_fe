@@ -1,10 +1,13 @@
-<h1>Caffeination</h1>
+<center>
+  <h1>Caffeination</h1>
+  <hr>
 
-<% if logged_in %>
-  <%= render "user_information" %>
-  <%= render "favorite_spots" %>
-  <%= render "recommended_spots" %>
-<% end %>
+  <% if logged_in %>
+    <%= render "user_information" %>
+    <%= render "favorite_spots" %>
+    <%= render "recommended_spots" %>
+  <% end %>
 
-<%= render "user_options" %>
-<%= render "zipcode_search_form" %>
+  <%= render "user_options" %>
+  <%= render "zipcode_search_form" %>
+</center>
