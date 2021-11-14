@@ -3,5 +3,6 @@
   <hr>
 
   <%= render "zipcode_search" %>
+  <%= render partial: "drop_down", locals: {coffee_shops: @coffee_shops} %>
   <%= render partial: "coffee_shops", locals: {coffee_shops: @coffee_shops} %>
 </center>
