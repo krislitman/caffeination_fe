@@ -1,6 +1,9 @@
 require "rails_helper"
 
 RSpec.describe "Yelp API call initial test", type: :feature do
+  after(:each) do
+    CoffeeShop.destroy_all
+  end
   describe "A guest can enter a zipcode into form" do
     it "Can search for local coffee shops" do
       VCR.use_cassette('requests/yelp_initial_test',

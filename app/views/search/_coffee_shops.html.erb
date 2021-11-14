@@ -1,9 +1,9 @@
 <hr>
   <% coffee_shops.each do |c| %>
-    <%= image_tag c.image_url(resize_to_limit: [200, 200]) %>
+    <%= image_tag c.image_url, size: "10" %>
     <p>Name: <%= c.name %></p>
     <p>Rating: <%= c.rating %></p>
-    <p>Location: <%= c.location[:display_address] %></p>
+    <p>Location: <%= c.location["display_address"].join(",") %></p>
     <p>Phone: <%= c.phone %></p>
   <% end%>
 <hr>
