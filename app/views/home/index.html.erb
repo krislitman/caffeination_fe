@@ -1,13 +1,21 @@
-<center>
-  <h1>Caffeination</h1>
-  <hr>
+<main>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <p>
+              <h1>Caffeination</h1>
+              <hr>
+              <% if logged_in %>
+                <%= render "user_information" %>
+                <%= render "favorite_spots" %>
+                <%= render "recommended_spots" %>
+              <% end %>
+              <%= render "user_options" %>
+              <%= render "zipcode_search_form" %>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
 
-  <% if logged_in %>
-    <%= render "user_information" %>
-    <%= render "favorite_spots" %>
-    <%= render "recommended_spots" %>
-  <% end %>
 
-  <%= render "user_options" %>
-  <%= render "zipcode_search_form" %>
-</center>
