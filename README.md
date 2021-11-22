@@ -1,6 +1,7 @@
 [![CircleCI](https://circleci.com/gh/krislitman/caffeination_fe.svg?style=shield)](https://circleci.com/gh/krislitman/caffeination_fe)
 
-# Caffeination FE
+## Caffeination FE
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 
 ### Rails Application
 
@@ -16,12 +17,14 @@
   - [Versioning](#versions)
   - [Acknowledgements](#acknowledgements)
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Author
 
   - **Kris Litman**<br>
     [GitHub](https://github.com/krislitman)<br>
     [LinkedIn](https://www.linkedin.com/in/kris-litman/)
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Getting Started
 
 ### API Keys
@@ -42,6 +45,7 @@ your local machine for development and testing purposes.
 4. Run rails s to start the rails server
 5. Go to localhost:3000 to view the Development environment for the application!
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Views
 
 #### Welcome Page
@@ -50,6 +54,7 @@ your local machine for development and testing purposes.
   Welcome to Caffeination! View local coffee shops near you, register a new account to star and remember your saved shops and share your favorite coffee shops!
 </p>
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Running the tests
 
 **Testing with RSpec**
@@ -59,6 +64,7 @@ To run the full test suite you will need to run the command:
 To run individual tests use:
 `bundle exec rspec spec/folder/file`
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Built With
 
 - Rails
@@ -78,12 +84,14 @@ To run individual tests use:
 - Webmock
 - VCR
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Versions
 
 - Ruby 3.0.0
 
 - Rails 6.1
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Acknowledgements
 
 - [Yelp](https://www.yelp.com/developers/)
