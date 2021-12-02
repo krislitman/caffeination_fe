@@ -1,19 +1,15 @@
 <main>
-  <div class="container">
+  <p>
+    <h1>Caffeination</h1>
+    <hr>
+    <% if logged_in %>
+      <%= render "user_information" %>
+      <%= render "favorite_spots" %>
+      <%= render "recommended_spots" %>
+    <% end %>
 
-        <p>
-              <h1>Caffeination</h1>
-              <hr>
-              <% if logged_in %>
-                <%= render "user_information" %>
-                <%= render "favorite_spots" %>
-                <%= render "recommended_spots" %>
-              <% end %>
-              <%= render "user_options" %>
-              <%= render "zipcode_search_form" %>
-        </p>
-
-  </div>
+    <%= render "zipcode_search_form" %>
+  </p>
 </main>
 
 
