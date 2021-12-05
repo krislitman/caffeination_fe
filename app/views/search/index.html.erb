@@ -1,8 +1,7 @@
 <center>
   <h1>Caffeination</h1>
   <hr>
-
-  <%= render "zipcode_search" %>
-  <%= render partial: "drop_down", locals: {coffee_shops: @coffee_shops} %>
+  <%== pagy_bootstrap_nav(@pagy) %>
+  <%= render partial: "drop_down", locals: {coffee_shops: @coffee_shops} %><br>
   <%= render partial: "coffee_shops", locals: {coffee_shops: @coffee_shops} %>
 </center>

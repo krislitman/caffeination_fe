@@ -10,7 +10,7 @@ RSpec.describe "Filter Search Results by Rating", type: :feature do
         match_requests_on: %i[body]) do
         visit root_path
         fill_in :query, with: "15243"
-        click_button "Search"
+        click_button "button"
         select "Rating", from: :sort_by
         click_button "Filter"
 
