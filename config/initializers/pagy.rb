@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 require 'pagy/extras/array'
+require 'pagy/extras/bootstrap'
+Pagy::DEFAULT[:items] = 10
 
 # Pagy initializer file (5.6.4)
 # Customize only what you really need and notice that the core Pagy works also without any of the following lines.
