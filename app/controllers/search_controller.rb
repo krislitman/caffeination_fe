@@ -2,7 +2,7 @@ class SearchController < ApplicationController
   before_action :location, only: [:index]
 
   def index
-    unexpected_error unless @coffee_shops = SearchFacade.route(search_params, location)
+    @pagy, @coffee_shops = pagy_array(SearchFacade.route(search_params, location))
   end
 
   private
