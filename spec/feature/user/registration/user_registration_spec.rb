@@ -8,10 +8,7 @@ RSpec.describe 'As a visitor', type: :feature do
     visit root_path
 
     expect(page).to have_content('Caffeination')
-    within '#user_options' do
-      expect(page).to have_button('Sign up')
-      expect(page).to have_button('Log in')
-    end
+
     within '#zipcode_search' do
       expect(page).to have_content('Where would you like to grab coffee?')
       expect(page).to have_field(:query)
@@ -19,7 +16,7 @@ RSpec.describe 'As a visitor', type: :feature do
   end
   scenario 'When I click on ~Sign up~, I am brought to a page to enter more information' do
     visit root_path
-    click_button 'Sign up'
+    find(:xpath, '//*[@id="navbarSupportedContent"]/ul/li[2]/ul/a[3]').click
 
     expect(current_path).to eq(sign_up_path)
     within '#sign_up_form' do

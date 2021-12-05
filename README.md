@@ -83,6 +83,7 @@ To run individual tests use:
 - Better Errors
 - Webmock
 - VCR
+- Pagy
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Versions
