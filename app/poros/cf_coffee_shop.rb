@@ -1,0 +1,2 @@
+class CfCoffeeShop
+end
