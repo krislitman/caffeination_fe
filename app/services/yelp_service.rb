@@ -12,20 +12,8 @@ class YelpService
       all_stores = []
       if data[:businesses]
         data[:businesses].each do |b|
-          s = CoffeeShop.new({
-            name: b[:name],
-            image_url: URI.parse(b[:image_url]),
-            rating: b[:rating],
-            coordinates: b[:coordinates],
-            transaction_types: b[:transactions],
-            location: b[:location],
-            phone: b[:display_phone] ||= b[:phone],
-            url: b[:url],
-            search_phrase: zipcode
-          })
-          if s.save
-              all_stores << s
-          end
+          s =CfCoffeeShop.new(b, zipcode)
+          all_stores.push(s)
         end
       else
         raise "Error receiving business information from Yelp, please try again later"
