@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/krislitman/caffeination_fe.svg?style=shield)](https://circleci.com/gh/krislitman/caffeination_fe)
+[![Heroku App Status](http://heroku-shields.herokuapp.com/caffeination-rails)](https://caffeination-rails.herokuapp.com/)
 
 ## Caffeination FE
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
