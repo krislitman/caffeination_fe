@@ -30,8 +30,8 @@
 
 ### API Keys
 
-Before getting started with installation, you will need to create an account and get an API key from
-[Yelp](https://fusion.yelp.com/)
+Before getting started with installation, you will need to create an account and get API keys from
+[Yelp](https://fusion.yelp.com/) and from [Abstract](https://www.abstractapi.com/) for Geolocation Services
 Please sign up to get your own copy and include them as environment variables with Figaro.
 Run `figaro install` to add your own application.yml file to the application.
 
@@ -97,3 +97,5 @@ To run individual tests use:
 ## Acknowledgements
 
 - [Yelp](https://www.yelp.com/developers/)
+
+- [Abstract](https://www.abstractapi.com/)
