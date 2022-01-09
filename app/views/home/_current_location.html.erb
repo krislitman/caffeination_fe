@@ -1,0 +1,7 @@
+<div id="current_location">
+  <%= form_with url: "/current_location", method: :get, multipart: true do |form| %>
+  <%= button_tag(type: 'submit', class: "btn btn-outline-secondary") do %>
+    <i class="fas fa-map-marker-alt"></i>
+  <% end %>
+<% end %>
+</div>
