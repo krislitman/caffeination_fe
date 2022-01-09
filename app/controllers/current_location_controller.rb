@@ -1,5 +1,11 @@
 class CurrentLocationController < ApplicationController
   def find
-    redirect_to root_path
+    location = CurrentLocationService.get_current_location
+
+    if location.nil?
+      # Add error handling
+    else
+      redirect_to root_path(current_location: location)
+    end
   end
 end
