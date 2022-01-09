@@ -1,3 +1,5 @@
 class HomeController < ApplicationController
-  def index; end
+  def index
+    @current_location = params[:current_location] || nil
+  end
 end

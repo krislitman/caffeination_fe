@@ -8,7 +8,9 @@
       <%= render "recommended_spots" %>
     <% end %>
 
-    <%= render "zipcode_search_form" %>
+    <%= render partial: "zipcode_search_form", locals: { location: @current_location } %>
+
+    <%= render "current_location" %>
   </p>
 </main>
 
