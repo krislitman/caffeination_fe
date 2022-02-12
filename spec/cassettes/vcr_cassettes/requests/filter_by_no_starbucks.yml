@@ -1,0 +1,272 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?categories=coffee&location=20149&sort_by=rating
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - DONT_LOOK_AT_ME
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '4991'
+      X-Zipkin-Id:
+      - 8429c28a24ce949a
+      Ratelimit-Resettime:
+      - '2022-02-13T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-784fb67f4d-vp45s; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-B3-Sampled:
+      - '0'
+      X-Cloudmap:
+      - routing_useast1
+      X-Proxied:
+      - 10-65-164-1-useast1bprod
+      X-Extlb:
+      - 10-65-164-1-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 12 Feb 2022 04:24:23 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-mia11354-MIA
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "ib8LA-j5ZLAjdy8fQBo6fA", "alias": "blend-coffee-bar-ashburn",
+        "name": "Blend Coffee Bar", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/OjANtvEaUx4ASYk4PXKnxQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/blend-coffee-bar-ashburn?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 295, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}], "rating":
+        4.5, "coordinates": {"latitude": 39.0087294924398, "longitude": -77.5081810262783},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "43170
+        Southern Walk Plz", "address2": "Ste 120", "address3": "", "city": "Ashburn",
+        "zip_code": "20148", "country": "US", "state": "VA", "display_address": ["43170
+        Southern Walk Plz", "Ste 120", "Ashburn, VA 20148"]}, "phone": "+15714428718",
+        "display_phone": "(571) 442-8718", "distance": 2467.6448752659503}, {"id":
+        "yxS0q2JiHOSnGJfq33JMhg", "alias": "java-cruiser-poolesville-4", "name": "Java
+        Cruiser", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/O_PG6F7SMhYIt5Fs8rFsjw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/java-cruiser-poolesville-4?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 17, "categories": [{"alias": "foodtrucks", "title": "Food
+        Trucks"}, {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 5.0, "coordinates":
+        {"latitude": 39.1409530639648, "longitude": -77.4097442626953}, "transactions":
+        [], "price": "$$", "location": {"address1": "", "address2": "", "address3":
+        "", "city": "Poolesville", "zip_code": "20837", "country": "US", "state":
+        "MD", "display_address": ["Poolesville, MD 20837"]}, "phone": "+12409948610",
+        "display_phone": "(240) 994-8610", "distance": 14751.330217870656}, {"id":
+        "hlo_4fiKFS44Gp7l2uieGw", "alias": "y-tea-ashburn-5", "name": "Y-TEA", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/qrhUVRh4y5YIJuRi8hX3aA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/y-tea-ashburn-5?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 14, "categories": [{"alias": "bubbletea", "title": "Bubble
+        Tea"}, {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 5.0, "coordinates":
+        {"latitude": 38.9908621, "longitude": -77.5046997}, "transactions": ["pickup",
+        "delivery"], "location": {"address1": "22621 Amendola Terrace", "address2":
+        "Unit 185", "address3": "", "city": "Ashburn", "zip_code": "20148", "country":
+        "US", "state": "VA", "display_address": ["22621 Amendola Terrace", "Unit 185",
+        "Ashburn, VA 20148"]}, "phone": "+17037294509", "display_phone": "(703) 729-4509",
+        "distance": 4369.258023313536}, {"id": "NRaIyBKeFV7Q-1l4vkEdKA", "alias":
+        "peets-coffee-ashburn-2", "name": "Peet''s Coffee", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/w408xQYj9G0QVKcHxdIFtA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/peets-coffee-ashburn-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 67, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 4.0, "coordinates": {"latitude": 39.06846720262, "longitude":
+        -77.4842873221985}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "19800 Belmont Chase Dr", "address2": "Ste 100", "address3":
+        null, "city": "Ashburn", "zip_code": "20147", "country": "US", "state": "VA",
+        "display_address": ["19800 Belmont Chase Dr", "Ste 100", "Ashburn, VA 20147"]},
+        "phone": "+15712525807", "display_phone": "(571) 252-5807", "distance": 4488.215234293261},
+        {"id": "ZT8m9ur89294S5zrTZjGeQ", "alias": "the-meadows-original-frozen-custard-ashburn",
+        "name": "The Meadows Original Frozen Custard", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/98E_VNi_oCCyd54T4b-NqA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-meadows-original-frozen-custard-ashburn?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 119, "categories": [{"alias": "icecream", "title": "Ice Cream
+        & Frozen Yogurt"}, {"alias": "coffee", "title": "Coffee & Tea"}, {"alias":
+        "juicebars", "title": "Juice Bars & Smoothies"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.0524977, "longitude": -77.4545169}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "20548 Easthampton Plz", "address2":
+        "", "address3": "", "city": "Ashburn", "zip_code": "20147", "country": "US",
+        "state": "VA", "display_address": ["20548 Easthampton Plz", "Ashburn, VA 20147"]},
+        "phone": "+17038580400", "display_phone": "(703) 858-0400", "distance": 4671.469046329307},
+        {"id": "qkkfi77Up0i5-pEQWG6c8A", "alias": "starbucks-ashburn-13", "name":
+        "Starbucks", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/DbbicZ8VpZeothMxuzLYHw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-ashburn-13?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 66, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 4.0, "coordinates": {"latitude": 39.02285670934793, "longitude":
+        -77.47739392316316}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "44050 Pipeline Plz", "address2": null, "address3": null, "city":
+        "Ashburn", "zip_code": "20147", "country": "US", "state": "VA", "display_address":
+        ["44050 Pipeline Plz", "Ashburn, VA 20147"]}, "phone": "+17037238534", "display_phone":
+        "(703) 723-8534", "distance": 2104.3618881074476}, {"id": "a-r1WBx2Ky-jbmAgVy19Tw",
+        "alias": "starbucks-ashburn-7", "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/g9QF4Ql0OFK9AUpqAQzEyQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-ashburn-7?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 40, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.5, "coordinates": {"latitude": 39.052029, "longitude":
+        -77.452578}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "44735 Thorndike St", "address2": "", "address3": null, "city": "Ashburn",
+        "zip_code": "20147", "country": "US", "state": "VA", "display_address": ["44735
+        Thorndike St", "Ashburn, VA 20147"]}, "phone": "+15712714807", "display_phone":
+        "(571) 271-4807", "distance": 4770.340195128684}, {"id": "WEOBRyrj1NZdD_s_z8NwfA",
+        "alias": "weathervane-coffee-and-wine-bar-ashburn", "name": "Weathervane Coffee
+        & Wine Bar", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ymd1JMw5fL3OMMLgFgWIEA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/weathervane-coffee-and-wine-bar-ashburn?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 17, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "coffeeroasteries", "title": "Coffee Roasteries"}, {"alias":
+        "wine_bars", "title": "Wine Bars"}], "rating": 4.0, "coordinates": {"latitude":
+        39.0410891, "longitude": -77.5219684}, "transactions": ["delivery"], "location":
+        {"address1": "42795 Generation Dr", "address2": "Ste 150", "address3": "",
+        "city": "Ashburn", "zip_code": "20147", "country": "US", "state": "VA", "display_address":
+        ["42795 Generation Dr", "Ste 150", "Ashburn, VA 20147"]}, "phone": "+17038283922",
+        "display_phone": "(703) 828-3922", "distance": 2245.5359748883075}, {"id":
+        "RDt4z_pRM2TqfrfsaCKBCA", "alias": "starbucks-ashburn-12", "name": "Starbucks",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nnF6fNJ_1NNse2ws9T195A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-ashburn-12?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 14, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.5, "coordinates": {"latitude": 39.025877, "longitude":
+        -77.509776}, "transactions": ["delivery"], "location": {"address1": "43155
+        Broadlands Ctr", "address2": "", "address3": null, "city": "Ashburn", "zip_code":
+        "20148", "country": "US", "state": "VA", "display_address": ["43155 Broadlands
+        Ctr", "Ashburn, VA 20148"]}, "phone": "+17038581102", "display_phone": "(703)
+        858-1102", "distance": 962.8769788026096}, {"id": "nBRMTLgmubbygsKPTKaUIg",
+        "alias": "starbucks-ashburn-10", "name": "Starbucks", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/MiXDzvMCVAM6lh7_mu20gg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-ashburn-10?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 31, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.0, "coordinates": {"latitude": 38.9964707285812, "longitude":
+        -77.481423413864}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "22420 Flagstaff Plz", "address2": "unit 100", "address3": null,
+        "city": "Ashburn", "zip_code": "20148", "country": "US", "state": "VA", "display_address":
+        ["22420 Flagstaff Plz", "unit 100", "Ashburn, VA 20148"]}, "phone": "+12028159914",
+        "display_phone": "(202) 815-9914", "distance": 4056.031479753881}, {"id":
+        "XpeD5KdBp8HjaGq9k8_ggA", "alias": "starbucks-ashburn-18", "name": "Starbucks",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/RxucD2TJUgzCfXx_koxixQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-ashburn-18?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 8, "categories": [{"alias": "coffee", "title": "Coffee & Tea"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.0616788, "longitude": -77.474102},
+        "transactions": [], "location": {"address1": "44185 Ashbrook Marketplace Plz",
+        "address2": "Ste 100", "address3": null, "city": "Ashburn", "zip_code": "20147",
+        "country": "US", "state": "VA", "display_address": ["44185 Ashbrook Marketplace
+        Plz", "Ste 100", "Ashburn, VA 20147"]}, "phone": "", "display_phone": "",
+        "distance": 4255.714007310793}, {"id": "EomLBKvAMzN1g65ju1Nrxg", "alias":
+        "7-eleven-ashburn-2", "name": "7-Eleven", "image_url": "", "is_closed": false,
+        "url": "https://www.yelp.com/biz/7-eleven-ashburn-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 7, "categories": [{"alias": "convenience", "title": "Convenience
+        Stores"}, {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 3.5, "coordinates":
+        {"latitude": 39.0472712001622, "longitude": -77.4848717451096}, "transactions":
+        ["pickup", "delivery"], "price": "$", "location": {"address1": "20630 Ashburn
+        Rd", "address2": "", "address3": null, "city": "Ashburn", "zip_code": "20147",
+        "country": "US", "state": "VA", "display_address": ["20630 Ashburn Rd", "Ashburn,
+        VA 20147"]}, "phone": "+17037233806", "display_phone": "(703) 723-3806", "distance":
+        2322.5072382640287}, {"id": "yiIqm61quPYc7faeaxO_9g", "alias": "starbucks-ashburn-6",
+        "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/oOrF6HQ3_jwig_xRSQGLrw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-ashburn-6?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 19, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.0, "coordinates": {"latitude": 39.037041, "longitude":
+        -77.502325}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "43330 Junction Plz", "address2": "Ste 110", "address3": "", "city": "Ashburn",
+        "zip_code": "20147", "country": "US", "state": "VA", "display_address": ["43330
+        Junction Plz", "Ste 110", "Ashburn, VA 20147"]}, "phone": "+17038580266",
+        "display_phone": "(703) 858-0266", "distance": 810.9230365416299}, {"id":
+        "QsTjNuRG2RBeZQ7HvhDQvg", "alias": "potomac-coffee-ashburn", "name": "Potomac
+        Coffee", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/vSWFeSzxVwJ-bL3lsRGQNA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/potomac-coffee-ashburn?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 5, "categories": [{"alias": "coffee", "title": "Coffee & Tea"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.018628, "longitude": -77.4530765},
+        "transactions": ["delivery"], "location": {"address1": "44710 Cape Ct", "address2":
+        "Ste 110", "address3": null, "city": "Ashburn", "zip_code": "20147", "country":
+        "US", "state": "VA", "display_address": ["44710 Cape Ct", "Ste 110", "Ashburn,
+        VA 20147"]}, "phone": "+15712677618", "display_phone": "(571) 267-7618", "distance":
+        4242.429482709739}, {"id": "XR1HlIL5ZjQWXzGlWZBL4A", "alias": "dunkin-ashburn-3",
+        "name": "Dunkin", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/BqMbyMfFSatWT5WS-k68HA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dunkin-ashburn-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 15, "categories": [{"alias": "donuts", "title": "Donuts"},
+        {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 2.5, "coordinates":
+        {"latitude": 39.0589083, "longitude": -77.46419}, "transactions": ["delivery"],
+        "location": {"address1": "44135 Ashbrook Marketplace Plz", "address2": "",
+        "address3": null, "city": "Ashburn", "zip_code": "20147", "country": "US",
+        "state": "VA", "display_address": ["44135 Ashbrook Marketplace Plz", "Ashburn,
+        VA 20147"]}, "phone": "+15712789735", "display_phone": "(571) 278-9735", "distance":
+        4149.524264790061}, {"id": "Mcac677m6CPoH-Qq6P-QCw", "alias": "dunkin-ashburn-2",
+        "name": "Dunkin''", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/IscLfRLULcgi0F34hGfoNQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dunkin-ashburn-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 52, "categories": [{"alias": "donuts", "title": "Donuts"},
+        {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 2.0, "coordinates":
+        {"latitude": 39.0476226669438, "longitude": -77.471254470537}, "transactions":
+        [], "price": "$", "location": {"address1": "44110 Ashburn Village Blvd", "address2":
+        "Unit 184", "address3": "", "city": "Ashburn", "zip_code": "20147", "country":
+        "US", "state": "VA", "display_address": ["44110 Ashburn Village Blvd", "Unit
+        184", "Ashburn, VA 20147"]}, "phone": "+15714428253", "display_phone": "(571)
+        442-8253", "distance": 2780.9808539638852}, {"id": "CpUITxmUhwoGo0utP1I_sQ",
+        "alias": "dunkin-ashburn", "name": "Dunkin''", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/yVtnQvDV4SEQdhsnyutajQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dunkin-ashburn?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 62, "categories": [{"alias": "donuts", "title": "Donuts"},
+        {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 2.0, "coordinates":
+        {"latitude": 39.0179496, "longitude": -77.5183028}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "42876 Truro Parish Dr", "address2":
+        "", "address3": "", "city": "Ashburn", "zip_code": "20148", "country": "US",
+        "state": "VA", "display_address": ["42876 Truro Parish Dr", "Ashburn, VA 20148"]},
+        "phone": "+17037230350", "display_phone": "(703) 723-0350", "distance": 2073.8043501789257},
+        {"id": "E12EHG6RRW0xvecXOqmCwg", "alias": "mcdonalds-ashburn-3", "name": "McDonald''s",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/xvR6uUNsABhRRjSO9mSUpg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mcdonalds-ashburn-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 47, "categories": [{"alias": "hotdogs", "title": "Fast Food"},
+        {"alias": "burgers", "title": "Burgers"}, {"alias": "coffee", "title": "Coffee
+        & Tea"}], "rating": 2.0, "coordinates": {"latitude": 39.008434103563, "longitude":
+        -77.5071153044701}, "transactions": ["delivery"], "price": "$", "location":
+        {"address1": "43210 Southern Walk Plz", "address2": "", "address3": "", "city":
+        "Ashburn", "zip_code": "20148", "country": "US", "state": "VA", "display_address":
+        ["43210 Southern Walk Plz", "Ashburn, VA 20148"]}, "phone": "+17037297906",
+        "display_phone": "(703) 729-7906", "distance": 2474.535587786115}, {"id":
+        "4mmkiW-QIkZ6hNka_7SToA", "alias": "ashburn-nutrition-ashburn", "name": "Ashburn
+        Nutrition", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/D2-XJl8dpo5Fb1Ws1YpiqA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ashburn-nutrition-ashburn?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 1, "categories": [{"alias": "juicebars", "title": "Juice Bars
+        & Smoothies"}, {"alias": "healthmarkets", "title": "Health Markets"}, {"alias":
+        "coffee", "title": "Coffee & Tea"}], "rating": 5.0, "coordinates": {"latitude":
+        39.03892585202328, "longitude": -77.48723730815183}, "transactions": [], "location":
+        {"address1": "20937 Ashburn Rd", "address2": "Ste 150", "address3": null,
+        "city": "Ashburn", "zip_code": "20147", "country": "US", "state": "VA", "display_address":
+        ["20937 Ashburn Rd", "Ste 150", "Ashburn, VA 20147"]}, "phone": "+15713521370",
+        "display_phone": "(571) 352-1370", "distance": 1482.1417962142302}, {"id":
+        "Oot8VMrxNEyzm8TcK2QUMA", "alias": "mcdonalds-ashburn-5", "name": "McDonald''s",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/bKtNZBPaPwS8QqpbKLo-HQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mcdonalds-ashburn-5?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 63, "categories": [{"alias": "hotdogs", "title": "Fast Food"},
+        {"alias": "burgers", "title": "Burgers"}, {"alias": "coffee", "title": "Coffee
+        & Tea"}], "rating": 1.5, "coordinates": {"latitude": 39.035675, "longitude":
+        -77.502038}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "43345 Junction Plz", "address2": "", "address3": "Ashburn Farm Town Center",
+        "city": "Ashburn", "zip_code": "20147", "country": "US", "state": "VA", "display_address":
+        ["43345 Junction Plz", "Ashburn Farm Town Center", "Ashburn, VA 20147"]},
+        "phone": "+17037291911", "display_phone": "(703) 729-1911", "distance": 657.8363173167864}],
+        "total": 22, "region": {"center": {"longitude": -77.49996185302734, "latitude":
+        39.029982985808005}}}'
+  recorded_at: Sat, 12 Feb 2022 04:24:23 GMT
+recorded_with: VCR 6.0.0

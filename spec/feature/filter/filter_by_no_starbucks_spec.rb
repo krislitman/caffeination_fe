@@ -12,8 +12,8 @@ RSpec.describe "Filter Results without Starbucks", type: :feature do
         fill_in :query, with: "20149"
         find(:xpath, "/html/body/div[1]/main/div[1]/form/button").click
         expect(page).to have_content("Starbucks")
-        # select "No Starbucks", from: :sort_by
-        # click_button "Filter"
+        select "No Starbucks", from: :sort_by
+        click_button "Filter"
 
         expect(current_path).to eq(search_path)
       end
