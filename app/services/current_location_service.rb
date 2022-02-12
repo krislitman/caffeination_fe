@@ -6,18 +6,14 @@ class CurrentLocationService
       response = HTTParty.get(
         URI
       )
-      if response.nil?
-        # Add Error Handling Here
-      else
-        find_postal_code(response)
-      end
+      find_postal_code(response)
     end
 
     def find_postal_code(response)
       if response["postal_code"]
         response["postal_code"]
       else
-        # Add Error Handling Here
+        logger.debug "Postal Code not found in Response"
       end
     end
   end
