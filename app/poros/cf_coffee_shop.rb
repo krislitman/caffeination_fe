@@ -20,4 +20,12 @@ class CfCoffeeShop
     @url = attributes[:url]
     @search_phrase = zipcode
   end
+
+  class << self
+
+    def filter_by_starbucks(location, coffee_shops)
+      coffee_shops = coffee_shops.delete_if{ |cs| cs.name.include? "Starbucks" || "starbucks" || "Starbuck" || "starbuck"}
+      coffee_shops
+    end
+  end
 end

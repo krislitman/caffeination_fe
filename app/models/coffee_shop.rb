@@ -9,6 +9,5 @@ class CoffeeShop < ApplicationRecord
     def filter_by_rating(location)
       all.where(search_phrase: location).order(rating: :desc)
     end
-
   end
 end

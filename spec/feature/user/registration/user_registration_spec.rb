@@ -7,7 +7,7 @@ RSpec.describe 'As a visitor', type: :feature do
   scenario 'When I visit the app, I see buttons to log in or sign up as a new user, and able to search' do
     visit root_path
 
-    expect(page).to have_content('Caffeination')
+    expect(page).to have_content('CAFFEINATION')
 
     within '#zipcode_search' do
       expect(page).to have_content('Where would you like to grab coffee?')

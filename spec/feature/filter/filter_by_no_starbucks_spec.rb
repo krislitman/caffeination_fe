@@ -15,7 +15,13 @@ RSpec.describe "Filter Results without Starbucks", type: :feature do
         select "No Starbucks", from: :sort_by
         click_button "Filter"
 
-        expect(current_path).to eq(search_path)
+        expect(current_path).to eq(filter_path)
+        within(".filtered_coffee_shops") do
+          expect(page).not_to have_content("Starbucks")
+          expect(page).not_to have_content("starbucks")
+          expect(page).not_to have_content("starbuck")
+          expect(page).not_to have_content("Starbuck")
+        end
       end
     end
   end

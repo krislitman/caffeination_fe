@@ -24,36 +24,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      X-Zipkin-Id:
-      - 6a949b2f406b9eb8
-      Ratelimit-Resettime:
-      - '2021-11-15T00:00:00+00:00'
-      X-B3-Sampled:
-      - '0'
-      X-Routing-Service:
-      - routing-main--useast1-b9c656cb7-5hlc9; site=public_api_v3
       Server:
       - envoy
       Ratelimit-Dailylimit:
       - '5000'
       Ratelimit-Remaining:
-      - '4970'
+      - '4984'
+      X-Zipkin-Id:
+      - 4f861b71a2e8a30c
+      X-Routing-Service:
+      - routing-main--useast1-784fb67f4d-wnprs; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2022-02-13T00:00:00+00:00'
       X-Cloudmap:
       - routing_useast1
       X-Proxied:
-      - 10-65-91-109-useast1aprod
+      - 10-65-73-48-useast1aprod
       X-Extlb:
-      - 10-65-91-109-useast1aprod
+      - 10-65-73-48-useast1aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 14 Nov 2021 20:10:43 GMT
+      - Sat, 12 Feb 2022 05:32:18 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-mia11373-MIA
+      - cache-mia11324-MIA
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -67,7 +67,7 @@ http_interactions:
       string: '{"businesses": [{"id": "DbVzSGQT1yxNPX_WTVAahg", "alias": "coffee-etc-castle-shannon-4",
         "name": "Coffee Etc.", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/HnD46c-xPgoGErie96LMiw/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/coffee-etc-castle-shannon-4?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 63, "categories": [{"alias": "coffee", "title": "Coffee &
+        "review_count": 64, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "delis", "title": "Delis"}, {"alias": "breakfast_brunch",
         "title": "Breakfast & Brunch"}], "rating": 5.0, "coordinates": {"latitude":
         40.36568, "longitude": -80.02367}, "transactions": ["delivery"], "price":
@@ -78,7 +78,7 @@ http_interactions:
         {"id": "jhGbILmSQ2TQvpJWug49Ew", "alias": "carnegie-coffee-company-carnegie",
         "name": "Carnegie Coffee Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xltDkTt7wf9hUSrupuWsuw/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/carnegie-coffee-company-carnegie?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 182, "categories": [{"alias": "coffee", "title": "Coffee &
+        "review_count": 188, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "breakfast_brunch",
         "title": "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude":
         40.407761, "longitude": -80.086108}, "transactions": ["delivery"], "price":
@@ -89,7 +89,7 @@ http_interactions:
         "nuMmehPFS5kI1_C9bBlK5A", "alias": "uptown-coffee-pittsburgh", "name": "Uptown
         Coffee", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/gKJ1J0FU62k6StwkNs48mQ/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/uptown-coffee-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 102, "categories": [{"alias": "coffee", "title": "Coffee &
+        "review_count": 104, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "bakeries", "title": "Bakeries"}, {"alias": "desserts", "title":
         "Desserts"}], "rating": 4.5, "coordinates": {"latitude": 40.37946, "longitude":
         -80.04484}, "transactions": ["delivery"], "price": "$", "location": {"address1":
@@ -99,7 +99,7 @@ http_interactions:
         "(412) 563-8563", "distance": 2528.4365860179573}, {"id": "EmU5D6GKbokldlA-IZvYrA",
         "alias": "muddy-cup-pittsburgh-2", "name": "Muddy Cup", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/N-jRMUJNnVZO-8vPeg7nnw/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/muddy-cup-pittsburgh-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 29, "categories": [{"alias": "coffee", "title": "Coffee &
+        "review_count": 32, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "cafes", "title": "Cafes"}, {"alias": "breakfast_brunch",
         "title": "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude":
         40.3953141171914, "longitude": -80.0344183523489}, "transactions": ["delivery"],
@@ -107,10 +107,31 @@ http_interactions:
         "address3": null, "city": "Pittsburgh", "zip_code": "15216", "country": "US",
         "state": "PA", "display_address": ["1412 Potomac Ave", "Pittsburgh, PA 15216"]},
         "phone": "+14122079561", "display_phone": "(412) 207-9561", "distance": 4004.7425633105604},
-        {"id": "ks2q-AWMx_xD0FpVIBXRzQ", "alias": "cafe-americano-pittsburgh-2", "name":
-        "Cafe Americano", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/GIezQY6ZLanMkdVRKs78kA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/cafe-americano-pittsburgh-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 27, "categories": [{"alias": "coffee", "title": "Coffee &
+        {"id": "LzDsqT8fhJxeechXTISPWw", "alias": "potomac-station-coffeehouse-pittsburgh",
+        "name": "Potomac Station Coffeehouse", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/hCOBiF3ayQ9nGjATD08WMQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/potomac-station-coffeehouse-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 13, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 5.0, "coordinates": {"latitude": 40.39753, "longitude":
+        -80.03642}, "transactions": ["delivery", "pickup"], "location": {"address1":
+        "1607 Potomac Ave", "address2": "", "address3": null, "city": "Pittsburgh",
+        "zip_code": "15216", "country": "US", "state": "PA", "display_address": ["1607
+        Potomac Ave", "Pittsburgh, PA 15216"]}, "phone": "+14122077036", "display_phone":
+        "(412) 207-7036", "distance": 3998.498773887924}, {"id": "FwJ3piokFUzzK-zwun64tw",
+        "alias": "mel-s-petit-caf\u00e9-pittsburgh", "name": "Mel\u2019s Petit Caf\u00e9",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6tvg0AjMPKgA3CAkglDnKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mel-s-petit-caf%C3%A9-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 22, "categories": [{"alias": "creperies", "title": "Creperies"},
+        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "cafes", "title":
+        "Cafes"}], "rating": 4.5, "coordinates": {"latitude": 40.38409, "longitude":
+        -80.052581}, "transactions": ["delivery", "pickup"], "location": {"address1":
+        "431 Cochran Rd", "address2": "", "address3": null, "city": "Pittsburgh",
+        "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["431
+        Cochran Rd", "Pittsburgh, PA 15228"]}, "phone": "+14122970828", "display_phone":
+        "(412) 297-0828", "distance": 2043.4311565308974}, {"id": "ks2q-AWMx_xD0FpVIBXRzQ",
+        "alias": "cafe-americano-pittsburgh-2", "name": "Cafe Americano", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/GIezQY6ZLanMkdVRKs78kA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/cafe-americano-pittsburgh-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 31, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
         "creperies", "title": "Creperies"}], "rating": 4.5, "coordinates": {"latitude":
         40.368832, "longitude": -80.034198}, "transactions": ["delivery"], "location":
@@ -118,20 +139,20 @@ http_interactions:
         "Pittsburgh", "zip_code": "15234", "country": "US", "state": "PA", "display_address":
         ["300 Mt Lebanon Blvd", "Pittsburgh, PA 15234"]}, "phone": "+14123447100",
         "display_phone": "(412) 344-7100", "distance": 3497.6231842204897}, {"id":
-        "LzDsqT8fhJxeechXTISPWw", "alias": "potomac-station-coffeehouse-pittsburgh",
-        "name": "Potomac Station Coffeehouse", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/hCOBiF3ayQ9nGjATD08WMQ/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/potomac-station-coffeehouse-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 10, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}], "rating": 5.0, "coordinates": {"latitude": 40.39753, "longitude":
-        -80.03642}, "transactions": ["pickup", "delivery"], "location": {"address1":
-        "1607 Potomac Ave", "address2": "", "address3": null, "city": "Pittsburgh",
-        "zip_code": "15216", "country": "US", "state": "PA", "display_address": ["1607
-        Potomac Ave", "Pittsburgh, PA 15216"]}, "phone": "+14122077036", "display_phone":
-        "(412) 207-7036", "distance": 3998.498773887924}, {"id": "MyITm7hhBUqRmz2PqlfhOw",
-        "alias": "labella-bean-bridgeville-2", "name": "Labella Bean", "image_url":
-        "https://s3-media3.fl.yelpcdn.com/bphoto/HqR4DBm4_gB6rsoDEGcMXQ/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/labella-bean-bridgeville-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 60, "categories": [{"alias": "coffee", "title": "Coffee &
+        "sGLdSwi3zKNM3c3f5Ep8jw", "alias": "gloria-jeans-coffees-pittsburgh-3", "name":
+        "Gloria Jeans Coffees", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eA976SleS3oACBO9WqJbJw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gloria-jeans-coffees-pittsburgh-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 19, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 4.5, "coordinates": {"latitude": 40.3424447894728, "longitude":
+        -80.0559294722137}, "transactions": ["delivery", "pickup"], "price": "$$",
+        "location": {"address1": "301 S Hills Vlg", "address2": "Ste 378", "address3":
+        "", "city": "Pittsburgh", "zip_code": "15241", "country": "US", "state": "PA",
+        "display_address": ["301 S Hills Vlg", "Ste 378", "Pittsburgh, PA 15241"]},
+        "phone": "+16319433687", "display_phone": "(631) 943-3687", "distance": 4055.5405506995035},
+        {"id": "MyITm7hhBUqRmz2PqlfhOw", "alias": "labella-bean-bridgeville-2", "name":
+        "Labella Bean", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HqR4DBm4_gB6rsoDEGcMXQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/labella-bean-bridgeville-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 64, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "salad",
         "title": "Salad"}], "rating": 4.0, "coordinates": {"latitude": 40.3569755554199,
         "longitude": -80.112663269043}, "transactions": ["pickup"], "price": "$",
@@ -139,28 +160,8 @@ http_interactions:
         "", "city": "Bridgeville", "zip_code": "15017", "country": "US", "state":
         "PA", "display_address": ["609 Washington Ave", "Ste 1", "Bridgeville, PA
         15017"]}, "phone": "+14122572202", "display_phone": "(412) 257-2202", "distance":
-        3879.297755066999}, {"id": "sGLdSwi3zKNM3c3f5Ep8jw", "alias": "gloria-jeans-coffees-pittsburgh-3",
-        "name": "Gloria Jeans Coffees", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eA976SleS3oACBO9WqJbJw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/gloria-jeans-coffees-pittsburgh-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 17, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}], "rating": 4.5, "coordinates": {"latitude": 40.3424447894728, "longitude":
-        -80.0559294722137}, "transactions": ["pickup", "delivery"], "price": "$$",
-        "location": {"address1": "301 S Hills Vlg", "address2": "Ste 378", "address3":
-        "", "city": "Pittsburgh", "zip_code": "15241", "country": "US", "state": "PA",
-        "display_address": ["301 S Hills Vlg", "Ste 378", "Pittsburgh, PA 15241"]},
-        "phone": "+16319433687", "display_phone": "(631) 943-3687", "distance": 4055.5405506995035},
-        {"id": "FwJ3piokFUzzK-zwun64tw", "alias": "mel-s-petit-caf\u00e9-pittsburgh",
-        "name": "Mel\u2019s Petit Caf\u00e9", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6tvg0AjMPKgA3CAkglDnKw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/mel-s-petit-caf%C3%A9-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 17, "categories": [{"alias": "creperies", "title": "Creperies"},
-        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "cafes", "title":
-        "Cafes"}], "rating": 4.5, "coordinates": {"latitude": 40.38409, "longitude":
-        -80.052581}, "transactions": ["pickup", "delivery"], "location": {"address1":
-        "431 Cochran Rd", "address2": "", "address3": null, "city": "Pittsburgh",
-        "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["431
-        Cochran Rd", "Pittsburgh, PA 15228"]}, "phone": "+14122970828", "display_phone":
-        "(412) 297-0828", "distance": 2043.4311565308974}, {"id": "GEpavUjzVf5ATsGYkPu0WA",
-        "alias": "orbis-caffe-pittsburgh", "name": "Orbis Caffe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/w8B8DrHt5bp7kToGbCVm-A/o.jpg",
+        3879.297755066999}, {"id": "GEpavUjzVf5ATsGYkPu0WA", "alias": "orbis-caffe-pittsburgh",
+        "name": "Orbis Caffe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/w8B8DrHt5bp7kToGbCVm-A/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/orbis-caffe-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
         "review_count": 76, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "bakeries", "title": "Bakeries"}, {"alias": "wraps", "title":
@@ -170,7 +171,7 @@ http_interactions:
         "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["675
         Washington Rd", "Pittsburgh, PA 15228"]}, "phone": "+14125631220", "display_phone":
         "(412) 563-1220", "distance": 2604.1700839756154}, {"id": "NeM7anGnTOTn7sEJavS3sw",
-        "alias": "starbucks-bridgeville", "name": "Starbucks", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ViMqHRWtkN3PY3HpGQWoEA/o.jpg",
+        "alias": "starbucks-bridgeville", "name": "Starbucks", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Mhk9twpPXQ5nSul0sMPayw/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-bridgeville?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
         "review_count": 32, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}], "rating": 4.0, "coordinates": {"latitude": 40.381477, "longitude":
@@ -179,8 +180,17 @@ http_interactions:
         "Bridgeville", "zip_code": "15017", "country": "US", "state": "PA", "display_address":
         ["1597 Washington Pike", "Space A-1", "Bridgeville, PA 15017"]}, "phone":
         "+14124296475", "display_phone": "(412) 429-6475", "distance": 1901.6364384048504},
-        {"id": "vG8Dx3_Vh_WlsZlUZiAa5A", "alias": "starbucks-pittsburgh-38", "name":
-        "Starbucks", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/irYNhWrlJgX5ZYSXEMO2RA/o.jpg",
+        {"id": "QYt6hKIEkwaBtIaemaZAsQ", "alias": "the-coffee-tree-roasters-pittsburgh-4",
+        "name": "The Coffee Tree Roasters", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/X2_-zDpeXEUTOme2TeYe6A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-coffee-tree-roasters-pittsburgh-4?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 48, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 4.0, "coordinates": {"latitude": 40.38854, "longitude":
+        -80.04955}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "299 Beverly Rd", "address2": "", "address3": "", "city": "Pittsburgh", "zip_code":
+        "15216", "country": "US", "state": "PA", "display_address": ["299 Beverly
+        Rd", "Pittsburgh, PA 15216"]}, "phone": "+14123444780", "display_phone": "(412)
+        344-4780", "distance": 2523.493063841184}, {"id": "vG8Dx3_Vh_WlsZlUZiAa5A",
+        "alias": "starbucks-pittsburgh-38", "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Iccg6wvRhktUYKMT6FzPpA/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-pittsburgh-38?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
         "review_count": 13, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}], "rating": 4.5, "coordinates": {"latitude": 40.392221, "longitude":
@@ -188,56 +198,35 @@ http_interactions:
         "1717 Cochran Rd", "address2": "", "address3": "", "city": "Pittsburgh", "zip_code":
         "15220", "country": "US", "state": "PA", "display_address": ["1717 Cochran
         Rd", "Pittsburgh, PA 15220"]}, "phone": "+14125637813", "display_phone": "(412)
-        563-7813", "distance": 1908.0371173721473}, {"id": "QYt6hKIEkwaBtIaemaZAsQ",
-        "alias": "the-coffee-tree-roasters-pittsburgh-4", "name": "The Coffee Tree
-        Roasters", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/X2_-zDpeXEUTOme2TeYe6A/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/the-coffee-tree-roasters-pittsburgh-4?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 45, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}], "rating": 4.0, "coordinates": {"latitude": 40.38854, "longitude":
-        -80.04955}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
-        "299 Beverly Rd", "address2": "", "address3": "", "city": "Pittsburgh", "zip_code":
-        "15216", "country": "US", "state": "PA", "display_address": ["299 Beverly
-        Rd", "Pittsburgh, PA 15216"]}, "phone": "+14123444780", "display_phone": "(412)
-        344-4780", "distance": 2523.493063841184}, {"id": "dd2lOVfpM3nLbcJs3Gq0HQ",
-        "alias": "starbucks-pittsburgh-8", "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/MuRhZ4h9Fy4Pk2jsjiLYCA/o.jpg",
+        563-7813", "distance": 1908.0371173721473}, {"id": "dd2lOVfpM3nLbcJs3Gq0HQ",
+        "alias": "starbucks-pittsburgh-8", "name": "Starbucks", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/O1jBrTSykeNRMLirmnSLkg/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-pittsburgh-8?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 26, "categories": [{"alias": "coffee", "title": "Coffee &
+        "review_count": 28, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}], "rating": 3.5, "coordinates": {"latitude": 40.399418, "longitude":
         -80.043865}, "transactions": ["delivery"], "price": "$", "location": {"address1":
         "3145 Banksville Rd", "address2": "", "address3": "", "city": "Pittsburgh",
         "zip_code": "15216", "country": "US", "state": "PA", "display_address": ["3145
         Banksville Rd", "Pittsburgh, PA 15216"]}, "phone": "+14123441460", "display_phone":
-        "(412) 344-1460", "distance": 3659.963371534931}, {"id": "51OCJUK6MLemGiUwwmItxA",
-        "alias": "seoul-korean-bbq-carnegie", "name": "Seoul Korean BBQ", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/bphoto/V7fr2za0majXWvHa_J4aIg/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/seoul-korean-bbq-carnegie?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 3, "categories": [{"alias": "korean", "title": "Korean"},
-        {"alias": "bbq", "title": "Barbeque"}, {"alias": "coffee", "title": "Coffee
-        & Tea"}], "rating": 5.0, "coordinates": {"latitude": 40.40235, "longitude":
-        -80.09396}, "transactions": [], "location": {"address1": "525 W. Main St",
-        "address2": null, "address3": null, "city": "Carnegie", "zip_code": "15106",
-        "country": "US", "state": "PA", "display_address": ["525 W. Main St", "Carnegie,
-        PA 15106"]}, "phone": "+14124895134", "display_phone": "(412) 489-5134", "distance":
-        3352.5654803069756}, {"id": "Vgh-CjwAl4tFleP39OdzaA", "alias": "starbucks-bethel-park",
-        "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Q2l9EeVhZMALsMeHQTzeBQ/o.jpg",
+        "(412) 344-1460", "distance": 3659.963371534931}, {"id": "Vgh-CjwAl4tFleP39OdzaA",
+        "alias": "starbucks-bethel-park", "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/F9Bzuvdz_jCDPLdM-1Ezkw/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-bethel-park?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 32, "categories": [{"alias": "coffee", "title": "Coffee &
+        "review_count": 34, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.337486, "longitude":
         -80.02604}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
         "5110 Library Rd", "address2": "A", "address3": "", "city": "Bethel Park",
         "zip_code": "15102", "country": "US", "state": "PA", "display_address": ["5110
         Library Rd", "A", "Bethel Park, PA 15102"]}, "phone": "+14128334649", "display_phone":
         "(412) 833-4649", "distance": 5933.521536020084}, {"id": "qnN6BumIj-OPU38Bg6wPOw",
-        "alias": "starbucks-bridgeville-2", "name": "Starbucks", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/NuGnCbzUwGUyT9dvpdnd6g/o.jpg",
+        "alias": "starbucks-bridgeville-2", "name": "Starbucks", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WZYVvYlGAYiXQadsGE82aA/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-bridgeville-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 20, "categories": [{"alias": "coffee", "title": "Coffee &
+        "review_count": 21, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.354264, "longitude":
         -80.114284}, "transactions": ["delivery"], "price": "$", "location": {"address1":
         "3007 Washington Pike", "address2": "", "address3": "", "city": "Bridgeville",
         "zip_code": "15017", "country": "US", "state": "PA", "display_address": ["3007
         Washington Pike", "Bridgeville, PA 15017"]}, "phone": "+14125227908", "display_phone":
         "(412) 522-7908", "distance": 4163.363044314266}, {"id": "7Wt1j4gpvNwGvyN6PCbpqQ",
-        "alias": "dunkin-pittsburgh-3", "name": "Dunkin''", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/4RC4Q5nqIXiXkoToDPkgMg/o.jpg",
+        "alias": "dunkin-pittsburgh-3", "name": "Dunkin''", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/OqU0dgt6Ramlzfjj6EnlKA/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/dunkin-pittsburgh-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
         "review_count": 19, "categories": [{"alias": "donuts", "title": "Donuts"},
         {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 3.0, "coordinates":
@@ -246,28 +235,307 @@ http_interactions:
         "address2": "", "address3": "", "city": "Pittsburgh", "zip_code": "15228",
         "country": "US", "state": "PA", "display_address": ["1541 Washington Rd",
         "Pittsburgh, PA 15228"]}, "phone": "+14122079158", "display_phone": "(412)
-        207-9158", "distance": 3087.521154418812}, {"id": "VObfskmUmh8vdpx60lruOw",
-        "alias": "starbucks-pittsburgh-10", "name": "Starbucks", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/N5mZEMmp4FF2A-d3lpIbrw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-pittsburgh-10?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 16, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.356673, "longitude":
-        -80.052068}, "transactions": ["delivery"], "price": "$", "location": {"address1":
-        "1500 Washington Rd", "address2": "", "address3": "", "city": "Pittsburgh",
-        "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["1500
-        Washington Rd", "Pittsburgh, PA 15228"]}, "phone": "+14125636860", "display_phone":
-        "(412) 563-6860", "distance": 2869.986110614779}, {"id": "0Z-IUyIOGb1lil5YRk7GAg",
+        207-9158", "distance": 3087.521154418812}, {"id": "0Z-IUyIOGb1lil5YRk7GAg",
         "alias": "moon-flight-coffee-drive-thru-car-wash-and-dog-wash-moon-township-2",
         "name": "Moon Flight Coffee Drive-Thru, Car Wash & Dog Wash", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/bphoto/-h8IiBQHn2vI9OSW7mgmZg/o.jpg", "is_closed":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/UHZjewoe4DHDh5WdV6jUVQ/o.jpg", "is_closed":
         false, "url": "https://www.yelp.com/biz/moon-flight-coffee-drive-thru-car-wash-and-dog-wash-moon-township-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 17, "categories": [{"alias": "groomer", "title": "Pet Groomers"},
+        "review_count": 20, "categories": [{"alias": "groomer", "title": "Pet Groomers"},
         {"alias": "carwash", "title": "Car Wash"}, {"alias": "coffee", "title": "Coffee
         & Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.5374649, "longitude":
         -80.1983851}, "transactions": ["delivery"], "price": "$", "location": {"address1":
         "4875 University Blvd", "address2": null, "address3": "", "city": "Moon Township",
         "zip_code": "15108", "country": "US", "state": "PA", "display_address": ["4875
         University Blvd", "Moon Township, PA 15108"]}, "phone": "+14122645943", "display_phone":
-        "(412) 264-5943", "distance": 20785.535963745253}], "total": 34, "region":
-        {"center": {"longitude": -80.07436752319336, "latitude": 40.376102468295244}}}'
-  recorded_at: Sun, 14 Nov 2021 20:10:43 GMT
+        "(412) 264-5943", "distance": 20785.535963745253}, {"id": "VObfskmUmh8vdpx60lruOw",
+        "alias": "starbucks-pittsburgh-10", "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mAhepl1r4Get6EUfRSbXGw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-pittsburgh-10?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 17, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.356673, "longitude":
+        -80.052068}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "1500 Washington Rd", "address2": "", "address3": "", "city": "Pittsburgh",
+        "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["1500
+        Washington Rd", "Pittsburgh, PA 15228"]}, "phone": "+14125636860", "display_phone":
+        "(412) 563-6860", "distance": 2869.986110614779}, {"id": "qdvkFT6CuFkCNRhwi9VHxQ",
+        "alias": "dunkin-pittsburgh-8", "name": "Dunkin''", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/zKAGhIts2oUgpo2VjwPODQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dunkin-pittsburgh-8?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 29, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "donuts", "title": "Donuts"}], "rating": 2.5, "coordinates":
+        {"latitude": 40.39373, "longitude": -80.03531}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "2961 W Liberty Ave", "address2": null,
+        "address3": null, "city": "Pittsburgh", "zip_code": "15216", "country": "US",
+        "state": "PA", "display_address": ["2961 W Liberty Ave", "Pittsburgh, PA 15216"]},
+        "phone": "+14125726701", "display_phone": "(412) 572-6701", "distance": 3832.0186980168396}],
+        "total": 34, "region": {"center": {"longitude": -80.07436752319336, "latitude":
+        40.376102468295244}}}'
+  recorded_at: Sat, 12 Feb 2022 05:32:18 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?categories=coffee&location=15243&sort_by=rating
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - DONT_LOOK_AT_ME
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '4983'
+      Ratelimit-Resettime:
+      - '2022-02-13T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-784fb67f4d-chcgr; site=public_api_v3
+      X-Zipkin-Id:
+      - f805f14ed9d9510d
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Cloudmap:
+      - routing_useast1
+      X-Proxied:
+      - 10-65-91-109-useast1aprod
+      X-Extlb:
+      - 10-65-91-109-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 12 Feb 2022 05:32:18 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-mia11343-MIA
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "DbVzSGQT1yxNPX_WTVAahg", "alias": "coffee-etc-castle-shannon-4",
+        "name": "Coffee Etc.", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/HnD46c-xPgoGErie96LMiw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/coffee-etc-castle-shannon-4?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 64, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "delis", "title": "Delis"}, {"alias": "breakfast_brunch",
+        "title": "Breakfast & Brunch"}], "rating": 5.0, "coordinates": {"latitude":
+        40.36568, "longitude": -80.02367}, "transactions": ["delivery"], "price":
+        "$", "location": {"address1": "3754 Willow Ave", "address2": null, "address3":
+        "", "city": "Castle Shannon", "zip_code": "15234", "country": "US", "state":
+        "PA", "display_address": ["3754 Willow Ave", "Castle Shannon, PA 15234"]},
+        "phone": "+14125022504", "display_phone": "(412) 502-2504", "distance": 4443.029826283886},
+        {"id": "jhGbILmSQ2TQvpJWug49Ew", "alias": "carnegie-coffee-company-carnegie",
+        "name": "Carnegie Coffee Company", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xltDkTt7wf9hUSrupuWsuw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/carnegie-coffee-company-carnegie?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 188, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "breakfast_brunch",
+        "title": "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude":
+        40.407761, "longitude": -80.086108}, "transactions": ["delivery"], "price":
+        "$", "location": {"address1": "132 E Main St", "address2": "", "address3":
+        "", "city": "Carnegie", "zip_code": "15106", "country": "US", "state": "PA",
+        "display_address": ["132 E Main St", "Carnegie, PA 15106"]}, "phone": "+17245186524",
+        "display_phone": "(724) 518-6524", "distance": 3657.988098383534}, {"id":
+        "nuMmehPFS5kI1_C9bBlK5A", "alias": "uptown-coffee-pittsburgh", "name": "Uptown
+        Coffee", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/gKJ1J0FU62k6StwkNs48mQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/uptown-coffee-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 104, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "bakeries", "title": "Bakeries"}, {"alias": "desserts", "title":
+        "Desserts"}], "rating": 4.5, "coordinates": {"latitude": 40.37946, "longitude":
+        -80.04484}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "723 Washington Rd", "address2": "", "address3": "", "city": "Pittsburgh",
+        "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["723
+        Washington Rd", "Pittsburgh, PA 15228"]}, "phone": "+14125638563", "display_phone":
+        "(412) 563-8563", "distance": 2528.4365860179573}, {"id": "EmU5D6GKbokldlA-IZvYrA",
+        "alias": "muddy-cup-pittsburgh-2", "name": "Muddy Cup", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/N-jRMUJNnVZO-8vPeg7nnw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/muddy-cup-pittsburgh-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 32, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "cafes", "title": "Cafes"}, {"alias": "breakfast_brunch",
+        "title": "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude":
+        40.3953141171914, "longitude": -80.0344183523489}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "1412 Potomac Ave", "address2": "",
+        "address3": null, "city": "Pittsburgh", "zip_code": "15216", "country": "US",
+        "state": "PA", "display_address": ["1412 Potomac Ave", "Pittsburgh, PA 15216"]},
+        "phone": "+14122079561", "display_phone": "(412) 207-9561", "distance": 4004.7425633105604},
+        {"id": "LzDsqT8fhJxeechXTISPWw", "alias": "potomac-station-coffeehouse-pittsburgh",
+        "name": "Potomac Station Coffeehouse", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/hCOBiF3ayQ9nGjATD08WMQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/potomac-station-coffeehouse-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 13, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 5.0, "coordinates": {"latitude": 40.39753, "longitude":
+        -80.03642}, "transactions": ["pickup", "delivery"], "location": {"address1":
+        "1607 Potomac Ave", "address2": "", "address3": null, "city": "Pittsburgh",
+        "zip_code": "15216", "country": "US", "state": "PA", "display_address": ["1607
+        Potomac Ave", "Pittsburgh, PA 15216"]}, "phone": "+14122077036", "display_phone":
+        "(412) 207-7036", "distance": 3998.498773887924}, {"id": "FwJ3piokFUzzK-zwun64tw",
+        "alias": "mel-s-petit-caf\u00e9-pittsburgh", "name": "Mel\u2019s Petit Caf\u00e9",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/6tvg0AjMPKgA3CAkglDnKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mel-s-petit-caf%C3%A9-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 22, "categories": [{"alias": "creperies", "title": "Creperies"},
+        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "cafes", "title":
+        "Cafes"}], "rating": 4.5, "coordinates": {"latitude": 40.38409, "longitude":
+        -80.052581}, "transactions": ["pickup", "delivery"], "location": {"address1":
+        "431 Cochran Rd", "address2": "", "address3": null, "city": "Pittsburgh",
+        "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["431
+        Cochran Rd", "Pittsburgh, PA 15228"]}, "phone": "+14122970828", "display_phone":
+        "(412) 297-0828", "distance": 2043.4311565308974}, {"id": "ks2q-AWMx_xD0FpVIBXRzQ",
+        "alias": "cafe-americano-pittsburgh-2", "name": "Cafe Americano", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/GIezQY6ZLanMkdVRKs78kA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/cafe-americano-pittsburgh-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 31, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
+        "creperies", "title": "Creperies"}], "rating": 4.5, "coordinates": {"latitude":
+        40.368832, "longitude": -80.034198}, "transactions": ["delivery"], "location":
+        {"address1": "300 Mt Lebanon Blvd", "address2": null, "address3": "", "city":
+        "Pittsburgh", "zip_code": "15234", "country": "US", "state": "PA", "display_address":
+        ["300 Mt Lebanon Blvd", "Pittsburgh, PA 15234"]}, "phone": "+14123447100",
+        "display_phone": "(412) 344-7100", "distance": 3497.6231842204897}, {"id":
+        "sGLdSwi3zKNM3c3f5Ep8jw", "alias": "gloria-jeans-coffees-pittsburgh-3", "name":
+        "Gloria Jeans Coffees", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eA976SleS3oACBO9WqJbJw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gloria-jeans-coffees-pittsburgh-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 19, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 4.5, "coordinates": {"latitude": 40.3424447894728, "longitude":
+        -80.0559294722137}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "301 S Hills Vlg", "address2": "Ste 378", "address3":
+        "", "city": "Pittsburgh", "zip_code": "15241", "country": "US", "state": "PA",
+        "display_address": ["301 S Hills Vlg", "Ste 378", "Pittsburgh, PA 15241"]},
+        "phone": "+16319433687", "display_phone": "(631) 943-3687", "distance": 4055.5405506995035},
+        {"id": "MyITm7hhBUqRmz2PqlfhOw", "alias": "labella-bean-bridgeville-2", "name":
+        "Labella Bean", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HqR4DBm4_gB6rsoDEGcMXQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/labella-bean-bridgeville-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 64, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "salad",
+        "title": "Salad"}], "rating": 4.0, "coordinates": {"latitude": 40.3569755554199,
+        "longitude": -80.112663269043}, "transactions": ["pickup"], "price": "$",
+        "location": {"address1": "609 Washington Ave", "address2": "Ste 1", "address3":
+        "", "city": "Bridgeville", "zip_code": "15017", "country": "US", "state":
+        "PA", "display_address": ["609 Washington Ave", "Ste 1", "Bridgeville, PA
+        15017"]}, "phone": "+14122572202", "display_phone": "(412) 257-2202", "distance":
+        3879.297755066999}, {"id": "GEpavUjzVf5ATsGYkPu0WA", "alias": "orbis-caffe-pittsburgh",
+        "name": "Orbis Caffe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/w8B8DrHt5bp7kToGbCVm-A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/orbis-caffe-pittsburgh?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 76, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "bakeries", "title": "Bakeries"}, {"alias": "wraps", "title":
+        "Wraps"}], "rating": 4.0, "coordinates": {"latitude": 40.3811007, "longitude":
+        -80.0443322}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "675 Washington Rd", "address2": "", "address3": "", "city": "Pittsburgh",
+        "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["675
+        Washington Rd", "Pittsburgh, PA 15228"]}, "phone": "+14125631220", "display_phone":
+        "(412) 563-1220", "distance": 2604.1700839756154}, {"id": "NeM7anGnTOTn7sEJavS3sw",
+        "alias": "starbucks-bridgeville", "name": "Starbucks", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Mhk9twpPXQ5nSul0sMPayw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-bridgeville?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 32, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 4.0, "coordinates": {"latitude": 40.381477, "longitude":
+        -80.09568}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "1597 Washington Pike", "address2": "Space A-1", "address3": null, "city":
+        "Bridgeville", "zip_code": "15017", "country": "US", "state": "PA", "display_address":
+        ["1597 Washington Pike", "Space A-1", "Bridgeville, PA 15017"]}, "phone":
+        "+14124296475", "display_phone": "(412) 429-6475", "distance": 1901.6364384048504},
+        {"id": "QYt6hKIEkwaBtIaemaZAsQ", "alias": "the-coffee-tree-roasters-pittsburgh-4",
+        "name": "The Coffee Tree Roasters", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/X2_-zDpeXEUTOme2TeYe6A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-coffee-tree-roasters-pittsburgh-4?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 48, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 4.0, "coordinates": {"latitude": 40.38854, "longitude":
+        -80.04955}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "299 Beverly Rd", "address2": "", "address3": "", "city": "Pittsburgh", "zip_code":
+        "15216", "country": "US", "state": "PA", "display_address": ["299 Beverly
+        Rd", "Pittsburgh, PA 15216"]}, "phone": "+14123444780", "display_phone": "(412)
+        344-4780", "distance": 2523.493063841184}, {"id": "vG8Dx3_Vh_WlsZlUZiAa5A",
+        "alias": "starbucks-pittsburgh-38", "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Iccg6wvRhktUYKMT6FzPpA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-pittsburgh-38?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 13, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 4.5, "coordinates": {"latitude": 40.392221, "longitude":
+        -80.066641}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "1717 Cochran Rd", "address2": "", "address3": "", "city": "Pittsburgh", "zip_code":
+        "15220", "country": "US", "state": "PA", "display_address": ["1717 Cochran
+        Rd", "Pittsburgh, PA 15220"]}, "phone": "+14125637813", "display_phone": "(412)
+        563-7813", "distance": 1908.0371173721473}, {"id": "dd2lOVfpM3nLbcJs3Gq0HQ",
+        "alias": "starbucks-pittsburgh-8", "name": "Starbucks", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/O1jBrTSykeNRMLirmnSLkg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-pittsburgh-8?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 28, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.5, "coordinates": {"latitude": 40.399418, "longitude":
+        -80.043865}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "3145 Banksville Rd", "address2": "", "address3": "", "city": "Pittsburgh",
+        "zip_code": "15216", "country": "US", "state": "PA", "display_address": ["3145
+        Banksville Rd", "Pittsburgh, PA 15216"]}, "phone": "+14123441460", "display_phone":
+        "(412) 344-1460", "distance": 3659.963371534931}, {"id": "Vgh-CjwAl4tFleP39OdzaA",
+        "alias": "starbucks-bethel-park", "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/F9Bzuvdz_jCDPLdM-1Ezkw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-bethel-park?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 34, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.337486, "longitude":
+        -80.02604}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "5110 Library Rd", "address2": "A", "address3": "", "city": "Bethel Park",
+        "zip_code": "15102", "country": "US", "state": "PA", "display_address": ["5110
+        Library Rd", "A", "Bethel Park, PA 15102"]}, "phone": "+14128334649", "display_phone":
+        "(412) 833-4649", "distance": 5933.521536020084}, {"id": "qnN6BumIj-OPU38Bg6wPOw",
+        "alias": "starbucks-bridgeville-2", "name": "Starbucks", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WZYVvYlGAYiXQadsGE82aA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-bridgeville-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 21, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.354264, "longitude":
+        -80.114284}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "3007 Washington Pike", "address2": "", "address3": "", "city": "Bridgeville",
+        "zip_code": "15017", "country": "US", "state": "PA", "display_address": ["3007
+        Washington Pike", "Bridgeville, PA 15017"]}, "phone": "+14125227908", "display_phone":
+        "(412) 522-7908", "distance": 4163.363044314266}, {"id": "7Wt1j4gpvNwGvyN6PCbpqQ",
+        "alias": "dunkin-pittsburgh-3", "name": "Dunkin''", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/OqU0dgt6Ramlzfjj6EnlKA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dunkin-pittsburgh-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 19, "categories": [{"alias": "donuts", "title": "Donuts"},
+        {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 3.0, "coordinates":
+        {"latitude": 40.35553836151258, "longitude": -80.04987988037522}, "transactions":
+        ["delivery"], "price": "$", "location": {"address1": "1541 Washington Rd",
+        "address2": "", "address3": "", "city": "Pittsburgh", "zip_code": "15228",
+        "country": "US", "state": "PA", "display_address": ["1541 Washington Rd",
+        "Pittsburgh, PA 15228"]}, "phone": "+14122079158", "display_phone": "(412)
+        207-9158", "distance": 3087.521154418812}, {"id": "0Z-IUyIOGb1lil5YRk7GAg",
+        "alias": "moon-flight-coffee-drive-thru-car-wash-and-dog-wash-moon-township-2",
+        "name": "Moon Flight Coffee Drive-Thru, Car Wash & Dog Wash", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/UHZjewoe4DHDh5WdV6jUVQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/moon-flight-coffee-drive-thru-car-wash-and-dog-wash-moon-township-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 20, "categories": [{"alias": "groomer", "title": "Pet Groomers"},
+        {"alias": "carwash", "title": "Car Wash"}, {"alias": "coffee", "title": "Coffee
+        & Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.5374649, "longitude":
+        -80.1983851}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "4875 University Blvd", "address2": null, "address3": "", "city": "Moon Township",
+        "zip_code": "15108", "country": "US", "state": "PA", "display_address": ["4875
+        University Blvd", "Moon Township, PA 15108"]}, "phone": "+14122645943", "display_phone":
+        "(412) 264-5943", "distance": 20785.535963745253}, {"id": "VObfskmUmh8vdpx60lruOw",
+        "alias": "starbucks-pittsburgh-10", "name": "Starbucks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mAhepl1r4Get6EUfRSbXGw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/starbucks-pittsburgh-10?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 17, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 3.0, "coordinates": {"latitude": 40.356673, "longitude":
+        -80.052068}, "transactions": ["delivery"], "price": "$", "location": {"address1":
+        "1500 Washington Rd", "address2": "", "address3": "", "city": "Pittsburgh",
+        "zip_code": "15228", "country": "US", "state": "PA", "display_address": ["1500
+        Washington Rd", "Pittsburgh, PA 15228"]}, "phone": "+14125636860", "display_phone":
+        "(412) 563-6860", "distance": 2869.986110614779}, {"id": "qdvkFT6CuFkCNRhwi9VHxQ",
+        "alias": "dunkin-pittsburgh-8", "name": "Dunkin''", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/zKAGhIts2oUgpo2VjwPODQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dunkin-pittsburgh-8?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 29, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "donuts", "title": "Donuts"}], "rating": 2.5, "coordinates":
+        {"latitude": 40.39373, "longitude": -80.03531}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "2961 W Liberty Ave", "address2": null,
+        "address3": null, "city": "Pittsburgh", "zip_code": "15216", "country": "US",
+        "state": "PA", "display_address": ["2961 W Liberty Ave", "Pittsburgh, PA 15216"]},
+        "phone": "+14125726701", "display_phone": "(412) 572-6701", "distance": 3832.0186980168396}],
+        "total": 34, "region": {"center": {"longitude": -80.07436752319336, "latitude":
+        40.376102468295244}}}'
+  recorded_at: Sat, 12 Feb 2022 05:32:18 GMT
 recorded_with: VCR 6.0.0

@@ -1,0 +1,7 @@
+<div id="zipcode_search">
+  <%= form_with url: "/search", method: :get, multipart: true do |form| %>
+  <%= form.label :query, "Where would you like to grab coffee?" %>
+  <%= form.text_field :query %>
+  <%= form.submit "Search" %>
+<% end %><br>
+</div>

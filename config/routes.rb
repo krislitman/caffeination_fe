@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   # Search
   get "/search", to: "search#index"
 
+  # Filter
+  get "/filter", to: "filter#index"
+
   # Current Location
   get "/current_location", to: "current_location#find"
 end
