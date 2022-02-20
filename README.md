@@ -70,7 +70,6 @@ To run individual tests use:
 
 - Rails
 - PostgreSQL
-- Postman
 - RSpec
 - Capybara
 - Launchy
@@ -85,6 +84,9 @@ To run individual tests use:
 - Webmock
 - VCR
 - Pagy
+- Docker
+- CircleCI
+- Heroku
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Versions
