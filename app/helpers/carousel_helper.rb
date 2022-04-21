@@ -1,30 +1,30 @@
 module CarouselHelper
-  def carousel_for(shops)
-    Carousel.new(self, shops).html
-  end
+	def carousel_for(shops)
+		Carousel.new(self, shops).html
+	end
 
-  class Carousel
-    def initialize(view, shops)
-      @view, @shops = view, shops
-    end
+	class Carousel
+		def initialize(view, shops)
+			@view, @shops = view, shops
+		end
 
-    def html
-      content = view.safe_join([indicators, slides, controls])
-      view.content_tag(:div, content, class: 'carousel slide')
-    end
+		def html
+			content = view.safe_join([indicators, slides, controls])
+			view.content_tag(:div, content, class: 'carousel slide')
+		end
 
-    private
+		private
 
-    attr_accessor :view, :shops
-    delegate :link_to, :content_tag, :image_tag, :safe_join, to: :view
+		attr_accessor :view, :shops
+		delegate :link_to, :content_tag, :image_tag, :safe_join, to: :view
 
-    def indicators
-    end
+		def indicators
+		end
 
-    def slides
-    end
+		def slides
+		end
 
-    def controls
-    end
-  end
+		def controls
+		end
+	end
 end

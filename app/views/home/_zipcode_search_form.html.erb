@@ -1,9 +1,9 @@
 <div id="zipcode_search">
-  <%= form_with url: "/search", method: :get, multipart: true do |form| %>
-  <%= form.label :query, "Where would you like to grab coffee?" %><br><br>
-  <%= form.text_field :query, value: location %>
-  <%= button_tag(type: 'submit', class: "btn btn-outline-secondary") do %>
-    <i class="fas fa-mug-hot"></i>
-  <% end %>
+	<%= form_with url: "/search", method: :get, multipart: true do |form| %>
+	<%= form.label :query, "Where would you like to grab coffee?" %><br><br>
+	<%= form.text_field :query, value: location %>
+	<%= button_tag(type: 'submit', class: "btn btn-outline-secondary") do %>
+		<i class="fas fa-mug-hot"></i>
+	<% end %>
 <% end %>
 </div>

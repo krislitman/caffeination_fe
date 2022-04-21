@@ -1,17 +1,17 @@
 <main>
-  <p>
-    <h1>CAFFEINATION</h1>
-    <hr>
-    <% if logged_in %>
-      <%= render "user_information" %>
-      <%= render "favorite_spots" %>
-      <%= render "recommended_spots" %>
-    <% end %>
+	<p>
+		<h1>CAFFEINATION</h1>
+		<hr>
+		<% if logged_in %>
+		<%= render "user_information" %>
+		<%= render "favorite_spots" %>
+		<%= render "recommended_spots" %>
+		<% end %>
 
-    <%= render partial: "zipcode_search_form", locals: { location: @current_location } %>
+		<%= render partial: "zipcode_search_form", locals: { location: @current_location } %>
 
-    <%= render "current_location" %>
-  </p>
+		<%= render "current_location" %>
+	</p>
 </main>
 
 

@@ -1,38 +1,38 @@
 <div id="sign_up_form">
-  <%= form_with url: "/sign_up", local: true, method: :post do |form| %>
-    <%= form.label :username %>
-    <%= form.text_field :username %>
+	<%= form_with url: "/sign_up", local: true, method: :post do |form| %>
+		<%= form.label :username %>
+		<%= form.text_field :username %>
 
-    <%= form.label :password %>
-    <%= form.text_field :password %>
+		<%= form.label :password %>
+		<%= form.text_field :password %>
 
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+		<%= form.label :first_name %>
+		<%= form.text_field :first_name %>
 
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+		<%= form.label :last_name %>
+		<%= form.text_field :last_name %>
 
-    <%= form.label :address_1 %>
-    <%= form.text_field :address_1 %>
+		<%= form.label :address_1 %>
+		<%= form.text_field :address_1 %>
 
-    <%= form.label :address_2 %>
-    <%= form.text_field :address_2 %>
+		<%= form.label :address_2 %>
+		<%= form.text_field :address_2 %>
 
-    <%= form.label :city %>
-    <%= form.text_field :city %>
+		<%= form.label :city %>
+		<%= form.text_field :city %>
 
-    <%= form.label :state %>
-    <%= form.text_field :state %>
+		<%= form.label :state %>
+		<%= form.text_field :state %>
 
-    <%= form.label :zipcode %>
-    <%= form.text_field :zipcode %>
+		<%= form.label :zipcode %>
+		<%= form.text_field :zipcode %>
 
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+		<%= form.label :email %>
+		<%= form.text_field :email %>
 
-    <%= form.label :favorite_beverage %>
-    <%= form.text_field :favorite_beverage %>
+		<%= form.label :favorite_beverage %>
+		<%= form.text_field :favorite_beverage %>
 
-    <%= form.submit "Sign me up" %>
-  <% end %>
+		<%= form.submit "Sign me up" %>
+	<% end %>
 </div>
