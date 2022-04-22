@@ -1,17 +1,23 @@
 <main>
-	<p>
-		<h1>CAFFEINATION</h1>
-		<hr>
-		<% if logged_in %>
-		<%= render "user_information" %>
-		<%= render "favorite_spots" %>
-		<%= render "recommended_spots" %>
-		<% end %>
+  <div class="px-4 py-5 my-5 text-center">
+  	<img src=<%=asset_path("pexels-adrian-regeci-9942543.jpg")%> height=300 width=300 alt="Hipster Coffee Stuff">
+    <h1 class="display-5 fw-bold">CAFFEINATION</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Find, save and share your favorite coffee spots!</p>
+	  		<% if logged_in %>
+			<%= render "user_information" %>
+			<%= render "favorite_spots" %>
+			<%= render "recommended_spots" %>
+			<% end %>
+		<br>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 
-		<%= render partial: "zipcode_search_form", locals: { location: @current_location } %>
+			<%= render partial: "zipcode_search_form", locals: { location: @current_location } %>
 
-		<%= render "current_location" %>
-	</p>
+      </div>
+			<%= render "current_location" %>
+    </div>
+  </div>
 </main>
 
 

@@ -13,7 +13,7 @@ class CurrentLocationService
 			if response["postal_code"]
 				response["postal_code"]
 			else
-				logger.debug "Postal Code not found in Response"
+				# logger.debug "Postal Code not found in Response"
 			end
 		end
 	end

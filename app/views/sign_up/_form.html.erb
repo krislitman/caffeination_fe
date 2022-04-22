@@ -1,38 +1,66 @@
-<div id="sign_up_form">
-	<%= form_with url: "/sign_up", local: true, method: :post do |form| %>
-		<%= form.label :username %>
-		<%= form.text_field :username %>
+<body>
+	<div class="container">
+		<%= form_with url: "/sign_up", local: true, method: :post do |form| %>
+			<div class="row">
+				<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+					<div class="card border-0 shadow rounded-3 my-5">
+						<div class="card-body p-4 p-sm-5">
+							<h5 class="card-title text-center mb-5 fw-light fs-5">Register</h5>
+							<form>
+							<div class="form-floating mb-3">
+								<%= form.text_field :username, id: "Enter Username", class: "form-control" %>
+								<%= form.label :username, "Enter Username" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.password_field :password, id: "Enter Password", class: "form-control" %>
+								<%= form.label :password, "Enter Password" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :first_name, id: "Enter your First Name", class: "form-control" %>
+								<%= form.label :first_name, "Enter your First Name" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :last_name, id: "Enter your Last Name", class: "form-control" %>
+								<%= form.label :last_name, "Enter your Last Name" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :address_1, id: "Enter your Address 1", class: "form-control" %>
+								<%= form.label :address_1, "Enter your Address 1" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :address_2, id: "Enter your Address 2", class: "form-control" %>
+								<%= form.label :address_2, "Enter your Address 2" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :city, id: "Enter your City", class: "form-control" %>
+								<%= form.label :city, "Enter your City" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :state, id: "Enter your State", class: "form-control" %>
+								<%= form.label :state, "Enter your State" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :zipcode, id: "Enter your Zipcode", class: "form-control" %>
+								<%= form.label :zipcode, "Enter your Zipcode" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :email, id: "Enter your Email", class: "form-control" %>
+								<%= form.label :email, "Enter your Email" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :favorite_beverage, id: "Enter your Favorite Beverage", class: "form-control" %>
+								<%= form.label :favorite_beverage, "Enter your Favorite Beverage" %>
+							</div>
 
-		<%= form.label :password %>
-		<%= form.text_field :password %>
-
-		<%= form.label :first_name %>
-		<%= form.text_field :first_name %>
-
-		<%= form.label :last_name %>
-		<%= form.text_field :last_name %>
-
-		<%= form.label :address_1 %>
-		<%= form.text_field :address_1 %>
-
-		<%= form.label :address_2 %>
-		<%= form.text_field :address_2 %>
-
-		<%= form.label :city %>
-		<%= form.text_field :city %>
-
-		<%= form.label :state %>
-		<%= form.text_field :state %>
-
-		<%= form.label :zipcode %>
-		<%= form.text_field :zipcode %>
-
-		<%= form.label :email %>
-		<%= form.text_field :email %>
-
-		<%= form.label :favorite_beverage %>
-		<%= form.text_field :favorite_beverage %>
-
-		<%= form.submit "Sign me up" %>
-	<% end %>
-</div>
+							<div class="d-grid">
+								<%= form.submit "Submit", class: "btn btn-primary btn-login text-uppercase fw-bold"%>
+							</div>
+							<hr class="my-4">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</body>

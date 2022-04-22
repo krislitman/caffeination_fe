@@ -2,7 +2,11 @@ class SearchController < ApplicationController
 	before_action :location, only: [:index]
 
 	def index
-		@pagy, @coffee_shops = pagy_array(SearchFacade.route(search_params, location))
+		begin
+			@pagy, @coffee_shops = pagy_array(SearchFacade.route(search_params, location))
+		rescue
+			redirect_to root_path(current_location: "Please try a different location!")
+		end
 	end
 
 	private

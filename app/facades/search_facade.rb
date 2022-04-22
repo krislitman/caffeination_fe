@@ -5,12 +5,12 @@ class SearchFacade
 			begin
 				case
 				when params[:query]
-				YelpService.search(params)
+					response = YelpService.search(params)
 				when params[:sort_by]
-				sort_options(params, location)
+					response = sort_options(params, location)
 				end
 			rescue
-				unexpected_error
+				unexpected_error(response)
 			end
 		end
 
@@ -25,7 +25,7 @@ class SearchFacade
 					CoffeeShop.filter_by_rating(location)
 				end
 			rescue
-				unexpected_error
+				unexpected_error(coffee_shops)
 			end
 		end
 
@@ -35,8 +35,10 @@ class SearchFacade
 			{query: location}
 		end
 
-		def unexpected_error
-			raise "An error has occurred"
+		def unexpected_error(message)
+			if !message.nil?
+				message.errors.full_messages
+			end
 		end
 	end
 end
