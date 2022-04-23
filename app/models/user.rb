@@ -8,16 +8,18 @@ class User < ApplicationRecord
 	before_create :normalize_attributes
 
 	after_create do
-		user = {
-			type: :user,
-			event: :create,
-			first_name: self.first_name,
-			last_name: self.last_name,
-			username: self.username,
-			email: self.email,
-			zipcode: self.zipcode
-		}
-		LogCreateJob.perform_later(user)
+		if Rails.env.development?
+			user = {
+				type: :user,
+				event: :create,
+				first_name: self.first_name,
+				last_name: self.last_name,
+				username: self.username,
+				email: self.email,
+				zipcode: self.zipcode
+			}
+			LogCreateJob.perform_later(user)
+		end
 	end
 
 	has_secure_password
