@@ -17,7 +17,7 @@ class User < ApplicationRecord
 			email: self.email,
 			zipcode: self.zipcode
 		}
-		LogCreate.perform_later(user)
+		LogCreateJob.perform_later(user)
 	end
 
 	has_secure_password
