@@ -7,6 +7,10 @@ class User < ApplicationRecord
 
 	before_create :normalize_attributes
 
+	after_create do
+		LogCreate.perform_later(self.id)
+	end
+
 	has_secure_password
 
 	def normalize_attributes
