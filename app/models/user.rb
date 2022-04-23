@@ -8,7 +8,16 @@ class User < ApplicationRecord
 	before_create :normalize_attributes
 
 	after_create do
-		LogCreate.perform_later(self.id)
+		user = {
+			type: :user,
+			event: :create,
+			first_name: self.first_name,
+			last_name: self.last_name,
+			username: self.username,
+			email: self.email,
+			zipcode: self.zipcode
+		}
+		LogCreate.perform_later(user)
 	end
 
 	has_secure_password

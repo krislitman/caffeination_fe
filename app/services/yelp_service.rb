@@ -12,8 +12,8 @@ class YelpService
 			all_stores = []
 			if data[:businesses]
 				data[:businesses].each do |b|
-				s =CfCoffeeShop.new(b, zipcode)
-				all_stores.push(s)
+					s = CfCoffeeShop.new(b, zipcode)
+					all_stores.push(s)
 				end
 			else
 				raise "Error receiving business information from Yelp, please try again later"

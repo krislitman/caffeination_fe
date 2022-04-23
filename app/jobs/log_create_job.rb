@@ -1,7 +1,11 @@
 class LogCreateJob < ApplicationJob
-  queue_as :default
+	queue_as :default
 
-  def perform(*args)
-    # Do something later
-  end
+	after_perform do |job|
+		Rails.logger.info "#{Time.now}: Job completed. #{job.inspect}"
+	end
+
+	def perform(payload)
+		LogService.create(payload)
+	end
 end
