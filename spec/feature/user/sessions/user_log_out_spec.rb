@@ -12,7 +12,7 @@ RSpec.describe "As a logged in user", type: :feature do
 	context "When I visit the home page" do
 		it "I can log out after clicking the button" do
 			visit root_path
-			find(:xpath, '//*[@id="navbarSupportedContent"]/ul/li[2]/ul/a[2]').click
+			find(:xpath, '/html/body/nav/div/div/div/ul/li[2]/ul/a').click
 
 			expect(current_path).to eq(root_path)
 			expect(page).to have_content("You have been logged out")
