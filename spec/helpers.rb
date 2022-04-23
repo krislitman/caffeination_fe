@@ -3,6 +3,8 @@ module Helpers
 		visit log_in_path
 		fill_in :email, with: user.email
 		fill_in :password, with: user.password
-		click_button "Log in"
+		within("#sign_in") do
+			click_button "Sign In"
+		end
 	end
 end

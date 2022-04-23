@@ -7,7 +7,7 @@ RSpec.describe "When a User is created on the FE" do
 	end
 
 	describe "Run rails s -p 3001 in backend repo before running" do
-		it "The user and session data are stored in the BE" do
+		xit "The user and session data are stored in the BE" do
 			@user = FactoryBot.create(:user)
 			session = {user_id: @user.id}
 			response = CreationService.store_user_and_session(@user, session)

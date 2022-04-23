@@ -11,8 +11,9 @@ RSpec.describe "Yelp API call initial test", type: :feature do
 				match_requests_on: %i[body]) do
 				visit root_path
 				fill_in :query, with: "33602"
-				page.find_button("button").click
-
+				within("#zipcode_search") do
+					page.find_button("button").click
+				end
 				expect(current_path).to eq(search_path)
 				expect(page).to have_content("Caffeination")
 			end

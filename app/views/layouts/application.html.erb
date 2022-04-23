@@ -28,10 +28,13 @@
 					Users
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<%= link_to "Log In", log_in_path, method: :get, class: "dropdown-item" %>
-					<%= link_to "Log Out", log_out_path, method: :delete, class: "dropdown-item" %>
-					<li><hr class="dropdown-divider"></li>
-					<%= link_to "Sign Up", sign_up_path, method: :get, class: "dropdown-item" %>
+					<% if logged_in %>
+						<%= link_to "Log Out", log_out_path, method: :delete, class: "dropdown-item" %>
+					<% else %>
+						<%= link_to "Log In", log_in_path, method: :get, class: "dropdown-item" %>
+						<li><hr class="dropdown-divider"></li>
+						<%= link_to "Sign Up", sign_up_path, method: :get, class: "dropdown-item" %>
+					<% end %>
 					</ul>
 				</li>
 				</ul>

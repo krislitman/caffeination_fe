@@ -10,8 +10,10 @@ RSpec.describe "Filter Results without Starbucks", type: :feature do
             VCR.use_cassette('requests/filter_by_no_starbucks',
             match_requests_on: %i[body]) do
                 visit root_path
-                fill_in :query, with: "20149"
-                find(:xpath, "/html/body/div[1]/main/div[1]/form/button").click
+				within("#zipcode_search") do
+					fill_in :query, with: "20149"
+					click_button "Search for Coffee Spots"
+				end
                 expect(page).to have_content("Starbucks")
                 select "No Starbucks", from: :sort_by
                 click_button "Filter"

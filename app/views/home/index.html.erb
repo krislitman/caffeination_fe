@@ -10,12 +10,10 @@
 			<%= render "recommended_spots" %>
 			<% end %>
 		<br>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-
+    	<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 			<%= render partial: "zipcode_search_form", locals: { location: @current_location } %>
-
-      </div>
-			<%= render "current_location" %>
+    	</div>
+		<%= render "current_location" %>
     </div>
   </div>
 </main>

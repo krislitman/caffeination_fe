@@ -15,19 +15,21 @@ RSpec.describe "As a visitor", type: :feature do
 
 			expect(current_path).to eq(log_in_path)
 			end
-			it "The log in page asks for my email address and password" do
+		it "The log in page asks for my email address and password" do
 			visit log_in_path
 
 			within "#log_in_form" do
 				expect(page).to have_field(:email)
 				expect(page).to have_field(:password)
 			end
-			end
-			it "With correct credentials I am able to log in, redirected to root path" do
+		end
+		it "With correct credentials I am able to log in, redirected to root path" do
 			visit log_in_path
-			fill_in :email, with: @user.email
-			fill_in :password, with: @user.password
-			click_button "Log in"
+			email = page.find(:field, :email)
+			password = page.find(:field, :password)
+			email.fill_in with: @user.email
+			password.fill_in with: @user.password
+			click_button "Sign In"
 
 			expect(current_path).to eq(root_path)
 			expect(page).to have_content("Welcome back #{@user.username}!")
