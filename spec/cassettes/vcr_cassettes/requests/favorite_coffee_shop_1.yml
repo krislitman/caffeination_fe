@@ -24,36 +24,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      X-B3-Sampled:
-      - '0'
       X-Zipkin-Id:
-      - ffca9c97082a57d6
+      - b34da637b098052e
       Server:
       - envoy
       Ratelimit-Dailylimit:
       - '5000'
-      X-Routing-Service:
-      - routing-main--useast1-6cc764b999-wjrmr; site=public_api_v3
       Ratelimit-Remaining:
-      - '4999'
+      - '4935'
       Ratelimit-Resettime:
       - '2022-04-25T00:00:00+00:00'
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-7c777559b7-h7x2g; site=public_api_v3
       X-Cloudmap:
       - routing_useast1
       X-Proxied:
-      - 10-65-91-109-useast1aprod
+      - 10-65-164-1-useast1bprod
       X-Extlb:
-      - 10-65-91-109-useast1aprod
+      - 10-65-164-1-useast1bprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 24 Apr 2022 21:24:35 GMT
+      - Sun, 24 Apr 2022 23:42:01 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-mia11342-MIA
+      - cache-mia11350-MIA
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -70,8 +70,8 @@ http_interactions:
         "review_count": 232, "categories": [{"alias": "foodtrucks", "title": "Food
         Trucks"}, {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "breakfast_brunch",
         "title": "Breakfast & Brunch"}], "rating": 5.0, "coordinates": {"latitude":
-        27.9454650532963, "longitude": -82.4588141217828}, "transactions": ["pickup",
-        "delivery"], "price": "$", "location": {"address1": "100 N Ashley Dr", "address2":
+        27.9454650532963, "longitude": -82.4588141217828}, "transactions": ["delivery",
+        "pickup"], "price": "$", "location": {"address1": "100 N Ashley Dr", "address2":
         "", "address3": "", "city": "Tampa", "zip_code": "33602", "country": "US",
         "state": "FL", "display_address": ["100 N Ashley Dr", "Tampa, FL 33602"]},
         "phone": "+18134538256", "display_phone": "(813) 453-8256", "distance": 521.4754398515104},
@@ -173,8 +173,8 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/bula-kavananda-tampa-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
         "review_count": 43, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "bars", "title": "Bars"}], "rating": 5.0, "coordinates":
-        {"latitude": 28.000015, "longitude": -82.459151}, "transactions": ["pickup",
-        "delivery"], "location": {"address1": "5803 N Florida Ave", "address2": null,
+        {"latitude": 28.000015, "longitude": -82.459151}, "transactions": ["delivery",
+        "pickup"], "location": {"address1": "5803 N Florida Ave", "address2": null,
         "address3": "", "city": "Tampa", "zip_code": "33604", "country": "US", "state":
         "FL", "display_address": ["5803 N Florida Ave", "Tampa, FL 33604"]}, "phone":
         "+18134445571", "display_phone": "(813) 444-5571", "distance": 5656.304705402084},
@@ -216,7 +216,7 @@ http_interactions:
         false, "url": "https://www.yelp.com/biz/22nd-street-coffee-tampa-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
         "review_count": 64, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}], "rating": 4.5, "coordinates": {"latitude": 27.95024, "longitude":
-        -82.43489}, "transactions": ["pickup", "delivery"], "price": "$", "location":
+        -82.43489}, "transactions": ["delivery", "pickup"], "price": "$", "location":
         {"address1": "208 N 22nd St", "address2": "", "address3": null, "city": "Tampa",
         "zip_code": "33605", "country": "US", "state": "FL", "display_address": ["208
         N 22nd St", "Tampa, FL 33605"]}, "phone": "+18133040373", "display_phone":
@@ -248,7 +248,7 @@ http_interactions:
         "review_count": 196, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "vietnamese", "title": "Vietnamese"}, {"alias": "asianfusion",
         "title": "Asian Fusion"}], "rating": 4.5, "coordinates": {"latitude": 27.9486961364746,
-        "longitude": -82.4557876586914}, "transactions": ["pickup", "delivery"], "price":
+        "longitude": -82.4557876586914}, "transactions": ["delivery", "pickup"], "price":
         "$$", "location": {"address1": "504 E Kennedy Blvd", "address2": "", "address3":
         "", "city": "Tampa", "zip_code": "33602", "country": "US", "state": "FL",
         "display_address": ["504 E Kennedy Blvd", "Tampa, FL 33602"]}, "phone": "+18132220102",
@@ -259,7 +259,7 @@ http_interactions:
         "review_count": 362, "categories": [{"alias": "bakeries", "title": "Bakeries"},
         {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "cuban", "title":
         "Cuban"}], "rating": 4.5, "coordinates": {"latitude": 27.96576, "longitude":
-        -82.44341}, "transactions": ["pickup", "delivery"], "price": "$", "location":
+        -82.44341}, "transactions": ["delivery", "pickup"], "price": "$", "location":
         {"address1": "2512 N 15th St", "address2": "", "address3": "", "city": "Tampa",
         "zip_code": "33605", "country": "US", "state": "FL", "display_address": ["2512
         N 15th St", "Tampa, FL 33605"]}, "phone": "+18132481531", "display_phone":
@@ -275,5 +275,173 @@ http_interactions:
         ["6102 S MacDill Ave", "Tampa, FL 33611"]}, "phone": "", "display_phone":
         "", "distance": 8298.865357707933}], "total": 221, "region": {"center": {"longitude":
         -82.46200561523438, "latitude": 27.949212757193706}}}'
-  recorded_at: Sun, 24 Apr 2022 21:24:35 GMT
+  recorded_at: Sun, 24 Apr 2022 23:42:01 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/yGH9V9WTNGSZ6AHOW3kH-w
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - DONT_LOOK_AT_ME
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-7c777559b7-tkjpz; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - 2510aaa018c5fcfd
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4934'
+      Ratelimit-Resettime:
+      - '2022-04-25T00:00:00+00:00'
+      X-Cloudmap:
+      - routing_useast1
+      X-Proxied:
+      - 10-65-133-10-useast1bprod
+      X-Extlb:
+      - 10-65-133-10-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 24 Apr 2022 23:42:02 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-mia11344-MIA
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id": "yGH9V9WTNGSZ6AHOW3kH-w", "alias": "ginger-beard-coffee-tampa",
+        "name": "Ginger Beard Coffee", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/t2Tw3pTUhAJuT9HgSeXcPA/o.jpg",
+        "is_claimed": true, "is_closed": false, "url": "https://www.yelp.com/biz/ginger-beard-coffee-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "phone": "+18134340795", "display_phone": "(813) 434-0795", "review_count":
+        163, "categories": [{"alias": "coffee", "title": "Coffee & Tea"}], "rating":
+        5.0, "location": {"address1": "1208 E Kennedy Blvd", "address2": "Ste 112",
+        "address3": "", "city": "Tampa", "zip_code": "33602", "country": "US", "state":
+        "FL", "display_address": ["1208 E Kennedy Blvd", "Ste 112", "Tampa, FL 33602"],
+        "cross_streets": ""}, "coordinates": {"latitude": 27.9512720454412, "longitude":
+        -82.4474974110451}, "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/t2Tw3pTUhAJuT9HgSeXcPA/o.jpg",
+        "https://s3-media4.fl.yelpcdn.com/bphoto/krVWd0zcwYU7IQ5tYHRCtw/o.jpg", "https://s3-media2.fl.yelpcdn.com/bphoto/M8QRAAG9qVpoqg9OFbKAeQ/o.jpg"],
+        "price": "$", "hours": [{"open": [{"is_overnight": false, "start": "0700",
+        "end": "1400", "day": 0}, {"is_overnight": false, "start": "0700", "end":
+        "1400", "day": 1}, {"is_overnight": false, "start": "0700", "end": "1400",
+        "day": 2}, {"is_overnight": false, "start": "0700", "end": "1400", "day":
+        3}, {"is_overnight": false, "start": "0700", "end": "1400", "day": 4}, {"is_overnight":
+        false, "start": "0800", "end": "1400", "day": 5}, {"is_overnight": false,
+        "start": "0800", "end": "1200", "day": 6}], "hours_type": "REGULAR", "is_open_now":
+        false}], "transactions": ["delivery"]}'
+  recorded_at: Sun, 24 Apr 2022 23:42:02 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/yGH9V9WTNGSZ6AHOW3kH-w/reviews
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - DONT_LOOK_AT_ME
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Routing-Service:
+      - routing-main--useast1-7c777559b7-2sxtw; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2022-04-25T00:00:00+00:00'
+      X-Zipkin-Id:
+      - '048000e19dd0a06e'
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4933'
+      X-Cloudmap:
+      - routing_useast1
+      X-Proxied:
+      - 10-65-73-48-useast1aprod
+      X-Extlb:
+      - 10-65-73-48-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 24 Apr 2022 23:42:02 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-mia11359-MIA
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"reviews": [{"id": "CrwyuJpH6HqBhz94vSJvZA", "url": "https://www.yelp.com/biz/ginger-beard-coffee-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&hrid=CrwyuJpH6HqBhz94vSJvZA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "text": "Was visiting for work and Ginger Beard was a walk away distance from
+        my hotel. I got something like a peanut butter draft, it was top notch. Had
+        to go back...", "rating": 5, "time_created": "2022-04-13 22:29:30", "user":
+        {"id": "rXQpZctNaeZWWWRuxGOo5g", "profile_url": "https://www.yelp.com/user_details?userid=rXQpZctNaeZWWWRuxGOo5g",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/photo/30drkTLRPUEnHU-4-j3QdA/o.jpg",
+        "name": "Malan N."}}, {"id": "QWCnfGe6axYmFUAcJqWdxg", "url": "https://www.yelp.com/biz/ginger-beard-coffee-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&hrid=QWCnfGe6axYmFUAcJqWdxg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "text": "Found this shop near my hotel while in Tampa for a short winter getaway.
+        I chose it over Starbucks because, duh, small businesses are the best. \n\nThe
+        shop...", "rating": 4, "time_created": "2021-12-20 19:25:32", "user": {"id":
+        "uRr19yX7Wm9IYnflEm-D9w", "profile_url": "https://www.yelp.com/user_details?userid=uRr19yX7Wm9IYnflEm-D9w",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/photo/eVvzwv1gsGU_EjypiTa3wA/o.jpg",
+        "name": "DJ G."}}, {"id": "zmkVIs_mcOCmcUlsrhgHAg", "url": "https://www.yelp.com/biz/ginger-beard-coffee-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&hrid=zmkVIs_mcOCmcUlsrhgHAg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "text": "Great vibe. Cool staff. Very dog friendly very relaxed. The coffee
+        is strong. We were a lil overwhelmed. But there was lots of Customers who
+        loved it....", "rating": 4, "time_created": "2022-03-28 22:22:12", "user":
+        {"id": "0BwbZxqx1VSusK3NCzQPMA", "profile_url": "https://www.yelp.com/user_details?userid=0BwbZxqx1VSusK3NCzQPMA",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/photo/HaHdsDLdIGMqMeczFq4fsQ/o.jpg",
+        "name": "Mike M."}}], "total": 163, "possible_languages": ["en"]}'
+  recorded_at: Sun, 24 Apr 2022 23:42:02 GMT
 recorded_with: VCR 6.0.0

@@ -37,6 +37,11 @@
 					<% end %>
 					</ul>
 				</li>
+				<% if !current_page?(root_path) %>
+					<li class="nav-item">
+						<%= link_to "Back", :back, class: "nav-link active" %>
+					</li>
+				<% end %>
 				</ul>
 			</div>
 			</div>
