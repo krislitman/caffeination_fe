@@ -8,7 +8,9 @@ class CfCoffeeShop
 				:location,
 				:phone,
 				:url,
-				:search_phrase
+				:search_phrase,
+				:hours,
+				:reviews
 
 	def initialize(attributes, zipcode)
 		@yelp_id = attributes[:id]
@@ -22,6 +24,13 @@ class CfCoffeeShop
 		@url = attributes[:url]
 		@search_phrase = zipcode
 		@hours = attributes[:hours]
+		@reviews = []
+	end
+
+	def add_reviews(all_reviews)
+		all_reviews.each do |review|
+			@reviews << review
+		end
 	end
 
 	class << self

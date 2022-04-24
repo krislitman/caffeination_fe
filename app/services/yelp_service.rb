@@ -4,14 +4,14 @@ class YelpService
 		def get_shop(yelp_id)
 			response = yelp_get_shop(yelp_id)
 			yelp_data = JSON.parse(response.body, symbolize_names: true)
-			CfCoffeeShop.new(yelp_data, nil)
+			shop = CfCoffeeShop.new(yelp_data, nil)
+			if shop
+				response_two = yelp_get_reviews(yelp_id)
+				parsed = JSON.parse(response_two.body, symbolize_names: true)[:reviews]
+				shop.add_reviews(parsed)
+			end
 		end
 
-		def get_reviews(yelp_id)
-			response = yelp_get_reviews(yelp_id)
-			JSON.parse(response.body, symbolize_names: true)
-			require 'pry'; binding.pry
-		end
 
 		def search(zipcode)
 			zipcode = zipcode[:query].to_s
