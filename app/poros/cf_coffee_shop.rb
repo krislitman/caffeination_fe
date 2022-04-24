@@ -21,6 +21,7 @@ class CfCoffeeShop
 		@phone = attributes[:display_phone] || attributes[:phone]
 		@url = attributes[:url]
 		@search_phrase = zipcode
+		@hours = attributes[:hours]
 	end
 
 	class << self
