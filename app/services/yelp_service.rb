@@ -9,6 +9,7 @@ class YelpService
 				response_two = yelp_get_reviews(yelp_id)
 				parsed = JSON.parse(response_two.body, symbolize_names: true)[:reviews]
 				shop.add_reviews(parsed)
+				shop
 			end
 		end
 
