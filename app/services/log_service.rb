@@ -9,7 +9,7 @@ class LogService
 			path = route(payload)
 
 			HTTParty.post(
-				Figaro.env.backend.concat(path),
+				"#{Figaro.env.backend}#{path}",
 				body: {
 					created_at: Time.now.to_s,
 					payload: payload

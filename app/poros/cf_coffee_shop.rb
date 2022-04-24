@@ -1,5 +1,6 @@
 class CfCoffeeShop
-	attr_reader :name,
+	attr_reader :yelp_id,
+				:name,
 				:image_url,
 				:rating,
 				:coordinates,
@@ -10,6 +11,7 @@ class CfCoffeeShop
 				:search_phrase
 
 	def initialize(attributes, zipcode)
+		@yelp_id = attributes[:yelp_id]
 		@name = attributes[:name]
 		@image_url = URI.parse(attributes[:image_url])
 		@rating = attributes[:rating]
