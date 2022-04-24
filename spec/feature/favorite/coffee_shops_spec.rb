@@ -27,5 +27,29 @@ RSpec.describe "As a visitor who searched for Coffee Shops in their location", t
 				expect(page).to have_content("Ginger Beard Coffee")
             end
         end
+
+        it "I see a button to favorite the coffee shop" do
+            VCR.use_cassette('requests/favorite_coffee_shop_2',
+            match_requests_on: %i[body]) do
+                visit root_path
+				within("#zipcode_search") do
+					fill_in :query, with: "33602"
+					click_button "Search for Coffee Spots"
+				end
+
+                expect(current_path).to eq(search_path)
+				expect(page).to have_link("Ginger Beard Coffee")
+				click_link("Ginger Beard Coffee")
+
+				expect(page).to have_button("Add to Favorites")
+				click_button("Add to Favorites")
+				expect(current_path).to eq(search_path)
+
+				visit root_path
+				within("#favorite_spots") do
+					expect(page).to have_link("Ginger Beard Coffee")
+				end
+            end
+        end
     end
 end
