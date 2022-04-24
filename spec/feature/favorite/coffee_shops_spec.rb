@@ -19,7 +19,12 @@ RSpec.describe "As a visitor who searched for Coffee Shops in their location", t
 					fill_in :query, with: "33602"
 					click_button "Search for Coffee Spots"
 				end
+
                 expect(current_path).to eq(search_path)
+				expect(page).to have_link("Ginger Beard Coffee")
+				click_link("Ginger Beard Coffee")
+
+				expect(page).to have_content("Ginger Beard Coffee")
             end
         end
     end
