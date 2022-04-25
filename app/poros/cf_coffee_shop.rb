@@ -15,7 +15,7 @@ class CfCoffeeShop
 	def initialize(attributes, zipcode)
 		@yelp_id = attributes[:id]
 		@name = attributes[:name]
-		@image_url = URI.parse(attributes[:image_url])
+		@image_url = URI.parse(attributes[:image_url]) rescue nil
 		@rating = attributes[:rating]
 		@coordinates = attributes[:coordinates]
 		@transaction_types = attributes[:transactions]

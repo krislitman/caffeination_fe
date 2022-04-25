@@ -5,8 +5,8 @@
 	<br>
 	<br>
 	<div class="favorite_button">
-		<%= form_with url: "/favorite", method: :post, multipart: true do |form| %>
-			<%= button_tag(type: 'submit', value: coffee_shop, class: "btn btn-outline-secondary", title: "Favorite") do %>
+		<%= form_with url: favorite_path(coffee_shop.yelp_id), method: :post, multipart: true do |form| %>
+			<%= button_tag(type: 'submit', class: "btn btn-outline-secondary", title: "Favorite") do %>
 				<i class="fas fa-star"></i>
 			<% end %>
 		<% end %>

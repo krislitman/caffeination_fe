@@ -23,6 +23,8 @@ class LogService
 
 			if type == :user && event == :create
 				"user_log"
+			elsif type == :user && event == :favorite
+				"favorite"
 			end
 		end
 	end
