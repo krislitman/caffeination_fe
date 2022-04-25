@@ -5,8 +5,10 @@
 	<br>
 	<br>
 	<div class="favorite_button">
-		<%= button_tag(type: 'submit', class: "btn btn-outline-secondary", title: "Favorite") do %>
-			<i class="fas fa-star"></i>
+		<%= form_with url: "/favorite", method: :post, multipart: true do |form| %>
+			<%= button_tag(type: 'submit', value: coffee_shop, class: "btn btn-outline-secondary", title: "Favorite") do %>
+				<i class="fas fa-star"></i>
+			<% end %>
 		<% end %>
 	</div>
 	<br>

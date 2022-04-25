@@ -19,4 +19,5 @@ Rails.application.routes.draw do
 
 	# Coffee Shop
 	get "/coffee_shop", to: "coffee_shop#show"
+	post "/favorite", to: "coffee_shop#favorite"
 end
