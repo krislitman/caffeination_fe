@@ -4,13 +4,23 @@
 	<%= image_tag coffee_shop.image_url.to_s, height: "200", width: "250" %>
 	<br>
 	<br>
-	<div class="favorite_button">
-		<%= form_with url: favorite_path(coffee_shop.yelp_id), method: :post, multipart: true do |form| %>
-			<%= button_tag(type: 'submit', class: "btn btn-outline-secondary", title: "Favorite") do %>
-				<i class="fas fa-star"></i>
+	<% if is_favorite == false %>
+		<div class="favorite_button">
+			<%= form_with url: favorite_path(coffee_shop.yelp_id), method: :post, multipart: true do |form| %>
+				<%= button_tag(type: 'submit', class: "btn btn-outline-secondary", title: "Favorite") do %>
+					<i class="fas fa-star"></i>
+				<% end %>
 			<% end %>
-		<% end %>
-	</div>
+		</div>
+	<% else %>
+		<div class="remove_favorite_button">
+			<%= form_with url: favorite_path(coffee_shop.yelp_id), method: :delete, multipart: true do |form| %>
+				<%= button_tag(type: 'submit', class: "btn btn-outline-secondary", title: "Remove Favorite") do %>
+					<i class="fas fa-minus-circle"></i>
+				<% end %>
+			<% end %>
+		</div>
+	<% end %>
 	<br>
 	<p>Rating: <%= coffee_shop.rating %></p>
 	<p>Location: <%= coffee_shop.location[:display_address].join(",") %></p>
