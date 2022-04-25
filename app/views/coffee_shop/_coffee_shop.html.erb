@@ -2,6 +2,14 @@
 	<h3><%=coffee_shop.name %></h3>
 	<hr>
 	<%= image_tag coffee_shop.image_url.to_s, height: "200", width: "250" %>
+	<br>
+	<br>
+	<div class="favorite_button">
+		<%= button_tag(type: 'submit', class: "btn btn-outline-secondary", title: "Favorite") do %>
+			<i class="fas fa-star"></i>
+		<% end %>
+	</div>
+	<br>
 	<p>Rating: <%= coffee_shop.rating %></p>
 	<p>Location: <%= coffee_shop.location[:display_address].join(",") %></p>
 	<p>View on Yelp: <%= link_to "#{coffee_shop.name}", coffee_shop.url %></p>

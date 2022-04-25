@@ -41,8 +41,8 @@ RSpec.describe "As a visitor who searched for Coffee Shops in their location", t
 				expect(page).to have_link("Ginger Beard Coffee")
 				click_link("Ginger Beard Coffee")
 
-				expect(page).to have_button("Add to Favorites")
-				click_button("Add to Favorites")
+				expect(page).to have_button("Favorite")
+				click_button("Favorite")
 				expect(current_path).to eq(search_path)
 
 				visit root_path
