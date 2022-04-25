@@ -72,6 +72,5 @@ RSpec.describe 'As a visitor', type: :feature do
 		expect(page).to have_content('Favorite Beverage: Nitro cold brew')
 		expect(page).to have_content('Where would you like to grab coffee?')
 		expect(page).to have_content('My Favorite Spots:')
-		expect(page).to have_content('Recommended Spots:')
 	end
 end

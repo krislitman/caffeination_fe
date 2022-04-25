@@ -1,0 +1,28 @@
+<div class="coffee_shop">
+	<h3><%=coffee_shop.name %></h3>
+	<hr>
+	<%= image_tag coffee_shop.image_url.to_s, height: "200", width: "250" %>
+	<br>
+	<br>
+	<div class="favorite_button">
+		<%= form_with url: favorite_path(coffee_shop.yelp_id), method: :post, multipart: true do |form| %>
+			<%= button_tag(type: 'submit', class: "btn btn-outline-secondary", title: "Favorite") do %>
+				<i class="fas fa-star"></i>
+			<% end %>
+		<% end %>
+	</div>
+	<br>
+	<p>Rating: <%= coffee_shop.rating %></p>
+	<p>Location: <%= coffee_shop.location[:display_address].join(",") %></p>
+	<p>View on Yelp: <%= link_to "#{coffee_shop.name}", coffee_shop.url %></p>
+	<p>Phone: <%= coffee_shop.phone %></p>
+	<hr>
+	<h4>Reviews</h4>
+	<% coffee_shop.reviews.each do |review| %>
+		<p><%= review.dig(:text) %></p>
+		<p>View Full Review <%= link_to "Here", review.dig(:url) %></p>
+		<p>Rating: <%= review.dig(:rating) %></p>
+		<p>Created at: <%= review.dig(:time_created) %></p>
+		<p>By: <%= review.dig(:user, :name) %></p>
+	<% end %>
+</div>

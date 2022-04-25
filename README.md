@@ -49,10 +49,28 @@ your local machine for development and testing purposes.
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Views
 
-#### Welcome Page
-**`localhost:3000/welcome`**
+#### Home Page
+**`localhost:3000/`**
 <p>
-  Welcome to Caffeination! View local coffee shops near you, register a new account to star and remember your saved shops and share your favorite coffee shops!
+  Welcome to Caffeination! View local coffee shops near you, register a new account to star and remember your saved shops and share your favorite coffee shops. Enter a location to search for coffee shops, or click the button for current location to find your current zipcode.
+</p>
+
+#### Registration Page
+**`localhost:3000/sign_up`**
+<p>
+  Path to register a new user.
+</p>
+
+#### Log In Page
+**`localhost:3000/log_in`**
+<p>
+  Path to sign in an already registered user.
+</p>
+
+#### Search Page
+**`localhost:3000/search`**
+<p>
+  After clicking on the search button, you will be brought to the Search page where you can see the coffee shop results for the location you input. Either filter the results by "No Starbucks", "Rating", or click on the next page of results.
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
@@ -78,6 +96,7 @@ To run individual tests use:
 - Fast JSON API
 - HTTParty
 - Shoulda Matchers
+- Sidekiq
 - Redis
 - Bcrypt
 - Better Errors

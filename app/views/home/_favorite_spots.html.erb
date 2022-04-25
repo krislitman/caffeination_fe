@@ -1,4 +1,8 @@
 <div id="favorite_spots">
 	<h5>My Favorite Spots: </h5>
-	<%# Need to add logic for grabbing a users favorite spots %>
+		<% if Rails.env.development? %>
+			<% favorite_spots.each do |spot| %>
+				<p><%= link_to spot.name, coffee_shop_path(yelp_id: spot.yelp_id) %></p>
+			<% end %>
+		<% end %>
 </div>
