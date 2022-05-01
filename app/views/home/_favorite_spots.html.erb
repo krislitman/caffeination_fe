@@ -1,6 +1,6 @@
 <div id="favorite_spots">
 	<h5>My Favorite Spots: </h5>
-		<% if Rails.env.production? %>
+		<% if Rails.env.production? && favorite_spots %>
 			<% favorite_spots.each do |spot| %>
 				<p><%= link_to spot.name, coffee_shop_path(yelp_id: spot.yelp_id) %></p>
 			<% end %>
