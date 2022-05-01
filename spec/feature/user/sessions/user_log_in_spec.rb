@@ -34,5 +34,7 @@ RSpec.describe "As a visitor", type: :feature do
 			expect(current_path).to eq(root_path)
 			expect(page).to have_content("Welcome back #{@user.username}!")
 		end
+		it "With incorrect credentials, I see a notice that I was unable to login" do
+		end
 	end
 end
