@@ -31,7 +31,7 @@
 ### API Keys
 
 Before getting started with installation, you will need to create an account and get API keys from
-[Yelp](https://fusion.yelp.com/) and from [Abstract](https://www.abstractapi.com/) for Geolocation Services.
+[Yelp](https://fusion.yelp.com/), [Abstract](https://www.abstractapi.com/) for Geolocation Services, [GoogleCloudPlatform](https://cloud.google.com/), and [OpenWeather](https://openweathermap.org/api/geocoding-api)
 Please sign up to get your own copy and include them as environment variables with Figaro.
 Run `figaro install` to add your own application.yml file to the application.
 
@@ -44,7 +44,10 @@ your local machine for development and testing purposes.
 2. Install gem packages: `bundle install`
 3. Run `rails db:{drop,create,migrate,seed}` -- (you may see errors from pg_restore that you can ignore)
 4. Run rails s to start the rails server
-5. Go to localhost:3000 to view the Development environment for the application!
+5. Run redis-server to start the redis server
+6. Run bundle exec sidekiq -q default to start Sidekiq server
+7. Run rails s -p 3001 on back-end repo to run the Rails API
+8. Go to localhost:3000 to view the Development environment for the application!
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
 ## Views
@@ -67,10 +70,28 @@ your local machine for development and testing purposes.
   Path to sign in an already registered user.
 </p>
 
+#### Log In with Google Oauth
+**`localhost:3000/auth/:provider/callback`**
+<p>
+  Route for initiating Oauth flow for Google with Omniauth.
+</p>
+
+#### Current Location
+**`localhost:3000/current_location`**
+<p>
+  Route for using geolocation services to find your current location.
+</p>
+
 #### Search Page
 **`localhost:3000/search`**
 <p>
   After clicking on the search button, you will be brought to the Search page where you can see the coffee shop results for the location you input. Either filter the results by "No Starbucks", "Rating", or click on the next page of results.
+</p>
+
+#### Current Location
+**`localhost:3000/coffee_shop`**
+<p>
+  Route to show an individual coffee_shop from the search page.
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
@@ -103,6 +124,7 @@ To run individual tests use:
 - Webmock
 - VCR
 - Pagy
+- Omniauth
 - Docker
 - CircleCI
 - Heroku
@@ -120,3 +142,7 @@ To run individual tests use:
 - [Yelp](https://www.yelp.com/developers/)
 
 - [Abstract](https://www.abstractapi.com/)
+
+- [OpenWeather](https://openweathermap.org/api/geocoding-api)
+
+- [GoogleCloudPlatform](https://cloud.google.com/)
