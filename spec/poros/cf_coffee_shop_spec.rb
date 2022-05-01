@@ -68,5 +68,9 @@ RSpec.describe CfCoffeeShop do
 		it "#closed?" do
 			expect(@cf_coffee_shop.is_open?).to be false
 		end
+		it "#price_sort" do
+			# length of dollar bills in string returned by yelp
+			expect(@cf_coffee_shop.price_sort).to eq(1)
+		end
 	end
 end
