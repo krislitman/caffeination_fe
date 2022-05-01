@@ -15,7 +15,6 @@ class SessionsController < ApplicationController
 
 	def omniauth
 		user = User.from_omniauth(request.env["omniauth.auth"])
-		require 'pry'; binding.pry
 		if user
 			session[:user_id] = user.id
 			flash[:message] = "Welcome #{user.username}!"
