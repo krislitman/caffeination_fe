@@ -30,7 +30,7 @@ RSpec.describe CfCoffeeShop do
 		@cf_coffee_shop = CfCoffeeShop.new(raw_data, zipcode)
 	end
 
-	context "Poro" do
+	context "Poros/CfCoffeeShop" do
 		it "Can be instantiated" do
 			expect(@cf_coffee_shop).to be_an_instance_of(CfCoffeeShop)
 		end
