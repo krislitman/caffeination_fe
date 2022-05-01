@@ -65,5 +65,8 @@ RSpec.describe CfCoffeeShop do
 
 			expect(@cf_coffee_shop.reviews.length).to eq(2)
 		end
+		it "#closed?" do
+			expect(@cf_coffee_shop.is_open?).to be false
+		end
 	end
 end

@@ -2,7 +2,7 @@
 	<%= form_with url: "/search", method: :get, multipart: true do |form| %>
 		<div class="mb-3">
 			<%= form.label :query, "Where would you like to grab coffee?" %><br><br>
-			<%= form.text_field :query, value: location || "Enter a location!", class: "form-control" %>
+			<%= form.text_field :query, placeholder: location || "Enter a location!", class: "form-control" %>
 			<br>
 			<%= button_tag(type: 'submit', class: "btn btn-outline-secondary", title: "Search for Coffee Spots") do %>
 				<i class="fas fa-mug-hot"></i>
