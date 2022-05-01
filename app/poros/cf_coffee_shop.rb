@@ -4,7 +4,7 @@ class CfCoffeeShop
 				:image_url,
 				:rating,
 				:coordinates,
-				:translation_types,
+				:transaction_types,
 				:location,
 				:phone,
 				:url,
