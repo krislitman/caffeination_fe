@@ -5,7 +5,7 @@
 		<p>Rating: <%= c.rating %></p>
 		<p>Location: <%= c.location[:display_address].join(",") %></p>
 		<p>Phone: <%= c.phone %></p>
-		<% if c.closed? %>
+		<% if c.is_open? %>
 			<p>Currently Open</p>
 		<% else %>
 			<p>Currently Closed</p>
