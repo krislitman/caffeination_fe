@@ -40,6 +40,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Hotwire
 gem 'hotwire-rails'
 
+# Google Oauth
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
+
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
