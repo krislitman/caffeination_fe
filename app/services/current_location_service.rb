@@ -9,7 +9,9 @@ class CurrentLocationService
 			if code.nil?
 				coordinates = find_lat_lon(response)
 				response2 = try_open_weather(coordinates)
-				response2.first.dig("name") || nil
+				if (response2.dig("cod") != "400" rescue nil)
+					response2.first.dig("name") || nil
+				end
 			end
 		end
 
