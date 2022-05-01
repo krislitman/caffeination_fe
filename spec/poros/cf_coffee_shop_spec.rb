@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe CFCoffeeShop do
+RSpec.describe CfCoffeeShop do
 	context "Poro" do
 		it "Can be instantiated" do
 			raw_data = {
@@ -28,9 +28,9 @@ RSpec.describe CFCoffeeShop do
 				"distance": 521.4754398515104
 			}
 			zipcode = 12345
-			cf_coffee_shop = CFCoffeeShop.new(raw_data, zipcode)
+			cf_coffee_shop = CfCoffeeShop.new(raw_data, zipcode)
 
-			expect(cf_coffee_shop).to be_an_instance_of(CFCoffeeShop)
+			expect(cf_coffee_shop).to be_an_instance_of(CfCoffeeShop)
 		end
 	end
 	context "Methods" do
