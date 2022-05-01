@@ -18,7 +18,7 @@ RSpec.describe 'As a visitor', type: :feature do
 
 	scenario 'When I click on ~Sign up~, I am brought to a page to enter more information' do
 		visit root_path
-		find(:xpath, '/html/body/nav/div/div/div/ul/li[2]/ul/a[2]').click
+		find(:xpath, '/html/body/nav/div/div/div/ul/li[2]/ul/a[3]').click
 
 		expect(current_path).to eq(sign_up_path)
 		within '#sign_up_form' do

@@ -4,12 +4,13 @@ class CfCoffeeShop
 				:image_url,
 				:rating,
 				:coordinates,
-				:translation_types,
+				:transaction_types,
 				:location,
 				:phone,
 				:url,
 				:search_phrase,
 				:hours,
+				:price,
 				:reviews
 
 	def initialize(attributes, zipcode)
@@ -24,7 +25,21 @@ class CfCoffeeShop
 		@url = attributes[:url]
 		@search_phrase = zipcode
 		@hours = attributes[:hours]
+		@price = attributes[:price]
+		@is_open = attributes[:is_closed]
 		@reviews = []
+	end
+
+	def price_sort
+		if @price
+			@price.length
+		else
+			0
+		end
+	end
+
+	def is_open?
+		@is_open
 	end
 
 	def add_reviews(all_reviews)
@@ -38,6 +53,20 @@ class CfCoffeeShop
 		def filter_by_starbucks(location, coffee_shops)
 			coffee_shops = coffee_shops.delete_if{ |cs| cs.name.include? "Starbucks" || "starbucks" || "Starbuck" || "starbuck"}
 			coffee_shops
+		end
+
+		def filter_by_rating(coffee_shops)
+			coffee_shops = coffee_shops.sort_by do |cf|
+				cf.rating
+			end
+			coffee_shops.reverse!
+		end
+
+		def filter_by_price(coffee_shops)
+			coffee_shops = coffee_shops.sort_by do |cf|
+				cf.price_sort
+			end
+			coffee_shops.reverse!
 		end
 	end
 end

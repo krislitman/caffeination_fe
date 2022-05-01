@@ -22,7 +22,9 @@ class SearchFacade
 				when sort_type == "No Starbucks"
 					CfCoffeeShop.filter_by_starbucks(location, coffee_shops)
 				when sort_type == "Rating"
-					CoffeeShop.filter_by_rating(location)
+					CfCoffeeShop.filter_by_rating(coffee_shops)
+				when sort_type == "Price"
+					CfCoffeeShop.filter_by_price(coffee_shops)
 				end
 			rescue
 				unexpected_error(coffee_shops)

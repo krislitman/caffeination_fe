@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 09 Jan 2022 04:42:31 GMT
+      - Sun, 01 May 2022 01:19:01 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '958'
+      - '939'
       Connection:
       - keep-alive
       Server:
@@ -43,8 +43,48 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJpcF9hZGRyZXNzIjoiMTczLjE2OS45NC4xNTYiLCJjaXR5IjoiVGFtcGEiLCJjaXR5X2dlb25hbWVfaWQiOjQxNzQ3NTcsInJlZ2lvbiI6IkZsb3JpZGEiLCJyZWdpb25faXNvX2NvZGUiOiJGTCIsInJlZ2lvbl9nZW9uYW1lX2lkIjo0MTU1NzUxLCJwb3N0YWxfY29kZSI6IjMzNjAyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJVUyIsImNvdW50cnlfZ2VvbmFtZV9pZCI6NjI1MjAwMSwiY291bnRyeV9pc19ldSI6ZmFsc2UsImNvbnRpbmVudCI6Ik5vcnRoIEFtZXJpY2EiLCJjb250aW5lbnRfY29kZSI6Ik5BIiwiY29udGluZW50X2dlb25hbWVfaWQiOjYyNTUxNDksImxvbmdpdHVkZSI6LTgyLjQ2MTQsImxhdGl0dWRlIjoyNy45Niwic2VjdXJpdHkiOnsiaXNfdnBuIjpmYWxzZX0sInRpbWV6b25lIjp7Im5hbWUiOiJBbWVyaWNhL05ld19Zb3JrIiwiYWJicmV2aWF0aW9uIjoiRVNUIiwiZ210X29mZnNldCI6LTUsImN1cnJlbnRfdGltZSI6IjIzOjQyOjMxIiwiaXNfZHN0IjpmYWxzZX0sImZsYWciOnsiZW1vamkiOiLwn4e68J+HuCIsInVuaWNvZGUiOiJVKzFGMUZBIFUrMUYxRjgiLCJwbmciOiJodHRwczovL3N0YXRpYy5hYnN0cmFjdGFwaS5jb20vY291bnRyeS1mbGFncy9VU19mbGFnLnBuZyIsInN2ZyI6Imh0dHBzOi8vc3RhdGljLmFic3RyYWN0YXBpLmNvbS9jb3VudHJ5LWZsYWdzL1VTX2ZsYWcuc3ZnIn0sImN1cnJlbmN5Ijp7ImN1cnJlbmN5X25hbWUiOiJVU0QiLCJjdXJyZW5jeV9jb2RlIjoiVVNEIn0sImNvbm5lY3Rpb24iOnsiYXV0b25vbW91c19zeXN0ZW1fbnVtYmVyIjozMzM2MywiYXV0b25vbW91c19zeXN0ZW1fb3JnYW5pemF0aW9uIjoiQkhOLTMzMzYzIiwiY29ubmVjdGlvbl90eXBlIjoiQ29ycG9yYXRlIiwiaXNwX25hbWUiOiJDaGFydGVyIENvbW11bmljYXRpb25zIiwib3JnYW5pemF0aW9uX25hbWUiOiJTcGVjdHJ1bSJ9fQ==
-  recorded_at: Sun, 09 Jan 2022 04:42:31 GMT
+        eyJpcF9hZGRyZXNzIjoiMTczLjE2OS45NC4xNTYiLCJjaXR5IjpudWxsLCJjaXR5X2dlb25hbWVfaWQiOm51bGwsInJlZ2lvbiI6bnVsbCwicmVnaW9uX2lzb19jb2RlIjpudWxsLCJyZWdpb25fZ2VvbmFtZV9pZCI6bnVsbCwicG9zdGFsX2NvZGUiOm51bGwsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoiVVMiLCJjb3VudHJ5X2dlb25hbWVfaWQiOjYyNTIwMDEsImNvdW50cnlfaXNfZXUiOmZhbHNlLCJjb250aW5lbnQiOiJOb3J0aCBBbWVyaWNhIiwiY29udGluZW50X2NvZGUiOiJOQSIsImNvbnRpbmVudF9nZW9uYW1lX2lkIjo2MjU1MTQ5LCJsb25naXR1ZGUiOi05Ny44MjIsImxhdGl0dWRlIjozNy43NTEsInNlY3VyaXR5Ijp7ImlzX3ZwbiI6ZmFsc2V9LCJ0aW1lem9uZSI6eyJuYW1lIjoiQW1lcmljYS9DaGljYWdvIiwiYWJicmV2aWF0aW9uIjoiQ0RUIiwiZ210X29mZnNldCI6LTUsImN1cnJlbnRfdGltZSI6IjIwOjE5OjAxIiwiaXNfZHN0Ijp0cnVlfSwiZmxhZyI6eyJlbW9qaSI6IvCfh7rwn4e4IiwidW5pY29kZSI6IlUrMUYxRkEgVSsxRjFGOCIsInBuZyI6Imh0dHBzOi8vc3RhdGljLmFic3RyYWN0YXBpLmNvbS9jb3VudHJ5LWZsYWdzL1VTX2ZsYWcucG5nIiwic3ZnIjoiaHR0cHM6Ly9zdGF0aWMuYWJzdHJhY3RhcGkuY29tL2NvdW50cnktZmxhZ3MvVVNfZmxhZy5zdmcifSwiY3VycmVuY3kiOnsiY3VycmVuY3lfbmFtZSI6IlVTRCIsImN1cnJlbmN5X2NvZGUiOiJVU0QifSwiY29ubmVjdGlvbiI6eyJhdXRvbm9tb3VzX3N5c3RlbV9udW1iZXIiOjMzMzYzLCJhdXRvbm9tb3VzX3N5c3RlbV9vcmdhbml6YXRpb24iOiJCSE4tMzMzNjMiLCJjb25uZWN0aW9uX3R5cGUiOiJDb3Jwb3JhdGUiLCJpc3BfbmFtZSI6IkNoYXJ0ZXIgQ29tbXVuaWNhdGlvbnMiLCJvcmdhbml6YXRpb25fbmFtZSI6IlNwZWN0cnVtIn19
+  recorded_at: Sun, 01 May 2022 01:19:01 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/reverse?appid=90937a52cf6f80d7ab418146d1e18d57&lat=37.751&limit=1&lon=-97.822
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 01 May 2022 01:19:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '125'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/reverse?lat=37.75&limit=1&lon=-97.82"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Reno County","local_names":{"en":"Reno County"},"lat":37.930344,"lon":-98.1055753,"country":"US","state":"Kansas"}]'
+  recorded_at: Sun, 01 May 2022 01:19:01 GMT
 - request:
     method: get
     uri: https://ipgeolocation.abstractapi.com/v1/?api_key=07cd8013112b4259b9ec190d04322c23
@@ -64,7 +104,7 @@ http_interactions:
       message: Too Many Requests
     headers:
       Date:
-      - Sun, 09 Jan 2022 04:42:31 GMT
+      - Sun, 01 May 2022 01:19:02 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -89,5 +129,45 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":{"message":"Free plan is limited to 1 request per second.
         Please wait or upgrade to remove this restriction.","code":"too_many_requests","details":null}}'
-  recorded_at: Sun, 09 Jan 2022 04:42:31 GMT
+  recorded_at: Sun, 01 May 2022 01:19:02 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/reverse?appid=90937a52cf6f80d7ab418146d1e18d57&lat=&limit=1&lon=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 01 May 2022 01:19:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '44'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/reverse?lat=&limit=1&lon="
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"cod":"400","message":"Nothing to geocode"}'
+  recorded_at: Sun, 01 May 2022 01:19:02 GMT
 recorded_with: VCR 6.0.0

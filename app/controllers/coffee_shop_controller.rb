@@ -1,6 +1,7 @@
 class CoffeeShopController < ApplicationController
 	def show
 		@coffee_shop = YelpService.get_shop(params[:yelp_id])
+		@is_favorite = FindService.find_shop_favorite(params[:yelp_id], current_user.email) rescue false
 	end
 
 	def favorite
@@ -23,10 +24,40 @@ class CoffeeShopController < ApplicationController
 				LogCreateJob.perform_later(user)
 			end
 			flash[:notice] = "#{coffee_shop.name} has been added to your favorite Coffee Shops!"
-			redirect_to root_path
+			redirect_back(fallback_location: root_path)
 		else
 			flash[:notice] = "An error occurred, please try again"
-			redirect_to root_path
+			redirect_back(fallback_location: root_path)
+		end
+	end
+
+	def destroy
+		yelp_id = params[:format]
+		user = FindService.find_user_by_email(current_user.email)
+		if user
+			response = DestroyService.destroy_favorite(user.dig(:data, :id), yelp_id)
+			if Rails.env.development?
+				user = {
+					type: :user,
+					event: :destroy,
+					id: user.dig(:data, :id),
+					email: user.dig(:data, :attributes, :email),
+					coffee_shop: {
+						yelp_id: yelp_id
+					}
+				}
+				LogCreateJob.perform_later(user)
+			end
+			if response == "success"
+				flash[:notice] = "Favorite has been removed!"
+				redirect_back(fallback_location: root_path)
+			else
+				flash[:notice] = "An error occurred, please try again"
+				redirect_back(fallback_location: root_path)
+			end
+		else
+			flash[:notice] = "An error occurred, please try again"
+			redirect_back(fallback_location: root_path)
 		end
 	end
 end
