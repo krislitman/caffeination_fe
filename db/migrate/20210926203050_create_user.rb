@@ -7,7 +7,7 @@ class CreateUser < ActiveRecord::Migration[6.1]
       t.string :address_2, null: true
       t.string :city, null: true
       t.string :state, null: true
-      t.string :zipcode, limit: 15, null: false
+      t.string :zipcode, limit: 15
       t.string :email, unique: true, null: false
       t.string :favorite_beverage, null: true
       t.string :password_digest
