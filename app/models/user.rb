@@ -7,7 +7,7 @@ class User < ApplicationRecord
 	before_create :normalize_attributes
 
 	after_create do
-		if Rails.env.development?
+		if Rails.env.production?
 			user = {
 				type: :user,
 				event: :create,
