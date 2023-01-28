@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
 	factory :coffee_shop do
 		sequence :name do |n|

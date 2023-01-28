@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class FilterController < ApplicationController
 	before_action :location, only: [:index]
 

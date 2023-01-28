@@ -1,17 +1,19 @@
+# frozen_string_literal: true
+
 class CfCoffeeShop
 	attr_reader :yelp_id,
-				:name,
-				:image_url,
-				:rating,
-				:coordinates,
-				:transaction_types,
-				:location,
-				:phone,
-				:url,
-				:search_phrase,
-				:hours,
-				:price,
-				:reviews
+              :name,
+              :image_url,
+              :rating,
+              :coordinates,
+              :transaction_types,
+              :location,
+              :phone,
+              :url,
+              :search_phrase,
+              :hours,
+              :price,
+              :reviews
 
 	def initialize(attributes, zipcode)
 		@yelp_id = attributes[:id]
@@ -48,25 +50,27 @@ class CfCoffeeShop
 		end
 	end
 
+  # Class methods for Caffienation Coffee Shops
 	class << self
 
+    def create_coffee_shops(data, zipcode)
+			if data[:businesses]
+				return data[:businesses].map{ |business| CfCoffeeShop.new(business, zipcode) }
+			else
+				raise "Error receiving business information from Yelp, please try again later"
+			end
+    end
+
 		def filter_by_starbucks(location, coffee_shops)
-			coffee_shops = coffee_shops.delete_if{ |cs| cs.name.include? "Starbucks" || "starbucks" || "Starbuck" || "starbuck"}
-			coffee_shops
+			coffee_shops.delete_if{ |cs| cs.name.include? "Starbucks" || "starbucks" || "Starbuck" || "starbuck"}
 		end
 
 		def filter_by_rating(coffee_shops)
-			coffee_shops = coffee_shops.sort_by do |cf|
-				cf.rating
-			end
-			coffee_shops.reverse!
+			coffee_shops.sort_by{ |cf| cf.rating }.reverse!
 		end
 
 		def filter_by_price(coffee_shops)
-			coffee_shops = coffee_shops.sort_by do |cf|
-				cf.price_sort
-			end
-			coffee_shops.reverse!
+			coffee_shops.sort_by{ |cf| cf.price_sort }.reverse!
 		end
 	end
 end

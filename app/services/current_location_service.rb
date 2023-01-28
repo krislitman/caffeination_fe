@@ -1,21 +1,25 @@
-class CurrentLocationService
+# frozen_string_literal: true
 
+class CurrentLocationService
 	class << self
-		def get_current_location
+		def abstract_location
 			response = HTTParty.get(
 				"https://ipgeolocation.abstractapi.com/v1/?api_key=#{Figaro.env.api_key}"
 			)
-			code = find_postal_code(response)
-			if code.nil?
+
+      if postal_code = find_postal_code(response)
+        postal_code
+      else
 				coordinates = find_lat_lon(response)
-				response2 = try_open_weather(coordinates)
+				response2 = weather_location(coordinates)
+
 				if (response2.dig("cod") != "400" rescue nil)
 					response2.first.dig("name") || nil
 				end
-			end
+		  end
 		end
 
-		def try_open_weather(coordinates)
+		def weather_location(coordinates)
 			HTTParty.get(
 				"http://api.openweathermap.org/geo/1.0/reverse",
 				query: {

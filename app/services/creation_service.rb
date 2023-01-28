@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
+
 class CreationService
 	class << self
-
 		def clean_up_test
 			HTTParty.delete('http://localhost:3001/api/v1/store')
 		end

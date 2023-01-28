@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class YelpService
 	class << self
-
 		def get_shop(yelp_id)
 			response = yelp_get_shop(yelp_id)
 			yelp_data = JSON.parse(response.body, symbolize_names: true)
 			shop = CfCoffeeShop.new(yelp_data, nil)
+
 			if shop
 				response_two = yelp_get_reviews(yelp_id)
 				parsed = JSON.parse(response_two.body, symbolize_names: true)[:reviews]
@@ -18,20 +20,8 @@ class YelpService
 			zipcode = zipcode[:query].to_s
 			response = yelp_search(zipcode)
 			yelp_data = JSON.parse(response.body, symbolize_names: true)
-			create_coffee_shops(yelp_data, zipcode)
-		end
 
-		def create_coffee_shops(data, zipcode)
-			all_stores = []
-			if data[:businesses]
-				data[:businesses].each do |b|
-					s = CfCoffeeShop.new(b, zipcode)
-					all_stores.push(s)
-				end
-			else
-				raise "Error receiving business information from Yelp, please try again later"
-			end
-			all_stores
+			CfCoffeeShop.create_coffee_shops(yelp_data, zipcode)
 		end
 
 		def yelp_search(zipcode)

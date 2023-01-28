@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "rails_helper"
 
 RSpec.describe "As a visitor who searched for Coffee Shops in their location", type: :feature do

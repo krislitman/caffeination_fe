@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 class LogService
 	class << self
-
 		def create(payload)
 			local_connection(payload)
 		end

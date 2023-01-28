@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 class DestroyService
 	class << self
-
 		def destroy_favorite(user_id, yelp_id)
 			response = HTTParty.delete(
 				"#{Figaro.env.backend}favorite",
