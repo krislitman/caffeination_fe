@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class CfFavorite
 	attr_reader :name,
-				:yelp_id
+				      :yelp_id
 
 	def initialize(attributes)
 		@name = attributes.dig(:attributes, :name)
@@ -8,7 +10,6 @@ class CfFavorite
 	end
 
 	class << self
-
 		def create(data)
 			data.map do |shop|
 				CfFavorite.new(shop)

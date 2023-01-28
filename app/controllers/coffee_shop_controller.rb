@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class CoffeeShopController < ApplicationController
 	def show
 		@coffee_shop = YelpService.get_shop(params[:yelp_id])
-		@is_favorite = FindService.find_shop_favorite(params[:yelp_id], current_user.email) rescue false
+		@is_favorite = FindService.find_shop_favorite(params[:yelp_id], current_user&.email)
 	end
 
 	def favorite

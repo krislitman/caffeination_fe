@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class LogCreateJob < ApplicationJob
 	queue_as :default
 

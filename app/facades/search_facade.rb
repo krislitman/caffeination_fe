@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 class SearchFacade
 	class << self
-
 		def route(params, location)
 			begin
 				case

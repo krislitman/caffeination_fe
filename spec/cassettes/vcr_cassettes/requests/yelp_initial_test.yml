@@ -26,34 +26,36 @@ http_interactions:
       - application/json
       Ratelimit-Dailylimit:
       - '5000'
+      Ratelimit-Remaining:
+      - '4964'
       X-B3-Sampled:
       - '0'
       Ratelimit-Resettime:
-      - '2021-11-15T00:00:00+00:00'
+      - '2023-01-29T00:00:00+00:00'
+      X-Zipkin-Id:
+      - f5c3473071803971
       Server:
       - envoy
-      X-Zipkin-Id:
-      - ca61aba539b83199
-      Ratelimit-Remaining:
-      - '4988'
       X-Routing-Service:
-      - routing-main--useast1-b9c656cb7-94cmz; site=public_api_v3
+      - routing-main--useast1-5c95747677-6k6qk; site=public_api_v3
       X-Cloudmap:
       - routing_useast1
+      X-Mode:
+      - ro
       X-Proxied:
-      - 10-65-73-48-useast1aprod
+      - 10-65-68-45-useast1aprod
       X-Extlb:
-      - 10-65-73-48-useast1aprod
+      - 10-65-68-45-useast1aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 14 Nov 2021 03:58:39 GMT
+      - Sat, 28 Jan 2023 03:21:21 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-mia11377-MIA
+      - cache-mia11371-MIA
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -64,62 +66,176 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"businesses": [{"id": "S5LnH1njwFBlq77tIkjI1g", "alias": "yolk-white-and-associates-tampa",
-        "name": "Yolk White & Associates", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Rfmxcgqo5xq-aLPIe1JYIw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/yolk-white-and-associates-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 227, "categories": [{"alias": "foodtrucks", "title": "Food
-        Trucks"}, {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "breakfast_brunch",
+      string: '{"businesses": [{"id": "vqoJDSfLY3FMTZY_ogLS_w", "alias": "jb3-doughjoe-ybor-city",
+        "name": "JB3 DoughJoe", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/gJ-3Pcgv9wnzmfP4U-agrw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/jb3-doughjoe-ybor-city?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 6, "categories": [{"alias": "bakeries", "title": "Bakeries"},
+        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "breakfast_brunch",
         "title": "Breakfast & Brunch"}], "rating": 5.0, "coordinates": {"latitude":
-        27.9454650532963, "longitude": -82.4588141217828}, "transactions": ["delivery",
-        "pickup"], "price": "$", "location": {"address1": "100 N Ashley Dr", "address2":
-        "", "address3": "", "city": "Tampa", "zip_code": "33602", "country": "US",
-        "state": "FL", "display_address": ["100 N Ashley Dr", "Tampa, FL 33602"]},
-        "phone": "+18134538256", "display_phone": "(813) 453-8256", "distance": 521.4754398515104},
-        {"id": "yGH9V9WTNGSZ6AHOW3kH-w", "alias": "ginger-beard-coffee-tampa", "name":
-        "Ginger Beard Coffee", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/t2Tw3pTUhAJuT9HgSeXcPA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/ginger-beard-coffee-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 159, "categories": [{"alias": "coffee", "title": "Coffee &
+        27.96101, "longitude": -82.45147}, "transactions": [], "location": {"address1":
+        "1806 1/2 N Nebraska Ave", "address2": "", "address3": null, "city": "Ybor
+        City", "zip_code": "33602", "country": "US", "state": "FL", "display_address":
+        ["1806 1/2 N Nebraska Ave", "Ybor City, FL 33602"]}, "phone": "", "display_phone":
+        "", "distance": 1669.5963946845593}, {"id": "Hj68GMB1E31JRtm5DbQcPA", "alias":
+        "tunisian-sweet-temple-terrace", "name": "Tunisian Sweet", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/cBYTV7th1uVtZEHsF1te5A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tunisian-sweet-temple-terrace?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 11, "categories": [{"alias": "desserts", "title": "Desserts"},
+        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "pastashops", "title":
+        "Pasta Shops"}], "rating": 5.0, "coordinates": {"latitude": 28.031215, "longitude":
+        -82.393884}, "transactions": ["pickup", "delivery"], "location": {"address1":
+        "8890 N 56th St", "address2": null, "address3": null, "city": "Temple Terrace",
+        "zip_code": "33617", "country": "US", "state": "FL", "display_address": ["8890
+        N 56th St", "Temple Terrace, FL 33617"]}, "phone": "+18139803234", "display_phone":
+        "(813) 980-3234", "distance": 11311.317779780129}, {"id": "AxtOW_b6a6iuojs_ObGpzA",
+        "alias": "taba-brew-tampa", "name": "Taba Brew", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/LTWuHK9Dx7kFfPPVGvM2_Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/taba-brew-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 10, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}], "rating": 5.0, "coordinates": {"latitude": 27.9602239252675, "longitude":
+        -82.4416590481997}, "transactions": [], "price": "$", "location": {"address1":
+        "1601 E 7th Ave", "address2": "", "address3": "Tabanero Cigars", "city": "Tampa",
+        "zip_code": "33605", "country": "US", "state": "FL", "display_address": ["1601
+        E 7th Ave", "Tabanero Cigars", "Tampa, FL 33605"]}, "phone": "", "display_phone":
+        "", "distance": 2343.6963980719424}, {"id": "bhdHMWp4JXZmX5NKqxk3VA", "alias":
+        "drnk-coffee-tea-and-qwench-juice-bar-tampa", "name": "DRNK Coffee + Tea and
+        QWENCH Juice Bar", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/YBcE0fiFlM16Kj-JCDdpFw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/drnk-coffee-tea-and-qwench-juice-bar-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 8, "categories": [{"alias": "coffee", "title": "Coffee & Tea"},
+        {"alias": "juicebars", "title": "Juice Bars & Smoothies"}, {"alias": "breakfast_brunch",
+        "title": "Breakfast & Brunch"}], "rating": 5.0, "coordinates": {"latitude":
+        27.890481, "longitude": -82.52952}, "transactions": ["pickup", "delivery"],
+        "location": {"address1": "5240 Bridge St", "address2": "", "address3": null,
+        "city": "Tampa", "zip_code": "33611", "country": "US", "state": "FL", "display_address":
+        ["5240 Bridge St", "Tampa, FL 33611"]}, "phone": "+18134431935", "display_phone":
+        "(813) 443-1935", "distance": 9376.48886042659}, {"id": "sYkFye93bD0IW8VVBdMfnQ",
+        "alias": "dignitary-kava-house-tampa", "name": "Dignitary Kava House", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/jM6bdCi1PNXnBaeBteX9AQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/dignitary-kava-house-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 6, "categories": [{"alias": "vitaminssupplements", "title":
+        "Vitamins & Supplements"}, {"alias": "coffee", "title": "Coffee & Tea"}, {"alias":
+        "tea", "title": "Tea Rooms"}], "rating": 5.0, "coordinates": {"latitude":
+        27.89403, "longitude": -82.52715}, "transactions": ["delivery"], "location":
+        {"address1": "4817 S W Shore Blvd", "address2": null, "address3": null, "city":
+        "Tampa", "zip_code": "33611", "country": "US", "state": "FL", "display_address":
+        ["4817 S W Shore Blvd", "Tampa, FL 33611"]}, "phone": "+18139994968", "display_phone":
+        "(813) 999-4968", "distance": 8866.884166415231}, {"id": "yQK9YpO1lnQqcpiT7uZHHA",
+        "alias": "flower-crown-kombucha-tampa", "name": "Flower Crown Kombucha", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/cdaPAn21PPk8G7N2uxfg4A/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/flower-crown-kombucha-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 21, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "kombucha", "title": "Kombucha"}], "rating": 5.0, "coordinates":
+        {"latitude": 27.958680134059833, "longitude": -82.45995003730059}, "transactions":
+        ["pickup", "delivery"], "location": {"address1": "1607 N Franklin St", "address2":
+        "", "address3": null, "city": "Tampa", "zip_code": "33602", "country": "US",
+        "state": "FL", "display_address": ["1607 N Franklin St", "Tampa, FL 33602"]},
+        "phone": "", "display_phone": "", "distance": 1071.9095193985443}, {"id":
+        "6Gz0RfxJvDi010TWRGAuCw", "alias": "the-big-guava-tampa-tampa", "name": "The
+        Big Guava Tampa", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/SEETM18Xslx61f59wFF5aQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-big-guava-tampa-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 14, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "donuts", "title": "Donuts"}, {"alias": "waffles", "title":
+        "Waffles"}], "rating": 5.0, "coordinates": {"latitude": 27.994563966796864,
+        "longitude": -82.5107712}, "transactions": [], "location": {"address1": "3936
+        W Hillsborough Ave", "address2": "", "address3": null, "city": "Tampa", "zip_code":
+        "33614", "country": "US", "state": "FL", "display_address": ["3936 W Hillsborough
+        Ave", "Tampa, FL 33614"]}, "phone": "+18133531188", "display_phone": "(813)
+        353-1188", "distance": 6954.4713735821315}, {"id": "SyELo2Uet1VWOpXuE6tPpg",
+        "alias": "rolling-tin-cafe-tampa", "name": "Rolling Tin Cafe", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/v3kYvm5f-XQ_0XEumiueoQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/rolling-tin-cafe-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 11, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "foodtrucks", "title": "Food Trucks"}], "rating": 5.0, "coordinates":
+        {"latitude": 28.02689, "longitude": -82.45154}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "8500 N Nebraska Ave", "address2":
+        null, "address3": "", "city": "Tampa", "zip_code": "33604", "country": "US",
+        "state": "FL", "display_address": ["8500 N Nebraska Ave", "Tampa, FL 33604"]},
+        "phone": "+18136791225", "display_phone": "(813) 679-1225", "distance": 8708.036419574346},
+        {"id": "Visax-kBz0AY_34PkuvXSQ", "alias": "k-dessert-cafe-tampa-bay", "name":
+        "K Dessert cafe", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/IFalkR1n_Gub0ce3kpg4IQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/k-dessert-cafe-tampa-bay?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 48, "categories": [{"alias": "bubbletea", "title": "Bubble
+        Tea"}, {"alias": "desserts", "title": "Desserts"}, {"alias": "coffee", "title":
+        "Coffee & Tea"}], "rating": 5.0, "coordinates": {"latitude": 27.99666, "longitude":
+        -82.56349}, "transactions": [], "location": {"address1": "7525 W Hillsborough
+        Ave", "address2": null, "address3": "", "city": "Tampa Bay", "zip_code": "33615",
+        "country": "US", "state": "FL", "display_address": ["7525 W Hillsborough Ave",
+        "Tampa Bay, FL 33615"]}, "phone": "+18132900777", "display_phone": "(813)
+        290-0777", "distance": 11376.649736314235}, {"id": "ggRUzKbKb3tJFDeavKG1Xw",
+        "alias": "craft-kafe-tampa", "name": "Craft Kafe", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/kg4fRnVsaluppVRufM8Czw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/craft-kafe-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 9, "categories": [{"alias": "bakeries", "title": "Bakeries"},
+        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "breakfast_brunch",
+        "title": "Breakfast & Brunch"}], "rating": 5.0, "coordinates": {"latitude":
+        27.94489, "longitude": -82.46477}, "transactions": [], "location": {"address1":
+        "422 W Kennedy Blvd", "address2": "", "address3": null, "city": "Tampa", "zip_code":
+        "33606", "country": "US", "state": "FL", "display_address": ["422 W Kennedy
+        Blvd", "Tampa, FL 33606"]}, "phone": "", "display_phone": "", "distance":
+        552.1132849679404}, {"id": "g0cza9j995IS7VFsSGmMTQ", "alias": "coffeeme-tampa",
+        "name": "CoffeeMe", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/O-GwKniV3-RmR9oaCzC56Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/coffeeme-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 31, "categories": [{"alias": "cafes", "title": "Cafes"}, {"alias":
+        "coffee", "title": "Coffee & Tea"}], "rating": 5.0, "coordinates": {"latitude":
+        28.03367, "longitude": -82.4757}, "transactions": ["pickup", "delivery"],
+        "price": "$", "location": {"address1": "1457 W Busch Blvd", "address2": "",
+        "address3": null, "city": "Tampa", "zip_code": "33612", "country": "US", "state":
+        "FL", "display_address": ["1457 W Busch Blvd", "Tampa, FL 33612"]}, "phone":
+        "+18133979237", "display_phone": "(813) 397-9237", "distance": 9493.446395514697},
+        {"id": "CWoQ8o-lyQuQOBSkLQk01g", "alias": "kale-me-crazy-tampa", "name": "Kale
+        Me Crazy", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ZXNbzJAJQq9_naSY0bqEuQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kale-me-crazy-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 21, "categories": [{"alias": "juicebars", "title": "Juice
+        Bars & Smoothies"}, {"alias": "coffee", "title": "Coffee & Tea"}, {"alias":
+        "acaibowls", "title": "Acai Bowls"}], "rating": 5.0, "coordinates": {"latitude":
+        27.9532425, "longitude": -82.5035449}, "transactions": ["pickup", "delivery"],
+        "price": "$$", "location": {"address1": "1110 Gramercy Ln", "address2": "",
+        "address3": null, "city": "Tampa", "zip_code": "33607", "country": "US", "state":
+        "FL", "display_address": ["1110 Gramercy Ln", "Tampa, FL 33607"]}, "phone":
+        "", "display_phone": "", "distance": 4087.3256909790553}, {"id": "yGH9V9WTNGSZ6AHOW3kH-w",
+        "alias": "ginger-beard-coffee-tampa", "name": "Ginger Beard Coffee", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/t2Tw3pTUhAJuT9HgSeXcPA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/ginger-beard-coffee-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 183, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}], "rating": 5.0, "coordinates": {"latitude": 27.9512720454412, "longitude":
         -82.4474974110451}, "transactions": ["delivery"], "price": "$", "location":
         {"address1": "1208 E Kennedy Blvd", "address2": "Ste 112", "address3": "",
         "city": "Tampa", "zip_code": "33602", "country": "US", "state": "FL", "display_address":
         ["1208 E Kennedy Blvd", "Ste 112", "Tampa, FL 33602"]}, "phone": "+18134340795",
         "display_phone": "(813) 434-0795", "distance": 1443.3402949090569}, {"id":
-        "Z3KyNcSMuOj_WxMwSC0Njw", "alias": "desserts-by-toffee-to-go-tampa", "name":
-        "Desserts by Toffee to Go", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/zVETp0BwJ4OyWGwsJusGUQ/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/desserts-by-toffee-to-go-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 234, "categories": [{"alias": "desserts", "title": "Desserts"},
-        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "icecream", "title":
-        "Ice Cream & Frozen Yogurt"}], "rating": 5.0, "coordinates": {"latitude":
-        27.91994, "longitude": -82.49682}, "transactions": ["delivery"], "price":
-        "$$", "location": {"address1": "3251 W Bay To Bay Blvd", "address2": "", "address3":
-        "", "city": "Tampa", "zip_code": "33629", "country": "US", "state": "FL",
-        "display_address": ["3251 W Bay To Bay Blvd", "Tampa, FL 33629"]}, "phone":
-        "+18136050655", "display_phone": "(813) 605-0655", "distance": 4725.681185728245},
-        {"id": "RmZ9CORyRONwfJYGrPPpbA", "alias": "jet-city-espresso-hyde-park-tampa",
-        "name": "Jet City Espresso Hyde Park", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rE29XPys_irQXBHkFXR-NA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/jet-city-espresso-hyde-park-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 148, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "juicebars", "title": "Juice Bars & Smoothies"}], "rating":
-        5.0, "coordinates": {"latitude": 27.94055, "longitude": -82.46932}, "transactions":
-        ["delivery"], "price": "$", "location": {"address1": "318 S Edison Ave", "address2":
-        "", "address3": "", "city": "Tampa", "zip_code": "33606", "country": "US",
-        "state": "FL", "display_address": ["318 S Edison Ave", "Tampa, FL 33606"]},
-        "phone": "+18135415048", "display_phone": "(813) 541-5048", "distance": 1204.833999852909},
-        {"id": "OFeOtZ_8FJvDUb9BEfnyTw", "alias": "nicahabana-cigars-tampa", "name":
-        "Nicahabana Cigars", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/ZIuluLfPn1yTryjEtgzQ0Q/o.jpg",
+        "OFeOtZ_8FJvDUb9BEfnyTw", "alias": "nicahabana-cigars-tampa", "name": "Nicahabana
+        Cigars", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/TqTqeNVgEUOSdYX6z7Q7_g/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/nicahabana-cigars-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 71, "categories": [{"alias": "tobaccoshops", "title": "Tobacco
+        "review_count": 79, "categories": [{"alias": "tobaccoshops", "title": "Tobacco
         Shops"}, {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 5.0, "coordinates":
         {"latitude": 27.960153, "longitude": -82.4414759874344}, "transactions": [],
         "price": "$", "location": {"address1": "1605 7th Ave", "address2": "", "address3":
         "", "city": "Tampa", "zip_code": "33605", "country": "US", "state": "FL",
         "display_address": ["1605 7th Ave", "Tampa, FL 33605"]}, "phone": "+18132483310",
         "display_phone": "(813) 248-3310", "distance": 2354.963715760153}, {"id":
-        "5HRLUzKrs27kuQhgJQijnQ", "alias": "spaddys-coffee-tampa-2", "name": "Spaddy''s
-        Coffee", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/2Cw2QrxiMHaKBKZAWbcI9w/o.jpg",
+        "BvehkI4buznukGx62QLKKg", "alias": "elevation-coffee-roasters-tampa-3", "name":
+        "Elevation Coffee Roasters", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/F16Q0Xdi3VqaxmGdV57Rtg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/elevation-coffee-roasters-tampa-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 10, "categories": [{"alias": "coffeeroasteries", "title":
+        "Coffee Roasteries"}, {"alias": "coffee", "title": "Coffee & Tea"}], "rating":
+        5.0, "coordinates": {"latitude": 27.95870931413107, "longitude": -82.46008824005055},
+        "transactions": [], "location": {"address1": "1607 N Franklin St", "address2":
+        "", "address3": "inside Brave Haus", "city": "Tampa", "zip_code": "33602",
+        "country": "US", "state": "FL", "display_address": ["1607 N Franklin St",
+        "inside Brave Haus", "Tampa, FL 33602"]}, "phone": "", "display_phone": "",
+        "distance": 1072.6298984272955}, {"id": "Z3KyNcSMuOj_WxMwSC0Njw", "alias":
+        "desserts-by-toffee-to-go-tampa", "name": "Desserts by Toffee to Go", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/NhnQl33vUte3GL3rwpByEg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/desserts-by-toffee-to-go-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 267, "categories": [{"alias": "desserts", "title": "Desserts"},
+        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "icecream", "title":
+        "Ice Cream & Frozen Yogurt"}], "rating": 5.0, "coordinates": {"latitude":
+        27.91994, "longitude": -82.49682}, "transactions": ["pickup", "delivery"],
+        "price": "$$", "location": {"address1": "3251 W Bay To Bay Blvd", "address2":
+        "", "address3": "", "city": "Tampa", "zip_code": "33629", "country": "US",
+        "state": "FL", "display_address": ["3251 W Bay To Bay Blvd", "Tampa, FL 33629"]},
+        "phone": "+18136050655", "display_phone": "(813) 605-0655", "distance": 4725.681185728245},
+        {"id": "5HRLUzKrs27kuQhgJQijnQ", "alias": "spaddys-coffee-tampa-2", "name":
+        "Spaddy''s Coffee", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Q6BAYZdme4BlunldEPQqWg/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/spaddys-coffee-tampa-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 129, "categories": [{"alias": "coffee", "title": "Coffee &
+        "review_count": 154, "categories": [{"alias": "coffee", "title": "Coffee &
         Tea"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
         "foodtrucks", "title": "Food Trucks"}], "rating": 5.0, "coordinates": {"latitude":
         27.9942110708573, "longitude": -82.4596359422907}, "transactions": ["delivery"],
@@ -127,152 +243,36 @@ http_interactions:
         "address3": null, "city": "Tampa", "zip_code": "33603", "country": "US", "state":
         "FL", "display_address": ["5206 N Florida Ave", "Tampa, FL 33603"]}, "phone":
         "+19548292111", "display_phone": "(954) 829-2111", "distance": 5008.98740235868},
-        {"id": "x5c_Lna3CYLQH4pAXFCBLg", "alias": "the-lab-tampa-tampa", "name": "The
-        Lab Tampa", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/XtO7I7lKfVsdyULgo2WfFQ/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/the-lab-tampa-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 177, "categories": [{"alias": "coffeeroasteries", "title":
-        "Coffee Roasteries"}, {"alias": "coffee", "title": "Coffee & Tea"}, {"alias":
-        "cafes", "title": "Cafes"}], "rating": 4.5, "coordinates": {"latitude": 27.9513050053247,
-        "longitude": -82.4770666451868}, "transactions": ["delivery"], "price": "$",
-        "location": {"address1": "1703 W State St", "address2": null, "address3":
-        "", "city": "Tampa", "zip_code": "33606", "country": "US", "state": "FL",
-        "display_address": ["1703 W State St", "Tampa, FL 33606"]}, "phone": "", "display_phone":
-        "", "distance": 1497.5431617417862}, {"id": "J9Bc1bZuxGo2VtAo-txgRA", "alias":
-        "king-state-tampa", "name": "King State", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/v5n3DUH-GBGFXajsWGjXHA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/king-state-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 136, "categories": [{"alias": "beerbar", "title": "Beer Bar"},
-        {"alias": "newamerican", "title": "American (New)"}, {"alias": "coffee", "title":
-        "Coffee & Tea"}], "rating": 4.5, "coordinates": {"latitude": 27.97111, "longitude":
-        -82.45429}, "transactions": ["delivery"], "price": "$", "location": {"address1":
-        "520 E Floribraska Ave", "address2": null, "address3": "", "city": "Tampa",
-        "zip_code": "33603", "country": "US", "state": "FL", "display_address": ["520
-        E Floribraska Ave", "Tampa, FL 33603"]}, "phone": "+18132212100", "display_phone":
-        "(813) 221-2100", "distance": 2547.539408242612}, {"id": "IRkQtjBxgVEqAOdtjgi6hQ",
-        "alias": "simply-done-donuts-tampa-2", "name": "Simply Done Donuts", "image_url":
-        "https://s3-media1.fl.yelpcdn.com/bphoto/dWZSw2m8yHTOrtIZv1kFKg/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/simply-done-donuts-tampa-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 72, "categories": [{"alias": "donuts", "title": "Donuts"},
-        {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 5.0, "coordinates":
-        {"latitude": 27.92599, "longitude": -82.50615}, "transactions": ["delivery"],
-        "price": "$", "location": {"address1": "2109 S Dale Mabry Hwy", "address2":
-        "", "address3": null, "city": "Tampa", "zip_code": "33629", "country": "US",
-        "state": "FL", "display_address": ["2109 S Dale Mabry Hwy", "Tampa, FL 33629"]},
-        "phone": "+18132533100", "display_phone": "(813) 253-3100", "distance": 5049.586377510562},
-        {"id": "L2tGLS6O9bwVbHWKJbEhRg", "alias": "bula-kavananda-tampa-2", "name":
-        "Bula Kavananda", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/0ACulXhKTA9rupPQym1J4Q/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/bula-kavananda-tampa-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 36, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "bars", "title": "Bars"}], "rating": 5.0, "coordinates":
-        {"latitude": 28.000015, "longitude": -82.459151}, "transactions": ["delivery",
-        "pickup"], "location": {"address1": "5803 N Florida Ave", "address2": null,
-        "address3": "", "city": "Tampa", "zip_code": "33604", "country": "US", "state":
-        "FL", "display_address": ["5803 N Florida Ave", "Tampa, FL 33604"]}, "phone":
-        "+18134445571", "display_phone": "(813) 444-5571", "distance": 5656.304705402084},
-        {"id": "6F4JadEP6ouUvNiIKr8pMg", "alias": "22nd-street-coffee-tampa-2", "name":
-        "22nd Street Coffee", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/tj-k81z4hdKBJiYU-Dwkeg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/22nd-street-coffee-tampa-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 55, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}], "rating": 5.0, "coordinates": {"latitude": 27.95024, "longitude":
-        -82.43489}, "transactions": ["delivery"], "price": "$", "location": {"address1":
-        "208 N 22nd St", "address2": "", "address3": null, "city": "Tampa", "zip_code":
-        "33605", "country": "US", "state": "FL", "display_address": ["208 N 22nd St",
-        "Tampa, FL 33605"]}, "phone": "+18133040373", "display_phone": "(813) 304-0373",
-        "distance": 2670.6208384996626}, {"id": "Mxlw3cSKkWv5o4HdRWGTPg", "alias":
-        "tebella-tea-company-tampa", "name": "TeBella Tea Company", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/fQCcBM6UCmP6nUwRWyui7Q/o.jpg",
+        {"id": "RmZ9CORyRONwfJYGrPPpbA", "alias": "jet-city-espresso-hyde-park-tampa",
+        "name": "Jet City Espresso Hyde Park", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rE29XPys_irQXBHkFXR-NA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/jet-city-espresso-hyde-park-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 166, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "juicebars", "title": "Juice Bars & Smoothies"}], "rating":
+        5.0, "coordinates": {"latitude": 27.94055, "longitude": -82.46932}, "transactions":
+        ["delivery"], "price": "$", "location": {"address1": "318 S Edison Ave", "address2":
+        "", "address3": "", "city": "Tampa", "zip_code": "33606", "country": "US",
+        "state": "FL", "display_address": ["318 S Edison Ave", "Tampa, FL 33606"]},
+        "phone": "+18135415048", "display_phone": "(813) 541-5048", "distance": 1204.1203794479782},
+        {"id": "Mxlw3cSKkWv5o4HdRWGTPg", "alias": "tebella-tea-company-tampa", "name":
+        "TeBella Tea Company", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/fQCcBM6UCmP6nUwRWyui7Q/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/tebella-tea-company-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 65, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "tea", "title": "Tea Rooms"}], "rating": 4.5, "coordinates":
+        "review_count": 78, "categories": [{"alias": "coffee", "title": "Coffee &
+        Tea"}, {"alias": "tea", "title": "Tea Rooms"}], "rating": 5.0, "coordinates":
         {"latitude": 27.926782, "longitude": -82.453139}, "transactions": ["delivery"],
         "price": "$$", "location": {"address1": "227 E Davis Blvd", "address2": null,
         "address3": "", "city": "Tampa", "zip_code": "33606", "country": "US", "state":
         "FL", "display_address": ["227 E Davis Blvd", "Tampa, FL 33606"]}, "phone":
         "+18132541212", "display_phone": "(813) 254-1212", "distance": 2641.897677337771},
-        {"id": "eM8kmbbkjtvYKL2kHsARsQ", "alias": "the-portico-cafe-tampa", "name":
-        "The Portico Cafe", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/LCUIaDKShSfyHjYO4GF5dA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/the-portico-cafe-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 70, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
-        "sandwiches", "title": "Sandwiches"}], "rating": 4.5, "coordinates": {"latitude":
-        27.9527707, "longitude": -82.458873}, "transactions": ["delivery"], "price":
-        "$", "location": {"address1": "1001 N Florida Ave", "address2": "", "address3":
-        null, "city": "Tampa", "zip_code": "33602", "country": "US", "state": "FL",
-        "display_address": ["1001 N Florida Ave", "Tampa, FL 33602"]}, "phone": "+18132222233",
-        "display_phone": "(813) 222-2233", "distance": 501.1951875563806}, {"id":
-        "kvbuD3U93O2w8YYPzsCxlA", "alias": "swann-ave-market-tampa", "name": "Swann
-        Ave Market", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/4KrqK828dd4VFjUoNrxR7g/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/swann-ave-market-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 70, "categories": [{"alias": "beer_and_wine", "title": "Beer,
-        Wine & Spirits"}, {"alias": "delis", "title": "Delis"}, {"alias": "coffee",
-        "title": "Coffee & Tea"}], "rating": 4.5, "coordinates": {"latitude": 27.9375226216526,
-        "longitude": -82.4704477778049}, "transactions": ["delivery"], "price": "$$",
-        "location": {"address1": "1021 W Swann Ave", "address2": "", "address3": "",
-        "city": "Tampa", "zip_code": "33606", "country": "US", "state": "FL", "display_address":
-        ["1021 W Swann Ave", "Tampa, FL 33606"]}, "phone": "+18132515000", "display_phone":
-        "(813) 251-5000", "distance": 1541.8816687141575}, {"id": "3LcxYHWulzue7Um9q_FK5g",
-        "alias": "spaddys-coffee-co-tampa-2", "name": "Spaddys Coffee Co", "image_url":
-        "https://s3-media4.fl.yelpcdn.com/bphoto/o2v30G4_6zuZpNoiOJcY-Q/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/spaddys-coffee-co-tampa-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 23, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}], "rating": 5.0, "coordinates": {"latitude": 27.880098913299, "longitude":
-        -82.4938828502415}, "transactions": ["delivery"], "price": "$", "location":
-        {"address1": "6102 S MacDill Ave", "address2": "", "address3": null, "city":
-        "Tampa", "zip_code": "33611", "country": "US", "state": "FL", "display_address":
-        ["6102 S MacDill Ave", "Tampa, FL 33611"]}, "phone": "", "display_phone":
-        "", "distance": 8298.865357707933}, {"id": "U6PmPJdNMI_dTUPySS5TDg", "alias":
-        "fruitwood-standup-market-tampa", "name": "Fruitwood Standup Market", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/bphoto/eNHT5oQMgjDcyV0231xgHQ/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/fruitwood-standup-market-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 160, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "cafes", "title": "Cafes"}, {"alias": "hotdogs", "title":
-        "Fast Food"}], "rating": 4.5, "coordinates": {"latitude": 27.9375149, "longitude":
-        -82.4821337}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
-        "2203 W Swann Ave", "address2": "", "address3": "", "city": "Tampa", "zip_code":
-        "33606", "country": "US", "state": "FL", "display_address": ["2203 W Swann
-        Ave", "Tampa, FL 33606"]}, "phone": "+18132547500", "display_phone": "(813)
-        254-7500", "distance": 2378.9261376088034}, {"id": "SqnMmUeoWrc5g66wAHOq4g",
-        "alias": "caffeine-roasters-tampa-6", "name": "Caffeine Roasters", "image_url":
-        "https://s3-media1.fl.yelpcdn.com/bphoto/c_TNs_yAZM46RoG75jPdAQ/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/caffeine-roasters-tampa-6?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 127, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "cafes", "title": "Cafes"}, {"alias": "coffeeroasteries",
-        "title": "Coffee Roasteries"}], "rating": 4.5, "coordinates": {"latitude":
-        27.9512542025762, "longitude": -82.4602117734113}, "transactions": [], "price":
-        "$$", "location": {"address1": "212 E Cass St", "address2": "", "address3":
-        "", "city": "Tampa", "zip_code": "33602", "country": "US", "state": "FL",
-        "display_address": ["212 E Cass St", "Tampa, FL 33602"]}, "phone": "+18133740783",
-        "display_phone": "(813) 374-0783", "distance": 304.6728149733498}, {"id":
-        "sCkBUXw-GrMvRRxcun-Alg", "alias": "fusion-bowl-tampa", "name": "Fusion Bowl",
-        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/dRYYimU1F_62LiR6aialLA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/fusion-bowl-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 187, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "vietnamese", "title": "Vietnamese"}, {"alias": "asianfusion",
-        "title": "Asian Fusion"}], "rating": 4.5, "coordinates": {"latitude": 27.9486961364746,
-        "longitude": -82.4557876586914}, "transactions": ["delivery", "pickup"], "price":
-        "$$", "location": {"address1": "504 E Kennedy Blvd", "address2": "", "address3":
-        "", "city": "Tampa", "zip_code": "33602", "country": "US", "state": "FL",
-        "display_address": ["504 E Kennedy Blvd", "Tampa, FL 33602"]}, "phone": "+18132220102",
-        "display_phone": "(813) 222-0102", "distance": 615.5790297900038}, {"id":
-        "osomcHxvrAGlXoDvlb9G_g", "alias": "espresso-yourself-coffee-shop-tampa",
-        "name": "Espresso Yourself Coffee Shop", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HRFgvUWXVNu_OwIm61zijg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/espresso-yourself-coffee-shop-tampa?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 19, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "bakeries", "title": "Bakeries"}, {"alias": "sandwiches",
-        "title": "Sandwiches"}], "rating": 5.0, "coordinates": {"latitude": 27.890645,
-        "longitude": -82.50595}, "transactions": ["delivery", "pickup"], "location":
-        {"address1": "5130 S Dale Mabry Hwy", "address2": "Ste 106", "address3": "",
-        "city": "Tampa", "zip_code": "33611", "country": "US", "state": "FL", "display_address":
-        ["5130 S Dale Mabry Hwy", "Ste 106", "Tampa, FL 33611"]}, "phone": "", "display_phone":
-        "", "distance": 7817.360222786111}, {"id": "YICdPG1yr1tzlZBd05xcQQ", "alias":
-        "urban-bungalow-tampa-3", "name": "Urban Bungalow", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/i2pxBWM8Q-1pmuge5hfW_w/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/urban-bungalow-tampa-3?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
-        "review_count": 30, "categories": [{"alias": "giftshops", "title": "Gift Shops"},
-        {"alias": "coffee", "title": "Coffee & Tea"}], "rating": 5.0, "coordinates":
-        {"latitude": 27.99585, "longitude": -82.485748}, "transactions": [], "price":
-        "$$", "location": {"address1": "2606 W Hillsborough Ave", "address2": "",
-        "address3": "Pickford''s Sundries", "city": "Tampa", "zip_code": "33614",
-        "country": "US", "state": "FL", "display_address": ["2606 W Hillsborough Ave",
-        "Pickford''s Sundries", "Tampa, FL 33614"]}, "phone": "+18137088985", "display_phone":
-        "(813) 708-8985", "distance": 5685.86721102098}], "total": 213, "region":
-        {"center": {"longitude": -82.46200561523438, "latitude": 27.949212757193706}}}'
-  recorded_at: Sun, 14 Nov 2021 03:58:39 GMT
+        {"id": "PsNTxUNwnFXf0pNY0qaWHQ", "alias": "astrobrew-tampa-bay-2", "name":
+        "AstroBrew", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hGGRMYL37qsRAWThf4dhvA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/astrobrew-tampa-bay-2?adjust_creative=nDIAuy1o_G4lHcbBlhCwTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=nDIAuy1o_G4lHcbBlhCwTg",
+        "review_count": 4, "categories": [{"alias": "coffee", "title": "Coffee & Tea"},
+        {"alias": "lounges", "title": "Lounges"}], "rating": 5.0, "coordinates": {"latitude":
+        27.95231805966176, "longitude": -82.4927621674268}, "transactions": [], "location":
+        {"address1": "1001 N Macdill Ave", "address2": "Ste D", "address3": "", "city":
+        "Tampa Bay", "zip_code": "33607", "country": "US", "state": "FL", "display_address":
+        ["1001 N Macdill Ave", "Ste D", "Tampa Bay, FL 33607"]}, "phone": "", "display_phone":
+        "", "distance": 3040.7006519224005}], "total": 231, "region": {"center": {"longitude":
+        -82.46200561523438, "latitude": 27.949212757193706}}}'
+  recorded_at: Sat, 28 Jan 2023 03:21:21 GMT
 recorded_with: VCR 6.0.0

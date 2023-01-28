@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 class FindService
 	class << self
-
 		def find_user_by_email(email)
 			response = HTTParty.get(
 				"#{Figaro.env.backend}user",
@@ -23,6 +24,8 @@ class FindService
 		end
 
 		def find_shop_favorite(yelp_id, email)
+      return false unless yelp_id && email
+
 			response = HTTParty.get(
 				"#{Figaro.env.backend}coffee_shop_favorite",
 				query: {
