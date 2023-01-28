@@ -46,6 +46,9 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-rails_csrf_protection'
 
+# Sorbet Type Checker
+gem 'sorbet-rails'
+
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
