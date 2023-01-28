@@ -7,16 +7,16 @@ class CurrentLocationService
 				"https://ipgeolocation.abstractapi.com/v1/?api_key=#{Figaro.env.api_key}"
 			)
 
-      if postal_code = find_postal_code(response)
-        postal_code
-      else
+			if postal_code = find_postal_code(response)
+				postal_code
+			else
 				coordinates = find_lat_lon(response)
 				response2 = weather_location(coordinates)
 
 				if (response2.dig("cod") != "400" rescue nil)
 					response2.first.dig("name") || nil
 				end
-		  end
+		  	end
 		end
 
 		def weather_location(coordinates)
