@@ -18,7 +18,7 @@ RSpec.describe 'As a guest', type: :feature do
 				button = find_button("button")
 				button.click
 			end
-			test_location = CurrentLocationService.get_current_location
+			test_location = CurrentLocationService.abstract_location
 
 			expect(current_path).to eq(root_path)
 			within("#zipcode_search") do
