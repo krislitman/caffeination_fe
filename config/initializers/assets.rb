@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Be sure to restart your server when you modify this file.
 
 # Version of your assets, change this if you want to expire all your assets.
@@ -14,5 +16,5 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
 Rails.application.config.middleware.use OmniAuth::Builder do
-	provider :google_oauth2, Figaro.env.GOOGLE_CLIENT_ID, Figaro.env.GOOGLE_CLIENT_SECRET
-  end
+  provider :google_oauth2, Figaro.env.GOOGLE_CLIENT_ID, Figaro.env.GOOGLE_CLIENT_SECRET
+end

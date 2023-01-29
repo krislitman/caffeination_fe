@@ -23,12 +23,12 @@
 								<%= form.label :last_name, "Enter your Last Name" %>
 							</div>
 							<div class="form-floating mb-3">
-								<%= form.text_field :address_1, id: "Enter your Address 1", class: "form-control" %>
-								<%= form.label :address_1, "Enter your Address 1" %>
+								<%= form.text_field :line1, id: "Enter your Address 1", class: "form-control" %>
+								<%= form.label :line1, "Enter your Address 1" %>
 							</div>
 							<div class="form-floating mb-3">
-								<%= form.text_field :address_2, id: "Enter your Address 2", class: "form-control" %>
-								<%= form.label :address_2, "Enter your Address 2" %>
+								<%= form.text_field :line2, id: "Enter your Address 2", class: "form-control" %>
+								<%= form.label :line2, "Enter your Address 2" %>
 							</div>
 							<div class="form-floating mb-3">
 								<%= form.text_field :city, id: "Enter your City", class: "form-control" %>
@@ -39,8 +39,11 @@
 								<%= form.label :state, "Enter your State" %>
 							</div>
 							<div class="form-floating mb-3">
-								<%= form.text_field :zipcode, id: "Enter your Zipcode", class: "form-control" %>
-								<%= form.label :zipcode, "Enter your Zipcode" %>
+								<%= form.text_field :postal_code, id: "Enter your Postal Code", class: "form-control" %>
+								<%= form.label :postal_code, "Enter your Postal Code" %>
+							</div>
+							<div class="form-floating mb-3">
+                                <%= form.country_select :country, selected: "US", only: ["US", "CA", "GB"], class: "form-control" %>
 							</div>
 							<div class="form-floating mb-3">
 								<%= form.text_field :email, id: "Enter your Email", class: "form-control" %>

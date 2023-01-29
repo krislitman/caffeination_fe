@@ -1,15 +1,16 @@
 <div class="filtered_coffee_shops">
-		<% coffee_shops.each do |c| %>
-			<%= image_tag c.image_url.to_s, height: "200", width: "250" %>
-			<p><%= link_to c.name, coffee_shop_path(yelp_id: c.yelp_id) %></p>
-			<p>Rating: <%= c.rating %></p>
-			<p>Location: <%= c.location[:display_address].join(",") %></p>
-			<p>Phone: <%= c.phone %></p>
-			<% if c.is_open? %>
-				<p>Currently Open</p>
-			<% else %>
-				<p>Currently Closed</p>
-			<% end %>
-		<% end%>
+	<% coffee_shops.each do |c| %>
+		<%= image_tag c.image_url.to_s, height: "200", width: "250" %>
+		<p><%= link_to c.name, coffee_shop_path(yelp_id: c.id) %></p>
+		<p>Rating: <%= c.rating %></p>
+		<p>Location: <%= c.formatted_location %></p>
+		<p>Phone: <%= c.phone %></p>
+
+		<% if c.open %>
+			<p>Currently Open</p>
+		<% else %>
+			<p>Currently Closed</p>
+		<% end %>
+	<% end%>
 	<hr>
 </div>

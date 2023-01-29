@@ -1,0 +1,63 @@
+<body>
+	<div class="container">
+		<%= form_with model: @current_user, local: true, method: :patch do |form| %>
+			<div class="row">
+				<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+					<div class="card border-0 shadow rounded-3 my-5">
+						<div class="card-body p-4 p-sm-5">
+							<h5 class="card-title text-center mb-5 fw-light fs-5">Settings</h5>
+							<div class="form-floating mb-3">
+								<%= form.text_field :username, value: @current_user.username, class: "form-control" %>
+								<%= form.label :username, "Username" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :first_name, value: @current_user.first_name, class: "form-control" %>
+								<%= form.label :first_name, "First Name" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :last_name, value: @current_user.last_name, class: "form-control" %>
+								<%= form.label :last_name, "Last Name" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :line1, value: @address.line1, class: "form-control" %>
+								<%= form.label :line1, "Enter your Address 1" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :line2, value: @address.line2, class: "form-control" %>
+								<%= form.label :line2, "Enter your Address 2" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :city, value: @address.city, class: "form-control" %>
+								<%= form.label :city, "Enter your City" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :state, value: @address.state, class: "form-control" %>
+								<%= form.label :state, "Enter your State" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :postal_code, value: @address.postal_code, class: "form-control" %>
+								<%= form.label :postal_code, "Enter your Postal Code" %>
+							</div>
+							<div class="form-floating mb-3">
+                                <%= form.country_select :country, selected: @address.country, only: ["US", "CA", "GB"], class: "form-control" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :email, value: @current_user.email, class: "form-control" %>
+								<%= form.label :email, "Enter your Email" %>
+							</div>
+							<div class="form-floating mb-3">
+								<%= form.text_field :favorite_beverage, value: @current_user.favorite_beverage, class: "form-control" %>
+								<%= form.label :favorite_beverage, "Enter your Favorite Beverage" %>
+							</div>
+
+							<div class="d-grid">
+								<%= form.submit "Update Settings", class: "btn btn-primary btn-login text-uppercase fw-bold"%>
+							</div>
+							<hr class="my-4">
+						</div>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</body>

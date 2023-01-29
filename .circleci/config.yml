@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/caffeination_fe
     docker:
-      - image: circleci/ruby:2.7.0-node-browsers
+      - image: circleci/ruby:3.0.0-node-browsers
         environment:
           PGHOST: localhost
           PGUSER: caffeination_fe

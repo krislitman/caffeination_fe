@@ -1,44 +1,55 @@
 # frozen_string_literal: true
 
 class SessionsController < ApplicationController
-	def new; end
+  def new; end
 
-	def create
-		user = User.find_by(email: normalized_email)
+  def create
+    user = User.find_by(email: normalized_email)
 
-		if user && user.authenticate(params[:password])
-			session[:user_id] = user.id
-			flash[:message] = "Welcome back #{user.username}!"
-			redirect_to root_path
-		else
-			flash[:error] = "Couldn't log you in :("
-			redirect_to log_in_path
-		end
-	end
+    if user&.authenticate(params[:password])
+      session[:user_id] = user.id
 
-	def omniauth
-		user = User.from_omniauth(request.env["omniauth.auth"])
+      flash[:message] = "Welcome back #{user.username}!"
+      redirect_to root_path
+    else
+      flash[:error] = "Couldn't log you in :("
+      redirect_to log_in_path
+    end
+  end
 
-		if user
-			session[:user_id] = user.id
-			flash[:message] = "Welcome #{user.username}!"
-			redirect_to root_path
-		else
-			flash[:error] = "Couldn't log you in :("
-			redirect_to log_in_path
-		end
-	end
+  def edit
+    @current_user = current_user
+    @address = current_user.address
+  end
 
-	def destroy
-		session[:user_id] = nil
-		flash[:message] = 'You have been logged out'
+  def update
+    require 'pry'
+    binding.pry
+  end
 
-		redirect_to root_path
-	end
+  def omniauth
+    user = User.from_omniauth(request.env['omniauth.auth'])
 
-	private
+    if user
+      session[:user_id] = user.id
+      flash[:message] = "Welcome #{user.username}!"
+      redirect_to root_path
+    else
+      flash[:error] = "Couldn't log you in :("
+      redirect_to log_in_path
+    end
+  end
 
-	def normalized_email
-		params[:email].downcase
-	end
+  def destroy
+    session[:user_id] = nil
+    flash[:message] = 'You have been logged out'
+
+    redirect_to root_path
+  end
+
+  private
+
+  def normalized_email
+    params[:email].downcase
+  end
 end

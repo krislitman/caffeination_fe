@@ -1,5 +1,9 @@
-# Create 100 users
+# frozen_string_literal: true
 
-100.times do |i|
-  FactoryBot.create(:user)
+# Seed file to get a basic development setup going
+
+# Create Users with CoffeeShops & Addresses
+100.times do |_i|
+  user = FactoryBot.create :user, :with_coffee_shops
+  FactoryBot.create :address, user: user
 end

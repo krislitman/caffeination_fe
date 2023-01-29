@@ -6,7 +6,6 @@
           <p class="lead mb-4">Find, save and share your favorite coffee spots!</p>
             <% if logged_in %>
               <%= render "user_information" %>
-              <%= render partial: "favorite_spots", locals: { favorite_spots: @favorite_spots } %>
           <% end %>
         <br>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
