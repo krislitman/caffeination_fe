@@ -21,22 +21,23 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-					<%= link_to "Home", root_path, method: :get, class: "nav-link active" %>
+					<%= link_to icon("fa", "home"), root_path, method: :get, class: "nav-link active" %>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Users
+						<i class="fa fa-user-circle" aria-hidden="true"></i>
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<% if logged_in %>
-						<%= link_to "Log Out", log_out_path, method: :delete, class: "dropdown-item" %>
-					<% else %>
-						<%= link_to "Log In", log_in_path, method: :get, class: "dropdown-item" %>
-						<%= link_to "Log in with Google", "/auth/google_oauth2", method: :post, class: "dropdown-item" %>
+						<% if logged_in %>
+							<%= link_to "Settings", edit_user_path(current_user), method: :get, class: "dropdown-item" %>
+							<%= link_to "Log Out", log_out_path, method: :delete, class: "dropdown-item" %>
+						<% else %>
+							<%= link_to "Log In", log_in_path, method: :get, class: "dropdown-item" %>
+							<%= link_to "Log in with Google", "/auth/google_oauth2", method: :post, class: "dropdown-item" %>
 
-						<li><hr class="dropdown-divider"></li>
-						<%= link_to "Sign Up", sign_up_path, method: :get, class: "dropdown-item" %>
-					<% end %>
+							<li><hr class="dropdown-divider"></li>
+							<%= link_to "Sign Up", sign_up_path, method: :get, class: "dropdown-item" %>
+						<% end %>
 					</ul>
 				</li>
 				<% if !current_page?(root_path) %>
