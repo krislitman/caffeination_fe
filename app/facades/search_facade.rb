@@ -2,18 +2,20 @@
 
 class SearchFacade
   class << self
-    def route(params, location)
-      if params[:query]
-        response = YelpService.search(params)
+    def route(zipcode)
+      if zipcode
+        Yelp::Search.call(zipcode: zipcode).results
       elsif params[:sort_by]
-        response = sort_options(params, location)
+        response = sort_options(params, zipcode)
       end
     rescue StandardError
       unexpected_error(response)
     end
 
     def sort_options(params, location)
-      coffee_shops = YelpService.search(get_search_params(location))
+      search_param = get_search_params(location)
+
+      coffee_shops = Yelp::Search.call(zipcode: search_param).results
       sort_type = params[:sort_by]
       case sort_type
       when 'No Starbucks'

@@ -7,7 +7,8 @@ class CoffeeShopController < ApplicationController
   end
 
   def favorite
-    result = YelpService.get_shop(params[:format])
+    yelp_id = params[:format]
+    result = Yelp::Fetch.call(yelp_id: yelp_id).result
 
     if result
       coffee_shop = CoffeeShop.find_or_create_by(

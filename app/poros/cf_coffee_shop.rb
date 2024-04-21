@@ -49,6 +49,8 @@ class CfCoffeeShop
   end
 
   def add_reviews(all_reviews)
+    return unless all_reviews.present?
+    
     all_reviews.each do |review|
       @reviews << review
     end
