@@ -22,10 +22,7 @@ class SessionsController < ApplicationController
     @address = current_user.address
   end
 
-  def update
-    require 'pry'
-    binding.pry
-  end
+  def update; end
 
   def omniauth
     user = User.from_omniauth(request.env['omniauth.auth'])

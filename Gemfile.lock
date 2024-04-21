@@ -308,6 +308,8 @@ GEM
       sprockets-rails
       tilt
     semantic_range (3.0.0)
+    service_actor (3.8.1)
+      zeitwerk (>= 1.0)
     shoulda-matchers (5.0.0)
       activesupport (>= 5.2.0)
     sidekiq (2.17.8)
@@ -402,6 +404,7 @@ DEPENDENCIES
   redis (~> 3.1)
   rspec-rails
   sass-rails (>= 6)
+  service_actor (~> 3.8)
   shoulda-matchers (~> 5.0)
   sidekiq (~> 2.7, >= 2.7.1)
   sorbet-rails

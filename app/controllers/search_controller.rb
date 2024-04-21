@@ -4,7 +4,7 @@ class SearchController < ApplicationController
   before_action :location, only: [:index]
 
   def index
-    @pagy, @coffee_shops = pagy_array(SearchFacade.route(search_params, location))
+    @pagy, @coffee_shops = pagy_array(SearchFacade.route(location))
   rescue StandardError
     redirect_to root_path(current_location: 'Please try a different location!')
   end
@@ -20,6 +20,6 @@ class SearchController < ApplicationController
   end
 
   def search_params
-    params.permit(:query, :sort_by, :price)
+    params.permit(:query, :sort_by, :price, :button)
   end
 end
