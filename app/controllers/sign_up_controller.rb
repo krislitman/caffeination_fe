@@ -1,25 +1,27 @@
 # frozen_string_literal: true
 
 class SignUpController < ApplicationController
-  def new; end
+  def new
+    @user = User.new
+  end
 
   def create
-    user = User.new(user_params)
+    @user ||= User.new(user_params)
 
-    if user.save
-      session[:user_id] = user.id
+    if @user.save
+      session[:user_id] = @user.id
       address = Address.new(address_params)
-      address.user_id = user.id
+      address.user_id = @user.id
 
       if address.save
-        flash[:notice] = "Welcome to Caffeination #{user.username}!"
+        flash[:notice] = "Welcome to Caffeination #{@user.username}!"
         redirect_to root_path
       else
         flash[:error] = address.errors.full_messages.to_s
         redirect_to sign_up_path
       end
     else
-      flash[:error] = user.errors.full_messages.to_s
+      flash[:error] = @user.errors.full_messages.to_s
       redirect_to sign_up_path
     end
   end

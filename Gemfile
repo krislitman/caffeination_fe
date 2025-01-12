@@ -60,6 +60,12 @@ gem 'sorbet-rails'
 # Font Awesome
 gem 'font-awesome-sass', '~> 6.2.1'
 
+# Haml
+gem 'haml'
+
+# Credentials
+gem 'dotenv-rails'
+
 group :development, :test do
   gem 'capybara'
   gem 'factory_bot_rails'
