@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 20 Apr 2024 22:39:58 GMT
+      - Sun, 12 Jan 2025 07:33:13 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1007'
+      - '941'
       Connection:
       - keep-alive
       Server:
@@ -43,11 +43,11 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJpcF9hZGRyZXNzIjoiNzUuMTY2LjQ1LjEzNiIsImNpdHkiOiJEZW52ZXIiLCJjaXR5X2dlb25hbWVfaWQiOjU0MTkzODQsInJlZ2lvbiI6IkNvbG9yYWRvIiwicmVnaW9uX2lzb19jb2RlIjoiQ08iLCJyZWdpb25fZ2VvbmFtZV9pZCI6NTQxNzYxOCwicG9zdGFsX2NvZGUiOiI4MDIxMCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoiVVMiLCJjb3VudHJ5X2dlb25hbWVfaWQiOjYyNTIwMDEsImNvdW50cnlfaXNfZXUiOmZhbHNlLCJjb250aW5lbnQiOiJOb3J0aCBBbWVyaWNhIiwiY29udGluZW50X2NvZGUiOiJOQSIsImNvbnRpbmVudF9nZW9uYW1lX2lkIjo2MjU1MTQ5LCJsb25naXR1ZGUiOi0xMDQuOTYyNiwibGF0aXR1ZGUiOjM5LjY3OTYsInNlY3VyaXR5Ijp7ImlzX3ZwbiI6ZmFsc2V9LCJ0aW1lem9uZSI6eyJuYW1lIjoiQW1lcmljYS9EZW52ZXIiLCJhYmJyZXZpYXRpb24iOiJNRFQiLCJnbXRfb2Zmc2V0IjotNiwiY3VycmVudF90aW1lIjoiMTY6Mzk6NTgiLCJpc19kc3QiOnRydWV9LCJmbGFnIjp7ImVtb2ppIjoi8J+HuvCfh7giLCJ1bmljb2RlIjoiVSsxRjFGQSBVKzFGMUY4IiwicG5nIjoiaHR0cHM6Ly9zdGF0aWMuYWJzdHJhY3RhcGkuY29tL2NvdW50cnktZmxhZ3MvVVNfZmxhZy5wbmciLCJzdmciOiJodHRwczovL3N0YXRpYy5hYnN0cmFjdGFwaS5jb20vY291bnRyeS1mbGFncy9VU19mbGFnLnN2ZyJ9LCJjdXJyZW5jeSI6eyJjdXJyZW5jeV9uYW1lIjoiVVNEIiwiY3VycmVuY3lfY29kZSI6IlVTRCJ9LCJjb25uZWN0aW9uIjp7ImF1dG9ub21vdXNfc3lzdGVtX251bWJlciI6MjA5LCJhdXRvbm9tb3VzX3N5c3RlbV9vcmdhbml6YXRpb24iOiJDRU5UVVJZTElOSy1VUy1MRUdBQ1ktUVdFU1QiLCJjb25uZWN0aW9uX3R5cGUiOiJDb3Jwb3JhdGUiLCJpc3BfbmFtZSI6IkNlbnR1cnlMaW5rIENvbW11bmljYXRpb25zLCBMTEMiLCJvcmdhbml6YXRpb25fbmFtZSI6IkNlbnR1cnlMaW5rIENvbW11bmljYXRpb25zLCBMTEMifX0=
-  recorded_at: Sat, 20 Apr 2024 22:39:58 GMT
+        eyJpcF9hZGRyZXNzIjoiMzguNzUuMjUzLjQiLCJjaXR5IjoiRGVudmVyIiwiY2l0eV9nZW9uYW1lX2lkIjo1NDE5Mzg0LCJyZWdpb24iOiJDb2xvcmFkbyIsInJlZ2lvbl9pc29fY29kZSI6IkNPIiwicmVnaW9uX2dlb25hbWVfaWQiOjU0MTc2MTgsInBvc3RhbF9jb2RlIjpudWxsLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6IlVTIiwiY291bnRyeV9nZW9uYW1lX2lkIjo2MjUyMDAxLCJjb3VudHJ5X2lzX2V1IjpmYWxzZSwiY29udGluZW50IjoiTm9ydGggQW1lcmljYSIsImNvbnRpbmVudF9jb2RlIjoiTkEiLCJjb250aW5lbnRfZ2VvbmFtZV9pZCI6NjI1NTE0OSwibG9uZ2l0dWRlIjotMTA0Ljk4NDg2MiwibGF0aXR1ZGUiOjM5LjczOTIzNjQsInNlY3VyaXR5Ijp7ImlzX3ZwbiI6ZmFsc2V9LCJ0aW1lem9uZSI6eyJuYW1lIjoiQW1lcmljYS9EZW52ZXIiLCJhYmJyZXZpYXRpb24iOiJNU1QiLCJnbXRfb2Zmc2V0IjotNywiY3VycmVudF90aW1lIjoiMDA6MzM6MTMiLCJpc19kc3QiOmZhbHNlfSwiZmxhZyI6eyJlbW9qaSI6IvCfh7rwn4e4IiwidW5pY29kZSI6IlUrMUYxRkEgVSsxRjFGOCIsInBuZyI6Imh0dHBzOi8vc3RhdGljLmFic3RyYWN0YXBpLmNvbS9jb3VudHJ5LWZsYWdzL1VTX2ZsYWcucG5nIiwic3ZnIjoiaHR0cHM6Ly9zdGF0aWMuYWJzdHJhY3RhcGkuY29tL2NvdW50cnktZmxhZ3MvVVNfZmxhZy5zdmcifSwiY3VycmVuY3kiOnsiY3VycmVuY3lfbmFtZSI6IlVTRCIsImN1cnJlbmN5X2NvZGUiOiJVU0QifSwiY29ubmVjdGlvbiI6eyJhdXRvbm9tb3VzX3N5c3RlbV9udW1iZXIiOjE3NCwiYXV0b25vbW91c19zeXN0ZW1fb3JnYW5pemF0aW9uIjoiQ29nZW50IENvbW11bmljYXRpb25zIiwiY29ubmVjdGlvbl90eXBlIjpudWxsLCJpc3BfbmFtZSI6IkNvZ2VudCIsIm9yZ2FuaXphdGlvbl9uYW1lIjpudWxsfX0=
+  recorded_at: Sun, 12 Jan 2025 07:33:13 GMT
 - request:
     method: get
-    uri: https://ipgeolocation.abstractapi.com/v1/?api_key=438775d176104df68810a40a72b964b7
+    uri: http://api.openweathermap.org/geo/1.0/reverse?appid=90937a52cf6f80d7ab418146d1e18d57&lat=39.7392364&limit=1&lon=-104.984862
     body:
       encoding: US-ASCII
       string: ''
@@ -60,67 +60,21 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 429
-      message: Too Many Requests
-    headers:
-      Date:
-      - Sat, 20 Apr 2024 22:39:59 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '197'
-      Connection:
-      - keep-alive
-      Server:
-      - nginx/1.18.0 (Ubuntu)
-      Allow:
-      - GET, HEAD, OPTIONS
-      X-Frame-Options:
-      - DENY
-      Vary:
-      - Cookie, Origin
-      X-Content-Type-Options:
-      - nosniff
-      Referrer-Policy:
-      - same-origin
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains
-    body:
-      encoding: UTF-8
-      string: '{"error":{"message":"You have exceeded the requests per second allowed
-        by your current plan. Visit the Abstract dashboard to upgrade for a higher
-        limit.","code":"too_many_requests","details":null}}'
-  recorded_at: Sat, 20 Apr 2024 22:39:59 GMT
-- request:
-    method: get
-    uri: http://api.openweathermap.org/geo/1.0/reverse?appid=90937a52cf6f80d7ab418146d1e18d57&lat=&limit=1&lon=
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
       Server:
       - openresty
       Date:
-      - Sat, 20 Apr 2024 22:39:59 GMT
+      - Sun, 12 Jan 2025 07:33:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '44'
+      - '493'
       Connection:
       - keep-alive
       X-Cache-Key:
-      - "/geo/1.0/reverse?lat=&limit=1&lon="
+      - "/geo/1.0/reverse?lat=39.74&limit=1&lon=-104.98"
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -128,7 +82,8 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST
     body:
-      encoding: UTF-8
-      string: '{"cod":"400","message":"Nothing to geocode"}'
-  recorded_at: Sat, 20 Apr 2024 22:39:59 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkRlbnZlciIsImxvY2FsX25hbWVzIjp7ImVzIjoiRGVudmVyIiwiZmEiOiLYr9mG2YjYsSIsInpoIjoi5Li55L2b5Y6/IiwidWsiOiLQlNC10L3QstC10YAiLCJoaSI6IuCkoeClheCkqOCkteCksCIsIm9jIjoiRGVudmVyIiwidGEiOiLgrp/gr4bgrqngr43grrXgrrDgr40iLCJ1ciI6ItqI24zZhtmI2LEiLCJibiI6IuCmoeCnh+CmqOCmreCmvuCmsCIsInJ1Ijoi0JTQtdC90LLQtdGAIiwicHMiOiLaidmG2YjYsSIsImtvIjoi642067KEIiwiZW8iOiJEZW52ZXJvIiwicGwiOiJEZW52ZXIiLCJ0ZSI6IuCwoeCxhuCwqOCxjeCwteCwsOCxjSIsImVuIjoiRGVudmVyIiwiZWwiOiLOnc+Ezq3Ovc6yzrXPgSIsIm1yIjoi4KSh4KWH4KSo4KWN4KS14KWN4KS54KSwIiwiamEiOiLjg4fjg7Pjg5Djg7wiLCJhciI6Itiv2YbZgdixIn0sImxhdCI6MzkuNzM5MjM2NCwibG9uIjotMTA0Ljk4NDg2MiwiY291bnRyeSI6IlVTIiwic3RhdGUiOiJDb2xvcmFkbyJ9XQ==
+  recorded_at: Sun, 12 Jan 2025 07:33:13 GMT
 recorded_with: VCR 6.0.0
