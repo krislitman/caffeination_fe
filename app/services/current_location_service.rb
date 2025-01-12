@@ -13,13 +13,7 @@ class CurrentLocationService
         coordinates = find_lat_lon(response)
         response2 = weather_location(coordinates)
 
-        if begin
-          response2['cod'] != '400'
-        rescue StandardError
-          nil
-        end
-          response2.first['name'] || nil
-        end
+        response2.first.dig("name")
       end
     end
 

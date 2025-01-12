@@ -1,5 +1,5 @@
 <div id="zipcode_search">
-	<%= form_with url: "/search", method: :get, multipart: true do |form| %>
+	<%= form_with url: "/search", method: :get, html: { class: "search_form" }, multipart: true do |form| %>
 		<div class="mb-3">
 			<%= form.label :query, "Where would you like to grab coffee?" %><br><br>
         <% if location == "Please try a different location!" %>

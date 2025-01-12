@@ -12,17 +12,16 @@ RSpec.describe 'As a guest', type: :feature do
   end
 
   scenario 'When I click button to find current location, I am redirected back to the home page with postal code entered' do
-    VCR.use_cassette('requests/current_location', match_requests_on: %i[body]) do
+    VCR.use_cassette('requests/current_location') do
       visit root_path
       within('#current_location') do
         button = find_button('button')
         button.click
       end
-      test_location = CurrentLocationService.abstract_location
 
       expect(current_path).to eq(root_path)
       within('#zipcode_search') do
-        expect(page).to have_content(test_location)
+        expect(page).to have_field('query', with: 'Denver')
       end
     end
   end
