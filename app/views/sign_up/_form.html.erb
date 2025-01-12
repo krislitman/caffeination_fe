@@ -1,6 +1,6 @@
 <body>
 	<div class="container">
-		<%= form_with url: "/sign_up", local: true, method: :post do |form| %>
+		<%= form_for @user, url: { action: "create" }, local: true, method: :post do |form| %>
 			<div class="row">
 				<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
 					<div class="card border-0 shadow rounded-3 my-5">
@@ -23,12 +23,12 @@
 								<%= form.label :last_name, "Enter your Last Name" %>
 							</div>
 							<div class="form-floating mb-3">
-								<%= form.text_field :line1, id: "Enter your Address 1", class: "form-control" %>
-								<%= form.label :line1, "Enter your Address 1" %>
+								<%= form.text_field :address_1, id: "Enter your Address 1", class: "form-control" %>
+								<%= form.label :address_1, "Enter your Address 1" %>
 							</div>
 							<div class="form-floating mb-3">
-								<%= form.text_field :line2, id: "Enter your Address 2", class: "form-control" %>
-								<%= form.label :line2, "Enter your Address 2" %>
+								<%= form.text_field :address_2, id: "Enter your Address 2", class: "form-control" %>
+								<%= form.label :address_2, "Enter your Address 2" %>
 							</div>
 							<div class="form-floating mb-3">
 								<%= form.text_field :city, id: "Enter your City", class: "form-control" %>
@@ -39,8 +39,8 @@
 								<%= form.label :state, "Enter your State" %>
 							</div>
 							<div class="form-floating mb-3">
-								<%= form.text_field :postal_code, id: "Enter your Postal Code", class: "form-control" %>
-								<%= form.label :postal_code, "Enter your Postal Code" %>
+								<%= form.text_field :zipcode, id: "Enter your Postal Code", class: "form-control" %>
+								<%= form.label :zipcode, "Enter your Postal Code" %>
 							</div>
 							<div class="form-floating mb-3">
                                 <%= form.country_select :country, selected: "US", only: ["US", "CA", "GB"], class: "form-control" %>
